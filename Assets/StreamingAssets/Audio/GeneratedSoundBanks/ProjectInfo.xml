@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="SugarRushW_WwiseProject" GUID="{28A1C91E-4F94-480E-8115-B26275BEB44B}" Generator="2023.1.0.8367"/>
+	<CacheRoot>../../../../SugarRushW_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{AA9024DC-D741-4CCC-BC21-BF56E631FA4E}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../SugarRushW_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{E63C4D66-B238-4A52-8BB5-A3BDF4E86A2F}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../SugarRushW_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{CC0E99F9-C0B1-4087-AE86-DC29BE3C21C8}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{10DEF8ED-E28D-1C1B-6976-54E4B726F28F}</FileHash>
+</ProjectInfo>
