@@ -147,8 +147,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4204897945729888745}
   - component: {fileID: 3881424934507312075}
-  - component: {fileID: 7413017261353810640}
-  - component: {fileID: 4081831348842136499}
+  - component: {fileID: 6743680844160981610}
+  - component: {fileID: 4866936017238385934}
   m_Layer: 0
   m_Name: Puff
   m_TagString: Untagged
@@ -194,7 +194,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.44
   m_Center: {x: 0, y: 0, z: -0.05}
---- !u!114 &7413017261353810640
+--- !u!114 &6743680844160981610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,44 +203,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 3733696402280767894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7adbb0d5bb6fc64f956ad6b435d3b3f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e8f2f28ada8d6141b625b4c8b62bde1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.3
-  fallSpeed: -0.098
-  move: {fileID: -2280867835802637203, guid: 8f90227e9cc4c2643b69810bfb181ad0, type: 3}
-  jump: {fileID: -2434460660220951229, guid: 8f90227e9cc4c2643b69810bfb181ad0, type: 3}
-  _playerSize: 0.4
---- !u!114 &4081831348842136499
-MonoBehaviour:
+  speed: 0.05
+  smoothTime: 0.25
+  _currentVelocity: 0
+  gravityMultiplyer: 3
+--- !u!143 &4866936017238385934
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3733696402280767894}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 8f90227e9cc4c2643b69810bfb181ad0, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  serializedVersion: 3
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8695107068611214644
 PrefabInstance:
   m_ObjectHideFlags: 0
