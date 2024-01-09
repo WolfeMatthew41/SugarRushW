@@ -59,7 +59,10 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyGravity()
     {
-        _velocity += _gravity * gravityMultiplyer * Time.deltaTime;
+        if (_characterController.isGrounded && _velocity < 0.0f)
+            _velocity = -1.0f;
+        else
+            _velocity += _gravity * gravityMultiplyer * Time.deltaTime;
         _direction.y = _velocity;
     }
 }
