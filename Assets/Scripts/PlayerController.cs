@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 _direction;
     private CharacterController _characterController;
     [SerializeField]
-    private float speed = 0.05f; //Used to control speed of Puff
+    private float speed = 0.04f; //Used to control speed of Puff
 
     [SerializeField]
     private float smoothTime = 1f;
@@ -20,10 +20,10 @@ public class PlayerController : MonoBehaviour
     private float _currentVelocity;
 
     [SerializeField]
-    private float _gravity = 9.81f; //Used to control fall speed
+    private float _gravity = -9.81f; //Used to control fall speed
 
     [SerializeField] 
-    private float gravityMultiplyer = .25f;
+    private float gravityMultiplyer = .2f;
     private float _velocity;
 
 

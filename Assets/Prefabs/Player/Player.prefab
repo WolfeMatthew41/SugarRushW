@@ -268,7 +268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7082306737061777297}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.28978428, y: -0.0000024339247, z: 0.0000007369333, w: 0.95709205}
+  m_LocalRotation: {x: 0.28978416, y: -0, z: -0, w: 0.95709205}
   m_LocalPosition: {x: 0, y: 1.2, z: -10.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -377,19 +377,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: speed
-      value: 0.05
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: _gravity
-      value: -13.68
+      value: -9.81
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: smoothTime
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: _currentVelocity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: gravityMultiplyer
