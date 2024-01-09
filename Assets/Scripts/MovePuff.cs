@@ -17,6 +17,14 @@ public class MovePuff : MonoBehaviour
 
     private Vector2 _moveInput;
 
+    [SerializeField]
+    private Transform _moveOrientation;
+
+    private Transform _baseOrientation;
+
+    [SerializeField]
+    private Rigidbody _rb;
+
     private CharacterController _characterController;
     // Jump Variables
     private Vector3 _playerVelocity;
@@ -36,6 +44,11 @@ public class MovePuff : MonoBehaviour
     // Start is called before the first frame update
     void start()
     {
+        _rb = GetComponent<Rigidbody>();
+        _rb.freezeRotation = true;
+
+        _baseOrientation = _moveOrientation.transform;
+
         playerObj = GameObject.Find("Puff");
         _characterController = GetComponent < CharacterController>();
     }
@@ -48,8 +61,14 @@ public class MovePuff : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 moveDirection = new Vector3(_moveInput.x, 0.0f, _moveInput.y);
-        transform.position += moveDirection * speed;
+        //Vector3 moveDirection = new Vector3(_moveInput.x, 0.0f, _moveInput.y);
+
+        Vector3 moveDirection = _moveOrientation.forward * _moveInput.y + _moveOrientation.right * _moveInput.x;
+
+        _rb.AddForce(moveDirection.normalized * speed, ForceMode.Force);
+        //transform.position += moveDirection * speed;
+
+        _moveOrientation.rotation = _baseOrientation.rotation;
 
     }
 
