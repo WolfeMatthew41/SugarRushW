@@ -18,19 +18,4 @@ public class EnergySystem : MonoBehaviour
     energySlider.value = energy;
    }
 
-    /*private void start()
-    {
-        _energySlider.GetComponent<Slider>();
-    }
-
-    public void SetMaxEnergy(int maxEnergy)
-    {
-        _energySlider.maxValue = maxEnergy;
-        _energySlider.value = maxEnergy;
-    }
-
-    public void SetEnergy(int energy)
-    {
-        _energySlider.value = energy;
-    }*/
 }
