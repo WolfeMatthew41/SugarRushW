@@ -1,6 +1,2608 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}" SchemaVersion="119">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="NonIngameMusic" ID="{46F53A2C-6F0C-4495-B725-807BEE868445}" ShortID="700254962">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{5E844082-33BC-41C1-A1C3-87207154A37E}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{57F242B5-8296-42D4-9EBB-DF7054D87689}">
+											<PropertyList>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="MainMenu" ID="{1E695C0F-8EB0-402A-92EB-5659E47D8266}" ShortID="229406167">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{5925B9B5-AB59-4835-A244-5269F9B6C6A7}" ShortID="406305041">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{34CAC822-C116-4FC5-92F3-F815E8573974}" ShortID="949041588">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="SugarRush_120bpm_4-4_MainMenu_Intro" ID="{DA6F7C0C-3266-40B4-BB37-96FFCCCC7002}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{B8C03764-7649-4723-A699-91B7A38C90A4}" ShortID="198313700">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{5DCBFC36-B147-4194-8906-43C5BAAB0B32}" ShortID="559145956">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="SugarRush_120bpm_4-4_MainMenu" ID="{36162C9A-325D-4B56-967E-5C96CD21E2D6}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{C18983DC-2209-4C7C-AFB0-93F70A3B1771}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{0DB8B35E-EBA5-4AF8-8124-81B0A07270B6}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="SugarRush_120bpm_4-4_MainMenu" ID="{36162C9A-325D-4B56-967E-5C96CD21E2D6}" ShortID="319555882">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="SugarRush_120bpm_4-4_MainMenu" ID="{D4FCA06F-571E-43DA-A20F-F88DC8E0C275}" ShortID="341679459">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{E667EB0E-C473-435B-B050-725ED07236F9}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SugarRush_120bpm_4-4_MainMenu" ID="{FE28BB97-F316-434B-A5D9-D9D5D7EE3D35}">
+													<Language>SFX</Language>
+													<AudioFile>SugarRush_120bpm_4-4_MainMenu.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="568555732"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{06903162-118E-4D68-ACCB-288CFE95EA13}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="SugarRush_120bpm_4-4_MainMenu" ID="{68D2E19F-56A5-4CF9-9017-F6C91405437C}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="SugarRush_120bpm_4-4_MainMenu" ID="{FE28BB97-F316-434B-A5D9-D9D5D7EE3D35}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{C680246C-A0C7-4496-A9E8-6FA329274396}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{C41F2495-8C7C-4C76-AD29-4359BE0EF719}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="16000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="SugarRush_120bpm_4-4_MainMenu_Intro" ID="{DA6F7C0C-3266-40B4-BB37-96FFCCCC7002}" ShortID="246298059">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="SugarRush_120bpm_4-4_MainMenu_Intro" ID="{3F4F1817-DE37-4DC3-89D4-2DFF0BD9516F}" ShortID="130569529">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{069EAB04-8E48-433C-957A-03D04A43DD36}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SugarRush_120bpm_4-4_MainMenu_Intro" ID="{10B120B8-646B-4983-ABDD-FD92E54CACAD}">
+													<Language>SFX</Language>
+													<AudioFile>SugarRush_120bpm_4-4_MainMenu_Intro.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="619033396"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{2A9B7A24-8403-4F77-9CD4-E1CE27C769C5}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="SugarRush_120bpm_4-4_MainMenu_Intro" ID="{0629C7C1-EB99-40CE-A1A9-7C3E43C10502}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="SugarRush_120bpm_4-4_MainMenu_Intro" ID="{10B120B8-646B-4983-ABDD-FD92E54CACAD}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{D3BAC497-6ED1-45CB-A277-9CE90BBB688B}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{4A33F976-811E-45FC-92ED-9E715CA20A36}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="4000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Pause" ID="{47CB262D-638F-4803-895A-E2369BC49C8B}" ShortID="435959514">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{DB46A092-300E-4D29-B50E-86D023FBFCEF}" ShortID="879865079">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{A65B893E-F38C-4576-A4A2-67FE7AD8EC73}" ShortID="1068493194">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="SugarRush_120bpm_4-4_Pause" ID="{69872583-2DAF-4823-88AF-E644C729F5FF}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{A4C9B236-53D8-4884-B99B-1D824EFEF528}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{B86665F0-9D25-477B-9ACB-413E60FB4BB3}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="SugarRush_120bpm_4-4_Pause" ID="{69872583-2DAF-4823-88AF-E644C729F5FF}" ShortID="530151546">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="SugarRush_120bpm_4-4_Pause" ID="{305F9A81-FC73-4FAB-9570-CEC72E91AD77}" ShortID="199405143">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{B2832A34-F9D2-470C-8B58-9384D656CE8B}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SugarRush_120bpm_4-4_Pause" ID="{3E54F2B8-C06E-48FA-8BCC-75D51885310B}">
+													<Language>SFX</Language>
+													<AudioFile>SugarRush_120bpm_4-4_Pause.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="885853930"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{40F4E21C-1235-4EC1-A2BF-F2B836F71CD5}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="SugarRush_120bpm_4-4_Pause" ID="{02DF4B7A-4D2C-4E09-9AE4-7E5CA2FB58B3}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="SugarRush_120bpm_4-4_Pause" ID="{3E54F2B8-C06E-48FA-8BCC-75D51885310B}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{399C2C64-DB76-4B8A-9E68-1DC38B8AADD5}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{43B286D8-9E64-4D20-896A-480DBE06B594}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="16000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="GameStates" ID="{35DAD417-01F9-46DD-8FE8-53381E4ECB67}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{EAD34AAE-76F6-4BF5-9747-F8ABC30A6D99}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="MainMenu" ID="{1E695C0F-8EB0-402A-92EB-5659E47D8266}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="MainMenu" ID="{2BE436FA-6895-4D50-9EF2-5A4DCFE10C0C}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{E2AA4978-9E9E-460B-A09B-7873321A8C73}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Pause" ID="{47CB262D-638F-4803-895A-E2369BC49C8B}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Pause" ID="{E3039952-D53F-45EA-8DCA-1DAAEE577B90}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSwitchContainer>
+				<MusicSwitchContainer Name="IngameMusic" ID="{FF1BE994-9505-42C7-9268-DE443679DF18}" ShortID="821106653">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{D448AD7E-5A6F-45C2-AD7F-BBB620590E83}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{98CB1B4A-291A-4289-8A44-97BF22F4A833}">
+											<PropertyList>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSwitchContainer Name="Ingame" ID="{56E89FBC-558F-4D78-9ADA-C767DF55A4C2}" ShortID="460693734">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{E1A19208-9AD7-457B-BC15-B90E4FC4801C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{702DE9B6-9F8B-4E83-BA66-B34BD8702CE4}">
+													<PropertyList>
+														<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="HighEnergyM" ID="{145D0938-3EBE-4AB5-B3DB-0CA7663C4628}" ShortID="1051845434">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{70567A4E-2A12-4CEF-9876-C79BF7EF981C}" ShortID="1017015200">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{B2C864E8-CA60-42F9-9937-25864F50759B}" ShortID="223434603">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="HighEnergyMusic" ID="{611FEDB9-F5FE-4882-A851-5FB2BB0CB699}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{B5FF6A09-0AC1-4A01-B538-E4DD5501D194}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{66CCFB21-A300-48FE-969C-DE0E7E4E2E62}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="HighEnergyMusic" ID="{611FEDB9-F5FE-4882-A851-5FB2BB0CB699}" ShortID="306115648">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="16500"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Base" ID="{E3BA9F5C-8BE7-40A1-974F-B392818B5FA3}" ShortID="803091090">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{A5CC6998-C990-4257-B009-DAE129A818FD}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Base" ID="{4BA27444-4C11-4A17-BF0E-8F8A30CD2FD6}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Base.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="83775878"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{5056DCCF-7A37-4458-9C93-5CD533C47295}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Base" ID="{609B8A79-8B88-4AC0-92C9-1AB6C774528C}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Base" ID="{4BA27444-4C11-4A17-BF0E-8F8A30CD2FD6}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Glockenspiel" ID="{B80F0767-CB66-4CF6-BADC-A49AD274C811}" ShortID="567413970">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{641303AF-65E0-4335-AFA8-63DE1EFEC79A}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_GlockenSpiel_1" ID="{535D7C8C-821F-4210-A0DA-955D13DD088B}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_GlockenSpiel_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="775337931"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_GlockenSpiel_2" ID="{760FD076-7703-49B1-B5CA-013DF163BAC1}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_GlockenSpiel_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="50149168"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{A78744B7-B53A-409F-99FF-55F3839C28B3}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_GlockenSpiel_1" ID="{E08695AE-D04C-4028-A0CB-8E34D10A9357}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_GlockenSpiel_1" ID="{535D7C8C-821F-4210-A0DA-955D13DD088B}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{31828C42-5266-4859-A69C-C08B3F01294C}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_GlockenSpiel_2" ID="{1A763C80-DCDB-4AA1-9E84-6A055953D77D}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_GlockenSpiel_2" ID="{760FD076-7703-49B1-B5CA-013DF163BAC1}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{59D60A47-49BD-4A75-9578-A67946637A65}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Marimba" ID="{DB3303E3-3692-45D6-816E-1D0A0B142F46}" ShortID="570186871">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{CCF02EA2-BE27-4653-B4B2-3602EB896029}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Marimba_1" ID="{F1042239-8F19-44EC-A1CC-5A26EE867101}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Marimba_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="652029079"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Marimba_4" ID="{D0313285-A3CD-4107-81C2-4C29EE54CF78}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Marimba_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1013556937"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{A192A55F-BAD0-411E-B198-F391F5FD9593}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Marimba_1" ID="{F3BCF74A-233A-44F1-B4CA-89195A7844BC}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Marimba_1" ID="{F1042239-8F19-44EC-A1CC-5A26EE867101}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{51BC0C94-EF56-44CD-A1CF-8FC0E8E6891D}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Marimba_4" ID="{CBEA66AF-5218-4E86-8BD2-E5CE051E4183}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Marimba_4" ID="{D0313285-A3CD-4107-81C2-4C29EE54CF78}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{F2675192-8D25-474F-A2E6-68E694B8E2B2}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Vibraphone" ID="{43DEC989-464A-4FB0-873D-92651CE43FCB}" ShortID="795294223">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{4E592668-02C3-49B1-A068-A505D9DF3232}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Vibraphone_1" ID="{4D0CDCB9-135B-423C-9688-E11A6FEA9285}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Vibraphone_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="793713492"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Vibraphone_2" ID="{B9EEE168-7657-423B-84DF-2CB0E696B3A4}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Vibraphone_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="180744644"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{61EB490A-0766-444B-97BD-58C9E817BF23}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Vibraphone_1" ID="{011CD2B9-3908-4F7E-87A8-87CE257BA7DE}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16017.0625"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Vibraphone_1" ID="{4D0CDCB9-135B-423C-9688-E11A6FEA9285}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{9C34F115-298F-4ABA-A0C5-FFCA62DB1572}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Vibraphone_2" ID="{76751115-9FFA-48D9-AC32-73AC998F6E56}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Vibraphone_2" ID="{B9EEE168-7657-423B-84DF-2CB0E696B3A4}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{AD594969-468D-4132-B01A-EFAECBB38E64}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Violas" ID="{98C424DD-001F-4E16-BAF0-DE1131040095}" ShortID="254629247">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{FCF424F9-F289-4849-A0CF-8D2FDBAFC2C2}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Violas_1" ID="{E1E1C1AE-AA2A-4A0E-94DA-761BE5FCABDB}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Violas_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="110154511"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Violas_2" ID="{C8BA03A4-19AB-4DA8-B532-C354C398D416}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Violas_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="446012430"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{7025BFED-524A-4EE9-9106-AD6E90C69B82}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Violas_1" ID="{BE836E8C-75B9-45DB-956D-61C227DD238C}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Violas_1" ID="{E1E1C1AE-AA2A-4A0E-94DA-761BE5FCABDB}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{C7315B00-2037-41EA-B0CD-0BF620B38A05}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Violas_2" ID="{CA91260E-0448-4364-AAC5-F22112F10909}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Violas_2" ID="{C8BA03A4-19AB-4DA8-B532-C354C398D416}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{13B8C97A-4054-4382-94F1-F7FFE2A70ECC}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Violins" ID="{C4D48395-0A9F-46C8-A19A-E91A2A9EDF6D}" ShortID="934134408">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{F4BB2565-FDF8-4C62-8DFD-5A8E9FCF82FC}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Violins_1" ID="{59920720-E151-4A96-B20D-06ADAE0E1712}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Violins_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="592039566"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Violins_2" ID="{C9446155-6343-4D63-9A6F-79E9DC194256}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Violins_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="361617025"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{0D1EF690-2F34-47C2-9867-933CF6C7824C}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Violins_1" ID="{E82AB98C-1E51-4895-B464-3C807EB09D47}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Violins_1" ID="{59920720-E151-4A96-B20D-06ADAE0E1712}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{0D694137-93FE-433F-8F36-B474995961ED}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Violins_2" ID="{71F744BA-8C47-4EC1-878F-70DC975CD139}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Violins_2" ID="{C9446155-6343-4D63-9A6F-79E9DC194256}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{4B0E2DD5-30B2-491A-8BE7-0EEF914E4585}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Xylophone" ID="{5E9125A8-4EE6-4885-B9CF-F1D18914EE73}" ShortID="1014485281">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{E4C03CA7-12B9-4326-84A0-C5E6D14F4EC0}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Xylophone_1" ID="{6DF11A74-7F13-442C-9D2C-B7A91779B976}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Xylophone_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="111178485"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Xylophone_2" ID="{61A5B6F4-C80B-4B1D-B546-CD33C1932405}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Xylophone_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="231553720"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Xylophone_3" ID="{FD90F48F-89A3-4729-A9BC-0CFB6D648DBB}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Xylophone_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="529745106"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Fast_Xylophone_4" ID="{389463C9-E704-4936-981D-216C2528E90A}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Fast_Xylophone_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="12833040"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{DC17F90C-D28C-4D62-8404-FEC5D80B1A5A}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Xylophone_1" ID="{B2F3EFC4-5656-4893-B60E-EAE766580F49}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Xylophone_1" ID="{6DF11A74-7F13-442C-9D2C-B7A91779B976}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{B004F571-14BE-4D9A-B430-390C32CEF67C}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Xylophone_2" ID="{34E72D62-0224-4731-9646-2857DB7DC7FF}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Xylophone_2" ID="{61A5B6F4-C80B-4B1D-B546-CD33C1932405}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{695C6D90-7AFA-4290-9C4B-8DABFA1E543A}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Xylophone_3" ID="{28EE2091-9B65-4E3B-AE3B-9347D469D43C}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Xylophone_3" ID="{FD90F48F-89A3-4729-A9BC-0CFB6D648DBB}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{8DF3241A-54C8-4E7C-882D-744D160939E8}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Fast_Xylophone_4" ID="{112975C7-4705-4973-93F6-D5CAA0820B63}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Fast_Xylophone_4" ID="{389463C9-E704-4936-981D-216C2528E90A}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{F1B3163B-7808-4288-AD68-A3E3EF5207A6}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{E22C588A-DA1A-499B-BBEF-628B92D96B36}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="16000"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="NormalEnergyM" ID="{267535BB-C5AF-423E-9512-1AEE66918C4C}" ShortID="567933697">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{513433C8-B380-4AE6-A299-FBA79CDDEE45}" ShortID="36799794">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{F78B5209-F1D0-49ED-82C5-C6B5B07F8AB4}" ShortID="982616437">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="NormalEnergyMusic" ID="{DC8A41B0-725B-4EC4-B369-79629F92F83E}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{ACA263BE-D762-4002-A0DC-F9BADD9ECFB7}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{4F5A1168-CB0D-4B10-8A2D-A977651620F7}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="NormalEnergyMusic" ID="{DC8A41B0-725B-4EC4-B369-79629F92F83E}" ShortID="825165754">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="16177.8735386246"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Base" ID="{7F08B022-64B4-468B-AC43-5667F8C14138}" ShortID="507863350">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{75E36A7A-DCA0-412F-9A2D-F6370E4DEB33}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Normal_Base" ID="{BF425CAE-5A81-45D8-970C-D6E037DEC2DC}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Normal_Base.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="872879647"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{9703949F-1E2A-4120-8DCA-F2598A855C40}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Normal_Base" ID="{3042FF53-F955-41DB-9B84-4CDE1DFC49F2}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16017.0625"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Normal_Base" ID="{BF425CAE-5A81-45D8-970C-D6E037DEC2DC}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Marimba" ID="{907E490F-E28D-4E65-8BEC-4B784BF410C7}" ShortID="1063336420">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{7014E586-A47B-4DC6-947B-0920279E615A}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Normal_Marimba_1" ID="{672F6C85-1157-4EA1-BE61-BB6DFDAC1CD1}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Normal_Marimba_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="744325571"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Normal_Marimba_4" ID="{9685C90C-019B-4471-BF14-9BFE01C5FC58}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Normal_Marimba_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1008994935"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{BA65B5F3-3AA2-4EF8-88A3-CCAFD10AFF6E}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Normal_Marimba_1" ID="{EBBBCD04-6D02-4390-A824-475EFD706E79}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Normal_Marimba_1" ID="{672F6C85-1157-4EA1-BE61-BB6DFDAC1CD1}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{4728E70D-0455-4770-836E-9FB01004F1C1}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Normal_Marimba_4" ID="{16DE42FF-051C-442F-961B-1F8CD2A2E4C8}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Normal_Marimba_4" ID="{9685C90C-019B-4471-BF14-9BFE01C5FC58}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{0AFF23F8-20E0-46D6-8CD4-8E7D16A05592}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Vibraphone" ID="{38B0E884-E316-4E07-B6F6-12943578EFAE}" ShortID="848848333">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{66BB1764-11CB-4B06-8BFE-D2E6D9B8EC49}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Normal_Vibraphone_1" ID="{5890DC8A-2AA4-47F8-8311-DA86F5055853}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Normal_Vibraphone_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="700266998"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Normal_Vibraphone_2" ID="{136066D5-694E-4042-B887-14933F0E011F}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Normal_Vibraphone_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="100103854"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{C3E2BD8B-A2FF-4C48-8000-5ADCE1DB302F}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Normal_Vibraphone_1" ID="{389EA301-4E72-46E3-81C6-56BC7B799FF1}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Normal_Vibraphone_1" ID="{5890DC8A-2AA4-47F8-8311-DA86F5055853}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{3E48AB8E-04B3-4A06-95CC-6BFF6D23C283}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Normal_Vibraphone_2" ID="{1776FF0D-A9C7-4557-8484-B26A493DA979}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Normal_Vibraphone_2" ID="{136066D5-694E-4042-B887-14933F0E011F}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{259302AE-BA4E-4947-8161-207F02092875}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Violas" ID="{FB1B5E9B-B97E-47A4-8990-A15B024447ED}" ShortID="381433289">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{AA6ED237-A68D-47F8-938E-DAE4674A73F3}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Normal_Violas_1" ID="{467D038E-D252-43DC-8B02-523D2759B419}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Normal_Violas_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="362491614"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{B9059DBA-B389-4EF8-A49C-F62EF213D056}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Normal_Violas_1" ID="{2705558F-6D9E-4F2D-B124-7FF58CA04A10}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Normal_Violas_1" ID="{467D038E-D252-43DC-8B02-523D2759B419}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{6EB39432-0408-41D0-A05B-A196DB15F695}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Violins" ID="{5B329B47-7879-440D-A410-23B91119D4AD}" ShortID="82802301">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{55D8047C-97AF-457F-A6A6-486BD6E241B1}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Normal_Violins_1" ID="{9D599E2A-D776-4C78-B094-556B8D73B16C}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Normal_Violins_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="225119970"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{604E6C65-6E25-4B8D-94BD-84DE3EAE1E56}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Normal_Violins_1" ID="{D0F1A787-7A24-423B-93F5-25061A168EAB}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Normal_Violins_1" ID="{9D599E2A-D776-4C78-B094-556B8D73B16C}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{816E9C4C-59AC-41B8-AE67-60BE72D1C9F3}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Xylophone" ID="{482D8BD2-4E29-4AC7-B1CB-0F6B0FF4A332}" ShortID="1031794647">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{E0E9199C-677F-4570-B11B-8CEB163289D6}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Normal_Xylophone_4" ID="{44EAE378-3483-4235-A966-652C4EFCAF6F}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Normal_Xylophone_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="283471362"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{A3569ADF-B7EA-4055-BCED-863B18AB17EC}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Normal_Xylophone_4" ID="{853A118B-2BED-4E86-842D-34E0157FA1BD}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Normal_Xylophone_4" ID="{44EAE378-3483-4235-A966-652C4EFCAF6F}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{68BE6236-4D30-4A0B-A46E-AC7EB07A0491}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{971B8411-4CB2-41F4-939B-1BA8FD2F8E84}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{CF2DDCDF-E479-4B53-99D7-868895C808B8}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="16000"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="LowEnergyM" ID="{EBDD34FC-9B54-44B5-97FB-5E4E3FE6825F}" ShortID="709870157">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{DEB1F759-E050-4640-95C7-AEFFAB6DDA03}" ShortID="383367987">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{1FECD19A-B697-475E-B806-38D61158AD44}" ShortID="871842434">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="LowEnergyMusic" ID="{F5AAF4AC-4FCC-4C1F-B514-83FC317787E0}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{AE9965AC-D075-449D-8ED8-C35FA134A06F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{9B905811-F379-4D9D-8D00-CCF8C650D5B0}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="LowEnergyMusic" ID="{F5AAF4AC-4FCC-4C1F-B514-83FC317787E0}" ShortID="26734801">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="16285.1724111602"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Base" ID="{750578A0-0C23-4779-893D-2173E01B5649}" ShortID="553772910">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{77EC4C56-4545-40D6-94F9-83E72BE36AF0}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Slow_Base" ID="{161671CC-DA52-4B0D-AAA5-48B5E2CE4FBC}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Slow_Base.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="476538838"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{68D7E03E-428E-4BCB-8BF9-936D09B69511}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Slow_Base" ID="{D3C53C47-C82A-4286-BC25-4F241B7A4025}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Slow_Base" ID="{161671CC-DA52-4B0D-AAA5-48B5E2CE4FBC}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Glockenspiel" ID="{60E01971-00C4-485C-B598-2A47FAC37323}" ShortID="775167766">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{342871C1-8FB8-4353-8652-10FCFE6263FC}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Slow_Glockenspiel_1" ID="{FB44060A-B5D3-4750-9FA2-BF1B06BD773E}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Slow_Glockenspiel_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="852738879"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{4DEC5414-056D-492F-8A5D-BE1127719466}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Slow_Glockenspiel_1" ID="{61C0C2C4-056F-4AF1-871E-6B65B8C7680B}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Slow_Glockenspiel_1" ID="{FB44060A-B5D3-4750-9FA2-BF1B06BD773E}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{D393A3F6-BC46-4254-B25C-BA4BB54E5427}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Marimba" ID="{752E8A4D-C44E-4ABD-B95F-C20A1957DE9E}" ShortID="1073446504">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{A1ED001C-513F-4CD4-8DFE-0FA390F08C88}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Slow_Marimba_1" ID="{23D34BFD-8E91-402A-9393-6891F3D33DE9}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Slow_Marimba_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="567027002"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Slow_Marimba_4" ID="{9DE5B367-41D7-45ED-887F-CB9C97338E9A}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Slow_Marimba_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="167560107"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{5C57DE91-D732-4E60-A981-CD73B82ED4F3}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Slow_Marimba_1" ID="{B3F707DE-786B-47A6-9033-3BF1C0AF0574}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Slow_Marimba_1" ID="{23D34BFD-8E91-402A-9393-6891F3D33DE9}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{CED0DD14-9B08-450B-B824-2F8A619BF23D}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Slow_Marimba_4" ID="{65822303-30A2-466F-85B2-04E5741BF580}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16017.0625"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Slow_Marimba_4" ID="{9DE5B367-41D7-45ED-887F-CB9C97338E9A}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{D0C707D0-20C7-4D32-994B-3541A65E2922}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Xylophone" ID="{2674CD96-A9CF-464E-B540-C80EF99C032B}" ShortID="709840056">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{BE15167C-970C-4F97-B6B7-BFABFAB0DB1C}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Slow_Xylophone_1" ID="{6325070D-A50B-4270-B0C5-662023F49D96}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Slow_Xylophone_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="720960048"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Slow_Xylophone_4" ID="{BD56D35B-8E08-41B7-9EA7-6A086F9D7B7D}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Slow_Xylophone_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="266400666"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{416FDC51-E894-40D6-A145-571CAAF2D497}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Slow_Xylophone_1" ID="{41953744-FDAC-43AB-8278-037258A86FBC}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Slow_Xylophone_1" ID="{6325070D-A50B-4270-B0C5-662023F49D96}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{3D02C3B3-A518-4DFC-B556-551DB9907431}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Slow_Xylophone_4" ID="{7A63D855-D982-4ED8-BF54-4BA5B82090A6}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Slow_Xylophone_4" ID="{BD56D35B-8E08-41B7-9EA7-6A086F9D7B7D}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{7CEA75C2-00D2-4D59-8960-8EBB842CD684}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Violas" ID="{FB1B0EAB-5D9D-4E9C-8FDD-12ADEA4DDCD9}" ShortID="786275375">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{8F30E4BC-0442-41AB-AFE4-A15BFF6FEB0B}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Slow_Violas_1" ID="{49D364C1-6AB2-4A57-A8E8-9B0839C0BB15}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Slow_Violas_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="115288702"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{BB2EEB5E-A39E-48C9-AEBC-DA2728F83501}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Slow_Violas_1" ID="{2716CD07-3A92-498A-92F4-2BDC7EC408F4}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Slow_Violas_1" ID="{49D364C1-6AB2-4A57-A8E8-9B0839C0BB15}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{3A4AD11F-4680-4C59-97BF-EFE85C29A423}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Violins" ID="{DAA1C194-8D55-4F78-B34D-388316FE95DC}" ShortID="508585310">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{E3E9AA03-B575-432B-B5E7-9F045D5D4532}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SugarRush_120bpm_4-4_Slow_Violins_1" ID="{28F03C2C-22CB-426F-B3D0-3EE8DC61BEE8}">
+															<Language>SFX</Language>
+															<AudioFile>SugarRush_120bpm_4-4_Slow_Violins_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="424010406"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{16694F6B-EAC4-4C36-9F6E-01D3BDB5A307}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="SugarRush_120bpm_4-4_Slow_Violins_1" ID="{E2A4EA6C-0E83-4E81-90B1-6EDE35484A4D}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="SugarRush_120bpm_4-4_Slow_Violins_1" ID="{28F03C2C-22CB-426F-B3D0-3EE8DC61BEE8}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{F7B4DC78-E729-416F-B29B-4069D97AB871}"/>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{136EBC25-A466-4EE1-ADF6-629646FEFD7F}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{30668F62-B537-4A6E-9E7E-EC1CB26C1D95}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="16000"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+								</MusicPlaylistContainer>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<Reference>
+										<ObjectRef Name="EnergyLevel" ID="{0735AF9C-66A2-48FC-BB72-240C8421060C}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{30BC7086-912C-4B41-9C2D-D0529378488C}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="HighEnergyM" ID="{145D0938-3EBE-4AB5-B3DB-0CA7663C4628}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="HighEnergy" ID="{14663D86-3CBB-4AEC-8166-992926629432}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{5706002D-D195-495F-931B-C59711FF79E4}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="LowEnergyM" ID="{EBDD34FC-9B54-44B5-97FB-5E4E3FE6825F}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="LowEnergy" ID="{8396C667-7E14-4C04-A40D-49D6AD3428FD}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{33268579-2DC4-41D1-A28A-386B726AE2DA}">
+												<ReferenceList>
+													<Reference Name="AudioNode">
+														<ObjectRef Name="NormalEnergyM" ID="{267535BB-C5AF-423E-9512-1AEE66918C4C}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+													</Reference>
+												</ReferenceList>
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="NormalEnergy" ID="{24CD0508-F123-4B22-B0D1-38DC7E198A6C}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSwitchContainer>
+						<MusicPlaylistContainer Name="OutOfEnergy" ID="{EC195BC3-9ABE-48C6-A1AD-91CA30900AC2}" ShortID="206399929">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{0A749361-49A2-4663-A9E5-2CE28936658F}" ShortID="183938579">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{6C6A17D5-3A59-41C6-97CC-76636E4620CE}" ShortID="192609122">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="SugarRush_Character_Voice_Yawn" ID="{08FD2FA3-C1CA-45CF-BDBA-5BF31AF87188}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{DA10B27C-87EA-4405-A1EC-DFB00582384F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{4AC75126-0CFC-4FA8-9526-726B7BC36130}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="SugarRush_Character_Voice_Yawn" ID="{08FD2FA3-C1CA-45CF-BDBA-5BF31AF87188}" ShortID="200099149">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="SugarRush_Character_Voice_Yawn" ID="{2A8A7A64-8251-47E8-9E81-41E8299AEF77}" ShortID="914490049">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{D456FC02-6FAA-4832-BC9F-364473AECFE7}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SugarRush_Character_Voice_Yawn" ID="{CBF2BFAB-FF32-4B0D-9DF3-825BA7D25959}">
+													<Language>SFX</Language>
+													<AudioFile>SugarRush_Character_Voice_Yawn.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="704831357"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8D0F4FCB-DEAD-4289-8BA4-57B42AE868DF}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="SugarRush_Character_Voice_Yawn" ID="{47BFAECD-19EC-4DCD-A2B9-85DDB08C23CF}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="1629.70833333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="SugarRush_Character_Voice_Yawn" ID="{CBF2BFAB-FF32-4B0D-9DF3-825BA7D25959}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{B3145DB7-E24F-4E3F-922D-BF0C790258BF}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{8064A943-2987-4203-ADED-3200A90636F7}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1629.70833333333"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Sleep" ID="{29DC1996-AB4A-4E4E-9645-40525AC47852}" ShortID="649909464">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{703EDE78-2507-4F25-A402-11F0F3270463}" ShortID="798863748">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{EAB02F22-4F6F-40D5-9997-65E4D27836CC}" ShortID="248401829">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="SugarRush_Character_Voice_Snoring-01" ID="{8CB00DC3-2034-47B1-A30A-6B249F59E78B}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{66B427D7-CFD4-499C-9EDD-BEDBD0AAFC6B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{A1AE900C-2EDE-4114-AEA7-BE0881D769B4}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="SugarRush_Character_Voice_Snoring-01" ID="{8CB00DC3-2034-47B1-A30A-6B249F59E78B}" ShortID="275482922">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="SugarRush_Character_Voice_Snoring-01" ID="{2B8A0472-8D6D-47AB-8114-85F3F7CC78F8}" ShortID="47459064">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{BCBC0E92-3AA5-450D-9DB1-F355F3244692}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SugarRush_Character_Voice_Snoring-01" ID="{24F93C01-3507-4646-932D-DCA27F4CC5CB}">
+													<Language>SFX</Language>
+													<AudioFile>SugarRush_Character_Voice_Snoring-01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="39179202"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4CB9EBC9-668A-4AFD-BB0B-2EFD7A19E838}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="SugarRush_Character_Voice_Snoring-01" ID="{184D0745-C9D7-4C92-8A1F-584E3CFCB1FB}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="1927.125"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="SugarRush_Character_Voice_Snoring-01" ID="{24F93C01-3507-4646-932D-DCA27F4CC5CB}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{A6C9C4EB-C33D-4AE3-9DE7-ABBC8EB48027}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{554A982A-A68E-48FF-8AC9-5DAA789B0460}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1927.125"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="GameStates" ID="{35DAD417-01F9-46DD-8FE8-53381E4ECB67}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="PlayerStates" ID="{0E664212-F500-4CFB-A393-CA2C77DA4CB9}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{2EE82D6C-AC6C-4D29-8BAE-D6EAA85C54D5}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Ingame" ID="{56E89FBC-558F-4D78-9ADA-C767DF55A4C2}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Ingame" ID="{026C9C08-EE56-4CD4-AAFD-F32542C072A5}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Awake" ID="{40518799-6EF1-4649-B508-9199D0FDEC08}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{04E69AAC-8BDA-42B5-A0DB-0C6F24BD6672}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="OutOfEnergy" ID="{EC195BC3-9ABE-48C6-A1AD-91CA30900AC2}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Ingame" ID="{026C9C08-EE56-4CD4-AAFD-F32542C072A5}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="OutOfEnergy" ID="{1CBFB0C6-24E1-4B0D-9793-AD5FC9D36328}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{2D7EE4F4-B73F-41DA-A7BC-17E4710A3086}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Sleep" ID="{29DC1996-AB4A-4E4E-9645-40525AC47852}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Ingame" ID="{026C9C08-EE56-4CD4-AAFD-F32542C072A5}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Sleep" ID="{AB2AD478-EBCF-4778-97A4-0E2C172BE566}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

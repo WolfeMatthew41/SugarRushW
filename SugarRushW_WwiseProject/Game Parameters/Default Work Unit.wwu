@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4FAA54E8-A762-4681-9E4C-8C0D3DCBA420}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{4FAA54E8-A762-4681-9E4C-8C0D3DCBA420}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4FAA54E8-A762-4681-9E4C-8C0D3DCBA420}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="EnergyLevelRTPC" ID="{B9FA65C2-2216-4060-96D6-D859739EE63F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

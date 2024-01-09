@@ -1,3 +1,25 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2286036297	EnergyLevel			\Default Work Unit\EnergyLevel	
+
+Switch	ID	Name	Switch Group			Notes
+	1772229705	LowEnergy	EnergyLevel			
+	2227543397	HighEnergy	EnergyLevel			
+	3278998676	NormalEnergy	EnergyLevel			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	777429653	GameStates			\Default Work Unit\GameStates	
+	4069290704	PlayerStates			\Default Work Unit\PlayerStates	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GameStates			
+	984691642	Ingame	GameStates			
+	3092587493	Pause	GameStates			
+	3604647259	MainMenu	GameStates			
+	748895195	None	PlayerStates			
+	1151176110	Awake	PlayerStates			
+	1274144392	OutOfEnergy	PlayerStates			
+	3671647190	Sleep	PlayerStates			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

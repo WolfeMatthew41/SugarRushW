@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_IngameMusic" ID="{6EFC7591-CC9D-45D6-A495-2F9C31B8C0EC}">
+					<ChildrenList>
+						<Action Name="" ID="{A4E71B98-AD2F-4D87-ACAD-982DD21D07A0}" ShortID="188114108">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IngameMusic" ID="{FF1BE994-9505-42C7-9268-DE443679DF18}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_NonIngameMusic" ID="{C5BD2BB4-239B-48CF-BD05-97BC167631C4}">
+					<ChildrenList>
+						<Action Name="" ID="{EA7AC66C-ED5E-43C0-BEAB-92417E9D339C}" ShortID="163022388">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NonIngameMusic" ID="{46F53A2C-6F0C-4495-B725-807BEE868445}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

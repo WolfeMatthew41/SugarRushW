@@ -1,0 +1,63 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3799629626	Play_IngameMusic			\Default Work Unit\Play_IngameMusic	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2286036297	EnergyLevel			\Default Work Unit\EnergyLevel	
+
+Switch	ID	Name	Switch Group			Notes
+	1772229705	LowEnergy	EnergyLevel			
+	2227543397	HighEnergy	EnergyLevel			
+	3278998676	NormalEnergy	EnergyLevel			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	777429653	GameStates			\Default Work Unit\GameStates	
+	4069290704	PlayerStates			\Default Work Unit\PlayerStates	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GameStates			
+	984691642	Ingame	GameStates			
+	3092587493	Pause	GameStates			
+	3604647259	MainMenu	GameStates			
+	748895195	None	PlayerStates			
+	1151176110	Awake	PlayerStates			
+	1274144392	OutOfEnergy	PlayerStates			
+	3671647190	Sleep	PlayerStates			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1841973268	EnergyLevelRTPC			\Default Work Unit\EnergyLevelRTPC	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	12833040	Xylophone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Xylophone_4_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Xylophone		3072096
+	39179202	SugarRush_Character_Voice_Snoring-01	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_Character_Voice_Snoring-01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Sleep\SugarRush_Character_Voice_Snoring-01\SugarRush_Character_Voice_Snoring-01		185100
+	50149168	Glockenspiel	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_GlockenSpiel_2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Glockenspiel		3072096
+	83775878	Base	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Base_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Base		3072096
+	100103854	Vibraphone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Normal_Vibraphone_2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\NormalEnergyM\NormalEnergyMusic\Vibraphone		3072096
+	110154511	Violas	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Violas_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Violas		3072096
+	111178485	Xylophone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Xylophone_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Xylophone		3072096
+	115288702	Violas	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Slow_Violas_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\LowEnergyM\LowEnergyMusic\Violas		3072096
+	167560107	Marimba	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Slow_Marimba_4_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\LowEnergyM\LowEnergyMusic\Marimba		3075372
+	180744644	Vibraphone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Vibraphone_2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Vibraphone		3072096
+	225119970	Violins	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Normal_Violins_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\NormalEnergyM\NormalEnergyMusic\Violins		3072096
+	231553720	Xylophone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Xylophone_2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Xylophone		3072096
+	266400666	Xylophone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Slow_Xylophone_4_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\LowEnergyM\LowEnergyMusic\Xylophone		3072096
+	283471362	Xylophone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Normal_Xylophone_4_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\NormalEnergyM\NormalEnergyMusic\Xylophone		3072096
+	361617025	Violins	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Violins_2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Violins		3072096
+	362491614	Violas	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Normal_Violas_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\NormalEnergyM\NormalEnergyMusic\Violas		3072096
+	424010406	Violins	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Slow_Violins_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\LowEnergyM\LowEnergyMusic\Violins		3072096
+	446012430	Violas	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Violas_2_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Violas		3072096
+	476538838	Base	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Slow_Base_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\LowEnergyM\LowEnergyMusic\Base		3072096
+	529745106	Xylophone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Xylophone_3_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Xylophone		3072096
+	567027002	Marimba	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Slow_Marimba_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\LowEnergyM\LowEnergyMusic\Marimba		3072096
+	592039566	Violins	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Violins_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Violins		3072096
+	652029079	Marimba	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Marimba_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Marimba		3072096
+	700266998	Vibraphone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Normal_Vibraphone_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\NormalEnergyM\NormalEnergyMusic\Vibraphone		3072096
+	704831357	SugarRush_Character_Voice_Yawn	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_Character_Voice_Yawn_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\OutOfEnergy\SugarRush_Character_Voice_Yawn\SugarRush_Character_Voice_Yawn		156548
+	720960048	Xylophone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Slow_Xylophone_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\LowEnergyM\LowEnergyMusic\Xylophone		3072096
+	744325571	Marimba	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Normal_Marimba_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\NormalEnergyM\NormalEnergyMusic\Marimba		3072096
+	775337931	Glockenspiel	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_GlockenSpiel_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Glockenspiel		3072096
+	793713492	Vibraphone	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Vibraphone_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Vibraphone		3075372
+	852738879	Glockenspiel	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Slow_Glockenspiel_1_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\LowEnergyM\LowEnergyMusic\Glockenspiel		3072096
+	872879647	Base	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Normal_Base_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\NormalEnergyM\NormalEnergyMusic\Base		3075372
+	1008994935	Marimba	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Normal_Marimba_4_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\NormalEnergyM\NormalEnergyMusic\Marimba		3072096
+	1013556937	Marimba	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Fast_Marimba_4_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Ingame\HighEnergyM\HighEnergyMusic\Marimba		3072096
+

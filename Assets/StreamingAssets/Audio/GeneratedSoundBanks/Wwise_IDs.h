@@ -13,12 +13,67 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_INGAMEMUSIC = 3799629626U;
+        static const AkUniqueID PLAY_NONINGAMEMUSIC = 3584345201U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace GAMESTATES
+        {
+            static const AkUniqueID GROUP = 777429653U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INGAME = 984691642U;
+                static const AkUniqueID MAINMENU = 3604647259U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PAUSE = 3092587493U;
+            } // namespace STATE
+        } // namespace GAMESTATES
+
+        namespace PLAYERSTATES
+        {
+            static const AkUniqueID GROUP = 4069290704U;
+
+            namespace STATE
+            {
+                static const AkUniqueID AWAKE = 1151176110U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTOFENERGY = 1274144392U;
+                static const AkUniqueID SLEEP = 3671647190U;
+            } // namespace STATE
+        } // namespace PLAYERSTATES
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace ENERGYLEVEL
+        {
+            static const AkUniqueID GROUP = 2286036297U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID HIGHENERGY = 2227543397U;
+                static const AkUniqueID LOWENERGY = 1772229705U;
+                static const AkUniqueID NORMALENERGY = 3278998676U;
+            } // namespace SWITCH
+        } // namespace ENERGYLEVEL
+
+    } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID ENERGYLEVELRTPC = 1841973268U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID INGAMEMUSIC_SOUNDBANK = 1668970261U;
+        static const AkUniqueID NONINGAMEMUSIC_SOUNDBANK = 3695227540U;
         static const AkUniqueID SFX_SOUNDBANK = 2641024368U;
     } // namespace BANKS
 

@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}" SchemaVersion="119">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="EnergyLevel" ID="{0735AF9C-66A2-48FC-BB72-240C8421060C}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="LowEnergy" ID="{8396C667-7E14-4C04-A40D-49D6AD3428FD}"/>
+						<Switch Name="NormalEnergy" ID="{24CD0508-F123-4B22-B0D1-38DC7E198A6C}"/>
+						<Switch Name="HighEnergy" ID="{14663D86-3CBB-4AEC-8166-992926629432}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="EnergyLevelRTPC" ID="{B9FA65C2-2216-4060-96D6-D859739EE63F}"/>
+						<Curve Name="" ID="{0615F9D4-425D-4CF6-954A-13733710193B}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>20</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>65</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
