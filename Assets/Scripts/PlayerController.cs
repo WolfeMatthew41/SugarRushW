@@ -30,7 +30,11 @@ public class PlayerController : MonoBehaviour
     private float rotationX;
     private float rotationY;
 
+    private float currentAngle;
+
     private Vector3 movementDirection;
+
+    private Vector3 currentDirection;
 
     private void Awake()
     {
@@ -41,7 +45,18 @@ public class PlayerController : MonoBehaviour
     {
         _input = context.ReadValue<Vector2>();
         //Debug.Log(_input);// message: "PlayerController Moving!");
-        _direction = new Vector3(_input.x, 0.0f, _input.y);
+        if (currentAngle > 135.0f && currentAngle < 225.0f) //Facing Backards VVV
+            _direction = new Vector3(_input.x * -1, 0.0f, _input.y * -1);
+        else if (currentAngle > 45.0f && currentAngle < 135.0f) //Facing Right -->
+        {
+            _direction = new Vector3(_input.y, 0.0f, _input.x *-1 );
+        }
+        else if (currentAngle > 225.0f && currentAngle < 270.0f) //Facing Left <---
+        {
+            _direction = new Vector3(_input.y*-1, 0.0f, _input.x);
+        }
+        else
+            _direction = new Vector3(_input.x, 0.0f, _input.y); //Facing forward ^^^
       
         movementDirection = _direction;
     }
@@ -57,13 +72,14 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyRotation()
     {
-        //if (_input.x == 0) return;
         if (_input.sqrMagnitude == 0) return;
 
         var targetAngle = Mathf.Atan2(_direction.x, _direction.z) * Mathf.Rad2Deg;
         var angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _currentVelocity, smoothTime);
         transform.rotation = Quaternion.Euler(0.0f, angle, 0.0f);
-
+       
+        currentAngle = angle;
+        Debug.Log(currentAngle);
     }
 
     private void ApplyGravity()
@@ -77,6 +93,7 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyMovement()
     {
+
         _characterController.Move(_direction * speed);
     }
 }
