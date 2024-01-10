@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: fd6c3703156182408570aa720beab611
     GuidInternal: 
-    m_lastTime: -8584968665000102752
+
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 040167dc4ddf6a40a296ec7ab0368e2a
     GuidInternal: 
-    m_lastTime: -8584967847323817858
+
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584967683522179639
+
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584967683522189644
+
     List:
     - name: Play_IngameMusic
       guid: 9175fc6e9dccd645a4952f9c31b8c0ec
@@ -187,22 +187,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: e854aa4f62a781469e4c8c0d3dcba420
     GuidInternal: 
-    m_lastTime: -8584967683522229653
-    List:
-    - name: EnergyLevelRTPC
-      guid: c265fab91622604096d6d859739ee63f
-      id: 1841973268
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: e854aa4f62a781469e4c8c0d3dcba420
-      - ElementName: EnergyLevelRTPC
-        ObjectType: 13
-        guid: c265fab91622604096d6d859739ee63f
-      Path: Game Parameters\Default Work Unit\EnergyLevelRTPC
+
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -215,172 +200,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 114c8cc6c7bda84f9c49880460240feb
     GuidInternal: 
-    m_lastTime: -8584967683522289662
-    List:
-    - name: GameStates
-      guid: 17d4da35f901dd468fe853381e4ecb67
-      id: 777429653
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 114c8cc6c7bda84f9c49880460240feb
-      - ElementName: GameStates
-        ObjectType: 9
-        guid: 17d4da35f901dd468fe853381e4ecb67
-      Path: States\Default Work Unit\GameStates
-      values:
-      - name: Ingame
-        guid: 089c6c0256eed44caafdf32542c072a5
-        id: 984691642
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 114c8cc6c7bda84f9c49880460240feb
-        - ElementName: GameStates
-          ObjectType: 9
-          guid: 17d4da35f901dd468fe853381e4ecb67
-        - ElementName: Ingame
-          ObjectType: 8
-          guid: 089c6c0256eed44caafdf32542c072a5
-      - name: MainMenu
-        guid: fa36e42b9568504d9ef25a4dcfe10c0c
-        id: 3604647259
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 114c8cc6c7bda84f9c49880460240feb
-        - ElementName: GameStates
-          ObjectType: 9
-          guid: 17d4da35f901dd468fe853381e4ecb67
-        - ElementName: MainMenu
-          ObjectType: 8
-          guid: fa36e42b9568504d9ef25a4dcfe10c0c
-      - name: None
-        guid: a987d5711c93414e92994c88b460956d
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 114c8cc6c7bda84f9c49880460240feb
-        - ElementName: GameStates
-          ObjectType: 9
-          guid: 17d4da35f901dd468fe853381e4ecb67
-        - ElementName: None
-          ObjectType: 8
-          guid: a987d5711c93414e92994c88b460956d
-      - name: Pause
-        guid: 529903e33fd5ea458dca1daaee577b90
-        id: 3092587493
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 114c8cc6c7bda84f9c49880460240feb
-        - ElementName: GameStates
-          ObjectType: 9
-          guid: 17d4da35f901dd468fe853381e4ecb67
-        - ElementName: Pause
-          ObjectType: 8
-          guid: 529903e33fd5ea458dca1daaee577b90
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: PlayerStates
-      guid: 1242660e00f5fb4ca393ca2c77da4cb9
-      id: 4069290704
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 114c8cc6c7bda84f9c49880460240feb
-      - ElementName: PlayerStates
-        ObjectType: 9
-        guid: 1242660e00f5fb4ca393ca2c77da4cb9
-      Path: States\Default Work Unit\PlayerStates
-      values:
-      - name: Awake
-        guid: 99875140f16e4946b5089199d0fdec08
-        id: 1151176110
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 114c8cc6c7bda84f9c49880460240feb
-        - ElementName: PlayerStates
-          ObjectType: 9
-          guid: 1242660e00f5fb4ca393ca2c77da4cb9
-        - ElementName: Awake
-          ObjectType: 8
-          guid: 99875140f16e4946b5089199d0fdec08
-      - name: None
-        guid: a297653e9f593b45b9bf524860f25f03
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 114c8cc6c7bda84f9c49880460240feb
-        - ElementName: PlayerStates
-          ObjectType: 9
-          guid: 1242660e00f5fb4ca393ca2c77da4cb9
-        - ElementName: None
-          ObjectType: 8
-          guid: a297653e9f593b45b9bf524860f25f03
-      - name: OutOfEnergy
-        guid: c6b0bf1ce1240d4b9793ad5fc9d36328
-        id: 1274144392
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 114c8cc6c7bda84f9c49880460240feb
-        - ElementName: PlayerStates
-          ObjectType: 9
-          guid: 1242660e00f5fb4ca393ca2c77da4cb9
-        - ElementName: OutOfEnergy
-          ObjectType: 8
-          guid: c6b0bf1ce1240d4b9793ad5fc9d36328
-      - name: Sleep
-        guid: 78d42aabcfeb784797a40e2c172be566
-        id: 3671647190
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 114c8cc6c7bda84f9c49880460240feb
-        - ElementName: PlayerStates
-          ObjectType: 9
-          guid: 1242660e00f5fb4ca393ca2c77da4cb9
-        - ElementName: Sleep
-          ObjectType: 8
-          guid: 78d42aabcfeb784797a40e2c172be566
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -393,74 +213,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8a3375716ecce44a9a9bcf149d21e80b
     GuidInternal: 
-    m_lastTime: -8584967683522209648
-    List:
-    - name: EnergyLevel
-      guid: 9caf3507a266fc48bb72240c8421060c
-      id: 2286036297
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 8a3375716ecce44a9a9bcf149d21e80b
-      - ElementName: EnergyLevel
-        ObjectType: 11
-        guid: 9caf3507a266fc48bb72240c8421060c
-      Path: Switches\Default Work Unit\EnergyLevel
-      values:
-      - name: HighEnergy
-        guid: 863d6614bb3cec4a8166992926629432
-        id: 2227543397
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 8a3375716ecce44a9a9bcf149d21e80b
-        - ElementName: EnergyLevel
-          ObjectType: 11
-          guid: 9caf3507a266fc48bb72240c8421060c
-        - ElementName: HighEnergy
-          ObjectType: 10
-          guid: 863d6614bb3cec4a8166992926629432
-      - name: LowEnergy
-        guid: 67c69683147e044ca40d49d6ad3428fd
-        id: 1772229705
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 8a3375716ecce44a9a9bcf149d21e80b
-        - ElementName: EnergyLevel
-          ObjectType: 11
-          guid: 9caf3507a266fc48bb72240c8421060c
-        - ElementName: LowEnergy
-          ObjectType: 10
-          guid: 67c69683147e044ca40d49d6ad3428fd
-      - name: NormalEnergy
-        guid: 0805cd2423f1224bb0d138dc7e198a6c
-        id: 3278998676
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 8a3375716ecce44a9a9bcf149d21e80b
-        - ElementName: EnergyLevel
-          ObjectType: 11
-          guid: 9caf3507a266fc48bb72240c8421060c
-        - ElementName: NormalEnergy
-          ObjectType: 10
-          guid: 0805cd2423f1224bb0d138dc7e198a6c
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -473,7 +226,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: b040c2bcc2735e438c4452b81dfbacb4
     GuidInternal: 
-    m_lastTime: -8584968665000232781
+
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 06000000070000000f00000010000000
