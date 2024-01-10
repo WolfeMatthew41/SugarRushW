@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: fd6c3703156182408570aa720beab611
     GuidInternal: 
-    m_lastTime: -8584968665000102752
+    m_lastTime: -8584968606384620727
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 040167dc4ddf6a40a296ec7ab0368e2a
     GuidInternal: 
-    m_lastTime: -8584967847323817858
+    m_lastTime: -8584968606385344819
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584967136161843479
+    m_lastTime: -8584967059705473698
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584967136185788887
+    m_lastTime: -8584967059758773808
     List:
     - name: Play_IngameMusic
       guid: 9175fc6e9dccd645a4952f9c31b8c0ec
@@ -187,7 +187,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: e854aa4f62a781469e4c8c0d3dcba420
     GuidInternal: 
-    m_lastTime: -8584967136185778891
+    m_lastTime: -8584967059758763763
     List:
     - name: EnergyLevelRTPC
       guid: c265fab91622604096d6d859739ee63f
@@ -215,7 +215,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 114c8cc6c7bda84f9c49880460240feb
     GuidInternal: 
-    m_lastTime: -8584967136161833480
+    m_lastTime: -8584967059705463735
     List:
     - name: GameStates
       guid: 17d4da35f901dd468fe853381e4ecb67
@@ -393,7 +393,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8a3375716ecce44a9a9bcf149d21e80b
     GuidInternal: 
-    m_lastTime: -8584967136161833480
+    m_lastTime: -8584967059705463735
     List:
     - name: EnergyLevel
       guid: 9caf3507a266fc48bb72240c8421060c
@@ -473,10 +473,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: b040c2bcc2735e438c4452b81dfbacb4
     GuidInternal: 
-    m_lastTime: -8584968665000232781
+    m_lastTime: -8584968606384867402
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000e0000000f000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
