@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}" SchemaVersion="119">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="GameStates" ID="{35DAD417-01F9-46DD-8FE8-53381E4ECB67}">
+					<ChildrenList>
+						<State Name="None" ID="{71D587A9-931C-4E41-9299-4C88B460956D}"/>
+						<State Name="Ingame" ID="{026C9C08-EE56-4CD4-AAFD-F32542C072A5}"/>
+						<State Name="MainMenu" ID="{2BE436FA-6895-4D50-9EF2-5A4DCFE10C0C}"/>
+						<State Name="Pause" ID="{E3039952-D53F-45EA-8DCA-1DAAEE577B90}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="PlayerStates" ID="{0E664212-F500-4CFB-A393-CA2C77DA4CB9}">
+					<ChildrenList>
+						<State Name="None" ID="{3E6597A2-599F-453B-B9BF-524860F25F03}"/>
+						<State Name="Awake" ID="{40518799-6EF1-4649-B508-9199D0FDEC08}"/>
+						<State Name="OutOfEnergy" ID="{1CBFB0C6-24E1-4B0D-9793-AD5FC9D36328}"/>
+						<State Name="Sleep" ID="{AB2AD478-EBCF-4778-97A4-0E2C172BE566}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
