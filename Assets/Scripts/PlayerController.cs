@@ -91,8 +91,7 @@ public class PlayerController : MonoBehaviour
        
         currentAngle = angle;
         Debug.Log(currentAngle);
-
-        PlayFootstep();
+        
     }
 
     private void ApplyGravity()
@@ -110,7 +109,10 @@ public class PlayerController : MonoBehaviour
         //if(!_characterController.isGrounded)
             _characterController.Move(_direction * speed);
 
-        PlayFootstep();
+        if (_input.x != 0.0f || _input.y != 0.0f)
+        {
+            PlayFootstep();
+        }
 
         /*
         if (_input.sqrMagnitude <= 1)
