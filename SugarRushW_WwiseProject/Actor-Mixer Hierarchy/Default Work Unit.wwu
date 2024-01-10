@@ -27,12 +27,23 @@
 				</Sound>
 				<SwitchContainer Name="Footsteps" ID="{13DD0F67-25EB-4A05-AFD7-5A7D29276F48}" ShortID="492065319">
 					<PropertyList>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{EA6AFDFA-A61C-4868-815C-319E59EF37F9}"/>
 								</ModifierInfo>
 							</ModifierList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -322,6 +333,37 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Sound Name="EmptyAudioTest" ID="{7ACBB2CD-4F06-4C28-AC25-43A19101431E}" ShortID="42106570">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0A517F49-8B89-451F-86BE-2D269545A233}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{14EE5A88-7968-4F8F-98D7-82E433263234}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EmptyAudioTest" ID="{22E36C41-141C-4B36-B660-C1E151ADBB67}">
+							<Language>SFX</Language>
+							<AudioFile>EmptyAudioTest.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="925127407"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EmptyAudioTest" ID="{22E36C41-141C-4B36-B660-C1E151ADBB67}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

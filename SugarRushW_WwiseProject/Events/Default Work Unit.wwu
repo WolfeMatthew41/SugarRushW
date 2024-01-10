@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_EmptyAudioTest" ID="{E5927F91-D7D2-4BF3-A6D2-755D99259249}">
+					<ChildrenList>
+						<Action Name="" ID="{1EDDA0E1-1E5D-4F8B-8EEA-1AF564B0C17B}" ShortID="120390616">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EmptyAudioTest" ID="{7ACBB2CD-4F06-4C28-AC25-43A19101431E}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

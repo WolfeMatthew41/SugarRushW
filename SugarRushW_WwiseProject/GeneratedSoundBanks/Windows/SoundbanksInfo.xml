@@ -314,7 +314,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{08E4CA02-59B2-2755-5ADE-CE7846F11509}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{D145A737-15D4-E541-215C-9068F45565BD}">
 			<ShortName>SFX_SoundBank</ShortName>
 			<Path>SFX_SoundBank.bnk</Path>
 			<Media>
@@ -342,12 +342,21 @@
 					<ShortName>SugarRush_Character_GrassFootstep02.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_GrassFootstep02_818F3B66.wem</CachePath>
 				</File>
+				<File Id="925127407" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EmptyAudioTest.wav</ShortName>
+					<CachePath>SFX/EmptyAudioTest_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1065132318" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Pause_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
+				<Event Id="520202705" Name="Play_EmptyAudioTest" DurationType="OneShot" DurationMin="1.8540417" DurationMax="1.8540417">
+					<MediaRefs>
+						<MediaRef Id="925127407"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1602358412" Name="Play_Footstep" DurationType="OneShot" DurationMin="0.3488982" DurationMax="0.7004163">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -431,5 +440,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EC576D2F-2FD4-5248-FB4A-4B8FCD10BD1C}</FileHash>
+	<FileHash>{E65EF197-7D34-858B-C791-9BCE806F7DDA}</FileHash>
 </SoundBanksInfo>

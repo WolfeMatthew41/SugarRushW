@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	520202705	Play_EmptyAudioTest			\Default Work Unit\Play_EmptyAudioTest	
 	1602358412	Play_Footstep			\Default Work Unit\Play_Footstep	
 	2752533807	Play_TestSound			\Default Work Unit\Play_TestSound	
 
@@ -16,5 +17,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	583404404	SugarRush_Character_DirtFootstep03	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Character_DirtFootstep03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\SugarRush_Character_DirtFootstep03		77844
 	748659744	SugarRush_Character_GrassFootstep01	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Character_GrassFootstep01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\SugarRush_Character_GrassFootstep01		85980
 	824552167	SugarRush_Character_GrassFootstep02	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Character_GrassFootstep02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\SugarRush_Character_GrassFootstep02		80372
+	925127407	EmptyAudioTest	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\EmptyAudioTest_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\EmptyAudioTest		356072
 	1065132318	TestSound	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_120bpm_4-4_Pause_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound		3072096
 
