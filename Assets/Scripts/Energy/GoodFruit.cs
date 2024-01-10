@@ -20,5 +20,11 @@ public class GoodFruit : MonoBehaviour
             Destroy(gameObject);
             playerEnergy.currentEnergy += energyBonus;
         }
+        Debug.Log("Player Entered");
+    }
+
+    void OnColliderEnter(Collider other)
+    {
+       
     }
 }

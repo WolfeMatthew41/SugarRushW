@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6653243864860568941}
   - component: {fileID: 396510644734187466}
+  - component: {fileID: 7744064617089882499}
+  - component: {fileID: 8325330276046287815}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -128,6 +130,34 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7744064617089882499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710357340905369959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9f08098da2a3f4b9fb417316ee3f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEnergy: 40
+  currentEnergy: 40
+  energyBar: {fileID: 8325330276046287815}
+--- !u!114 &8325330276046287815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710357340905369959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840e2de461d6673408d1363bec203f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energySlider: {fileID: 0}
 --- !u!1 &6761164603384108997
 GameObject:
   m_ObjectHideFlags: 0
