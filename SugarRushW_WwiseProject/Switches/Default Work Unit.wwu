@@ -43,6 +43,12 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="GroundMaterial" ID="{78739EE2-23C0-4DFB-A8A1-8CCF94DF598F}">
+					<ChildrenList>
+						<Switch Name="Dirt" ID="{40243C33-B550-4958-BDDF-A0A245A1B27B}"/>
+						<Switch Name="Grass" ID="{AF82A782-4E80-4131-851D-B20EC79C2B85}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
         static const AkUniqueID PLAY_INGAMEMUSIC = 3799629626U;
         static const AkUniqueID PLAY_NONINGAMEMUSIC = 3584345201U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
@@ -62,6 +63,17 @@ namespace AK
             } // namespace SWITCH
         } // namespace ENERGYLEVEL
 
+        namespace GROUNDMATERIAL
+        {
+            static const AkUniqueID GROUP = 3072116243U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRASS = 4248645337U;
+            } // namespace SWITCH
+        } // namespace GROUNDMATERIAL
+
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
@@ -80,6 +92,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

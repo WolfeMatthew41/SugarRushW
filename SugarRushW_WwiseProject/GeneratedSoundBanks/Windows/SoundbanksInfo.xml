@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{ACDF30DB-4BD9-2A7C-F870-AF577DA9E307}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DFC4BDAB-0B82-72E9-8C53-A3D670220FE0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -19,7 +19,9 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="1841973268" Name="EnergyLevelRTPC"/>
@@ -51,9 +53,15 @@
 						<Switch Id="3278998676" Name="NormalEnergy"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="3072116243" Name="GroundMaterial">
+					<Switches>
+						<Switch Id="2195636714" Name="Dirt"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{84BBCF65-10D7-FECD-CFE7-DA3F87060DDB}">
+		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{3734E126-1311-A012-6178-DD5F4D5B636B}">
 			<ShortName>IngameMusic_SoundBank</ShortName>
 			<Path>IngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -306,24 +314,76 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{58DA8C94-2A40-7371-8125-A6ADDDAA9D1D}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{08E4CA02-59B2-2755-5ADE-CE7846F11509}">
 			<ShortName>SFX_SoundBank</ShortName>
 			<Path>SFX_SoundBank.bnk</Path>
 			<Media>
+				<File Id="207380700" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_GrassFootstep03.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_GrassFootstep03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="407355580" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_DirtFootstep01.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_DirtFootstep01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="499353266" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_DirtFootstep02.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_DirtFootstep02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="583404404" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_DirtFootstep03.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_DirtFootstep03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="748659744" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_GrassFootstep01.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_GrassFootstep01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="824552167" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_GrassFootstep02.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_GrassFootstep02_818F3B66.wem</CachePath>
+				</File>
 				<File Id="1065132318" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Pause_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
+				<Event Id="1602358412" Name="Play_Footstep" DurationType="OneShot" DurationMin="0.3488982" DurationMax="0.7004163">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3072116243" Id="2195636714" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="407355580"/>
+								<MediaRef Id="499353266"/>
+								<MediaRef Id="583404404"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3072116243" Id="4248645337"/>
+							<MediaRefs>
+								<MediaRef Id="207380700"/>
+								<MediaRef Id="748659744"/>
+								<MediaRef Id="824552167"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="2752533807" Name="Play_TestSound" DurationType="OneShot" DurationMin="16" DurationMax="16">
 					<MediaRefs>
 						<MediaRef Id="1065132318"/>
 					</MediaRefs>
 				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="3072116243" Name="GroundMaterial">
+					<Switches>
+						<Switch Id="2195636714" Name="Dirt"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{ADF86424-1E34-113C-F509-AB28627CDB75}">
+		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{5A054A5A-2607-589E-4846-0EC0234817F5}">
 			<ShortName>NonIngameMusic_SoundBank</ShortName>
 			<Path>NonIngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -371,5 +431,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{51FB07CE-A7AA-854D-02F2-9A7274C8C2A1}</FileHash>
+	<FileHash>{EC576D2F-2FD4-5248-FB4A-4B8FCD10BD1C}</FileHash>
 </SoundBanksInfo>
