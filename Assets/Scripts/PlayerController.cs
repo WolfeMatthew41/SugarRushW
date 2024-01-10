@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private float speed = 0.053f; //Used to control speed of Puff
 
     [SerializeField]
-    private float smoothTime = 0.3f;
+    private float smoothTime = 0.28f;
 
     [SerializeField]
     private float _currentVelocity;
@@ -32,9 +32,10 @@ public class PlayerController : MonoBehaviour
 
     private float currentAngle;
 
-    private Vector3 movementDirection;
+    private int movementDirection;
 
-    private Vector3 currentDirection;
+
+    private bool isRotating = false;
 
     private void Awake()
     {
@@ -46,19 +47,26 @@ public class PlayerController : MonoBehaviour
         _input = context.ReadValue<Vector2>();
         //Debug.Log(_input);// message: "PlayerController Moving!");
         if (currentAngle > 135.0f && currentAngle < 225.0f) //Facing Backards VVV
+        {
             _direction = new Vector3(_input.x * -1, 0.0f, _input.y * -1);
+            movementDirection = 2;
+        }
         else if (currentAngle > 45.0f && currentAngle < 135.0f) //Facing Right -->
         {
-            _direction = new Vector3(_input.y, 0.0f, _input.x *-1 );
+            _direction = new Vector3(_input.y, 0.0f, _input.x * -1);
+            movementDirection = 1;
         }
-        else if (currentAngle > 225.0f && currentAngle < 270.0f) //Facing Left <---
+        else if (currentAngle > 225.0f && currentAngle < 315.0f) //Facing Left <---
         {
-            _direction = new Vector3(_input.y*-1, 0.0f, _input.x);
+            _direction = new Vector3(_input.y * -1, 0.0f, _input.x);
+            movementDirection = 3;
         }
         else
+        { 
             _direction = new Vector3(_input.x, 0.0f, _input.y); //Facing forward ^^^
-      
-        movementDirection = _direction;
+            movementDirection = 0;
+        }
+        
     }
 
     private void Update()
@@ -94,6 +102,31 @@ public class PlayerController : MonoBehaviour
     private void ApplyMovement()
     {
 
-        _characterController.Move(_direction * speed);
+        //if(!_characterController.isGrounded)
+            _characterController.Move(_direction * speed);
+
+        /*
+        if (_input.sqrMagnitude <= 1)
+        {
+            if (movementDirection == 0) //Forward { }
+            {
+
+            }
+
+            else if (movementDirection == 1) //Right { }
+            {
+
+            }
+            else if (movementDirection == 2) // Down 
+            { }
+
+            else if (movementDirection == 3) // Left
+            { }
+
+            
+
+            _characterController.Move(_direction * speed);
+        }*/
+           
     }
 }
