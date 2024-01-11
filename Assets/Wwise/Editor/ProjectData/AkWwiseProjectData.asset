@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584966829264713879
+    m_lastTime: -8584966162107721064
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -156,7 +156,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584966829264663867
+    m_lastTime: -8584966176895501835
     List:
     - name: Play_EmptyAudioTest
       guid: 917f92e5d2d7f34ba6d2755d99259249
@@ -192,6 +192,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7004163
       minDuration: 0.3488982
+    - name: Play_GoodOrBadFruit
+      guid: b5f1148c32e6b149a7ab973fc9c7f549
+      id: 2781998183
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_GoodOrBadFruit
+        ObjectType: 3
+        guid: b5f1148c32e6b149a7ab973fc9c7f549
+      Path: Events\Default Work Unit\Play_GoodOrBadFruit
+      maxAttenuation: 0
+      maxDuration: 1.5437698
+      minDuration: 1.087483
     - name: Play_IngameMusic
       guid: 9175fc6e9dccd645a4952f9c31b8c0ec
       id: 3799629626
@@ -461,7 +478,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8a3375716ecce44a9a9bcf149d21e80b
     GuidInternal: 
-    m_lastTime: -8584966901813363906
+    m_lastTime: -8584966176895521846
     List:
     - name: EnergyLevel
       guid: 9caf3507a266fc48bb72240c8421060c
@@ -526,6 +543,56 @@ MonoBehaviour:
         - ElementName: NormalEnergy
           ObjectType: 10
           guid: 0805cd2423f1224bb0d138dc7e198a6c
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: GoodOrBadFruit
+      guid: 697e638695e0434f97516c5313cd2cfb
+      id: 3201173508
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8a3375716ecce44a9a9bcf149d21e80b
+      - ElementName: GoodOrBadFruit
+        ObjectType: 11
+        guid: 697e638695e0434f97516c5313cd2cfb
+      Path: Switches\Default Work Unit\GoodOrBadFruit
+      values:
+      - name: BadFruit
+        guid: 816dcb8e0f680342a0c3691e55a814a4
+        id: 229773992
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8a3375716ecce44a9a9bcf149d21e80b
+        - ElementName: GoodOrBadFruit
+          ObjectType: 11
+          guid: 697e638695e0434f97516c5313cd2cfb
+        - ElementName: BadFruit
+          ObjectType: 10
+          guid: 816dcb8e0f680342a0c3691e55a814a4
+      - name: GoodFruit
+        guid: 4bc17a1b9dc0c341b035dd74a983290b
+        id: 1899661724
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8a3375716ecce44a9a9bcf149d21e80b
+        - ElementName: GoodOrBadFruit
+          ObjectType: 11
+          guid: 697e638695e0434f97516c5313cd2cfb
+        - ElementName: GoodFruit
+          ObjectType: 10
+          guid: 4bc17a1b9dc0c341b035dd74a983290b
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []

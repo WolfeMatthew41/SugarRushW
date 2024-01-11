@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_GoodOrBadFruit" ID="{8C14F1B5-E632-49B1-A7AB-973FC9C7F549}">
+					<ChildrenList>
+						<Action Name="" ID="{3FF8584F-83E3-483F-94E8-148C8A5CAFCC}" ShortID="355125254">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GoodOrBadFruit" ID="{D398B965-F0A6-4F4C-805D-748E8B46D967}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_EMPTYAUDIOTEST = 520202705U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
+        static const AkUniqueID PLAY_GOODORBADFRUIT = 2781998183U;
         static const AkUniqueID PLAY_INGAMEMUSIC = 3799629626U;
         static const AkUniqueID PLAY_NONINGAMEMUSIC = 3584345201U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
@@ -63,6 +64,17 @@ namespace AK
                 static const AkUniqueID NORMALENERGY = 3278998676U;
             } // namespace SWITCH
         } // namespace ENERGYLEVEL
+
+        namespace GOODORBADFRUIT
+        {
+            static const AkUniqueID GROUP = 3201173508U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BADFRUIT = 229773992U;
+                static const AkUniqueID GOODFRUIT = 1899661724U;
+            } // namespace SWITCH
+        } // namespace GOODORBADFRUIT
 
         namespace GROUNDMATERIAL
         {

@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
 
     private bool isRotating = false;
-
+    private bool hasEventBeenTriggered = false;
     public AK.Wwise.Event Play_Footstep;
 
 
@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
         ApplyGravity();
 
         ApplyMovement();
+        hasEventBeenTriggered = false;
     }
 
     private void ApplyRotation()
@@ -149,7 +150,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Dirt"))
+
+       if (other.CompareTag("Dirt"))
         {
             GroundMaterialSwitch("Dirt");
         }
@@ -164,8 +166,9 @@ public class PlayerController : MonoBehaviour
         //Should check if player is on ground here to see if it is needed to be played
         if (Play_Footstep != null)
         {
-
+           
             Play_Footstep.Post(gameObject);
+            hasEventBeenTriggered = true;
         }
         else
         {
