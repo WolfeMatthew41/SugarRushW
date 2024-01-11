@@ -72,6 +72,12 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        Debug.Log("We have Jumped");
+    }
+
+
     private void Update()
     {
         ApplyRotation();

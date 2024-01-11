@@ -60,4 +60,9 @@ public class MovePuff : MonoBehaviour
         
 
     }
+
+    private void OnPauseButton()
+    {
+        
+    }
 }
