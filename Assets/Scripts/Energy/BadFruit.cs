@@ -1,10 +1,10 @@
-//using System.Collections;
-//using System.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class GoodFruit : MonoBehaviour
+public class BadFruit : MonoBehaviour
 {
-    public int energyBonus = 10;
+    public int energyDecrease = 10;
 
     PlayerEnergy playerEnergy;
 
@@ -15,10 +15,10 @@ public class GoodFruit : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(playerEnergy.currentEnergy < playerEnergy.maxEnergy)
+        if(playerEnergy.currentEnergy > 0)
         {
             Destroy(gameObject);
-            playerEnergy.currentEnergy += energyBonus;
+            playerEnergy.currentEnergy -= energyDecrease;
         }
         Debug.Log("Player Entered");
     }
