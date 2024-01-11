@@ -25,6 +25,607 @@
 						<ActiveSource Name="SugarRush_120bpm_4-4_Pause" ID="{D08319B2-1490-4221-91A8-8D8CBF8FF1BC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<SwitchContainer Name="Footsteps" ID="{13DD0F67-25EB-4A05-AFD7-5A7D29276F48}" ShortID="492065319">
+					<PropertyList>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{EA6AFDFA-A61C-4868-815C-319E59EF37F9}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Dirt" ID="{40243C33-B550-4958-BDDF-A0A245A1B27B}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{14EE5A88-7968-4F8F-98D7-82E433263234}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="GroundMaterial" ID="{78739EE2-23C0-4DFB-A8A1-8CCF94DF598F}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Dirt" ID="{6FB7618B-732F-4AB9-B861-79656F55F736}" ShortID="246941787">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SugarRush_Character_DirtFootstep01" ID="{E43E5592-A792-4F3B-B041-30D52D67E04F}" ShortID="308378386">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EDA41FA9-4A3A-481D-A6A3-1D1B1BBB6167}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_DirtFootstep01" ID="{528E7629-0B95-4EBE-BE15-D600D63E56DF}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_DirtFootstep01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="407355580"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_DirtFootstep01" ID="{528E7629-0B95-4EBE-BE15-D600D63E56DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SugarRush_Character_DirtFootstep02" ID="{6EAC9AE0-78A4-4D08-A498-B1B4F3422AAB}" ShortID="483957780">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{16AF4D99-B9B9-4606-BD16-1BA849A25CF6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_DirtFootstep02" ID="{D47410F5-A53C-43AC-9135-FDE4E23D2ECE}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_DirtFootstep02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="499353266"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_DirtFootstep02" ID="{D47410F5-A53C-43AC-9135-FDE4E23D2ECE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SugarRush_Character_DirtFootstep03" ID="{06C631D3-3F61-4BEE-9382-635EA3DA6D56}" ShortID="117369841">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2614A72F-1922-445F-B9A4-35DE4D46EB9D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_DirtFootstep03" ID="{5DE33BD0-6E86-4A04-8992-81DDA1DB62B9}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_DirtFootstep03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="583404404"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_DirtFootstep03" ID="{5DE33BD0-6E86-4A04-8992-81DDA1DB62B9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Grass" ID="{F30769A1-6F07-4002-A9ED-00C406647EBF}" ShortID="630895444">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SugarRush_Character_GrassFootstep01" ID="{788590D4-83A2-4140-BED8-8E9211686BC4}" ShortID="470340293">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B7DA4128-518D-4BBB-8A42-A2D8F206FDD0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_GrassFootstep01" ID="{B143EA62-33ED-41B3-8118-67FD404900F5}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_GrassFootstep01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="748659744"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_GrassFootstep01" ID="{B143EA62-33ED-41B3-8118-67FD404900F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SugarRush_Character_GrassFootstep02" ID="{EB092151-B7A0-4881-A02A-0EC68E27AC29}" ShortID="126550344">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C57394B2-CEEB-4278-8B51-AE5CDFFE00C7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_GrassFootstep02" ID="{2B5E33EB-8BB0-4E08-B2AF-F5FE46A0CA2E}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_GrassFootstep02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="824552167"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_GrassFootstep02" ID="{2B5E33EB-8BB0-4E08-B2AF-F5FE46A0CA2E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SugarRush_Character_GrassFootstep03" ID="{655762AA-AD32-4E68-B868-E96455F9B4B4}" ShortID="806077740">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{77ADE550-E1DA-4511-91C1-0247006FC92D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_GrassFootstep03" ID="{E66A152B-8E81-485A-8BA8-AF459ED3B83B}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_GrassFootstep03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="207380700"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_GrassFootstep03" ID="{E66A152B-8E81-485A-8BA8-AF459ED3B83B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Dirt" ID="{6FB7618B-732F-4AB9-B861-79656F55F736}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Grass" ID="{F30769A1-6F07-4002-A9ED-00C406647EBF}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Dirt" ID="{40243C33-B550-4958-BDDF-A0A245A1B27B}"/>
+								<ItemList>
+									<ItemRef Name="Dirt" ID="{6FB7618B-732F-4AB9-B861-79656F55F736}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Grass" ID="{AF82A782-4E80-4131-851D-B20EC79C2B85}"/>
+								<ItemList>
+									<ItemRef Name="Grass" ID="{F30769A1-6F07-4002-A9ED-00C406647EBF}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Sound Name="EmptyAudioTest" ID="{7ACBB2CD-4F06-4C28-AC25-43A19101431E}" ShortID="42106570">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0A517F49-8B89-451F-86BE-2D269545A233}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{14EE5A88-7968-4F8F-98D7-82E433263234}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EmptyAudioTest" ID="{22E36C41-141C-4B36-B660-C1E151ADBB67}">
+							<Language>SFX</Language>
+							<AudioFile>EmptyAudioTest.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="925127407"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EmptyAudioTest" ID="{22E36C41-141C-4B36-B660-C1E151ADBB67}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<SwitchContainer Name="GoodOrBadFruit" ID="{D398B965-F0A6-4F4C-805D-748E8B46D967}" ShortID="489914113">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="GoodFruit" ID="{1B7AC14B-C09D-41C3-B035-DD74A983290B}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="GoodOrBadFruit" ID="{86637E69-E095-4F43-9751-6C5313CD2CFB}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="GoodFruit" ID="{59E3B9B3-3829-4DD8-BAE9-B290B63F3ACA}" ShortID="475555087">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="GoodFruitBlend" ID="{E158AFA1-DAFE-4A9D-B2D1-316595194DE9}" ShortID="607251364">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SugarRush_Character_Eat" ID="{9EA6528A-C993-4775-9B83-CD64BDBFA152}" ShortID="76868562">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FCF366E4-A6AB-4FC2-8AEB-42CEC65D7F64}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SugarRush_Character_Eat" ID="{A5E62E4E-171E-4DBE-AA7D-E4026B1B5EA0}">
+													<Language>SFX</Language>
+													<AudioFile>SugarRush_Character_Eat.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="557175082"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SugarRush_Character_Eat" ID="{A5E62E4E-171E-4DBE-AA7D-E4026B1B5EA0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SugarRush_Character_Voice_Yummy" ID="{349B036D-344D-4ABE-815B-6BB685F76070}" ShortID="1022059733">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7B821EA5-6CFE-45E4-923A-5252BA17C9AB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SugarRush_Character_Voice_Yummy" ID="{EC060056-A4B5-4A40-BFCE-550DC670C823}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0797635393873085"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SugarRush_Character_Voice_Yummy.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="124480272"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SugarRush_Character_Voice_Yummy" ID="{EC060056-A4B5-4A40-BFCE-550DC670C823}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="BadFruit" ID="{965190E4-24C8-4410-B8A9-92959568056C}" ShortID="881857155">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="BadFruitBlend" ID="{A4CEFBFC-90D8-455F-A188-529C0BF410ED}" ShortID="209155307">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D8B9CE53-6E08-42DB-A660-13ECC40DF9DE}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SugarRush_Character_Eat" ID="{92524C4E-4995-418A-A65B-82A13393032B}" ShortID="564285998">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{04691906-6186-4B4A-8861-AE3B9CE5392A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SugarRush_Character_Eat" ID="{F17B15D4-97F0-4941-B04D-07F2985485F8}">
+													<Language>SFX</Language>
+													<AudioFile>SugarRush_Character_Eat.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="557175082"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SugarRush_Character_Eat" ID="{F17B15D4-97F0-4941-B04D-07F2985485F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SugarRush_Character_Voice_BadFruitUGH" ID="{CEEC3849-096E-4C4D-9C48-AF5E263BF102}" ShortID="267980293">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{087EB141-5605-4FDB-96A1-04815C501A0F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SugarRush_Character_Voice_BadFruitUGH" ID="{95649FF0-F295-4F7D-BF57-171B8489B13E}">
+													<Language>SFX</Language>
+													<AudioFile>SugarRush_Character_Voice_BadFruitUGH.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="631280473"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SugarRush_Character_Voice_BadFruitUGH" ID="{95649FF0-F295-4F7D-BF57-171B8489B13E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="GoodFruit" ID="{59E3B9B3-3829-4DD8-BAE9-B290B63F3ACA}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="BadFruit" ID="{965190E4-24C8-4410-B8A9-92959568056C}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="GoodFruit" ID="{1B7AC14B-C09D-41C3-B035-DD74A983290B}"/>
+								<ItemList>
+									<ItemRef Name="GoodFruit" ID="{59E3B9B3-3829-4DD8-BAE9-B290B63F3ACA}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="BadFruit" ID="{8ECB6D81-680F-4203-A0C3-691E55A814A4}"/>
+								<ItemList>
+									<ItemRef Name="BadFruit" ID="{965190E4-24C8-4410-B8A9-92959568056C}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

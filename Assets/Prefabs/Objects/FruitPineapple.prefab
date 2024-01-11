@@ -1027,6 +1027,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energyBonus: 10
+  Play_GoodOrBadFruit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b5442e19b7365fe43a8456d8d829a0d8, type: 2}
 --- !u!54 &2884513480434936926
 Rigidbody:
   m_ObjectHideFlags: 0

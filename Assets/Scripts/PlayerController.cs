@@ -36,6 +36,9 @@ public class PlayerController : MonoBehaviour
 
 
     private bool isRotating = false;
+    private bool hasEventBeenTriggered = false;
+    public AK.Wwise.Event Play_Footstep;
+
 
     private void Awake()
     {
@@ -76,6 +79,7 @@ public class PlayerController : MonoBehaviour
         ApplyGravity();
 
         ApplyMovement();
+        hasEventBeenTriggered = false;
     }
 
     private void ApplyRotation()
@@ -88,6 +92,7 @@ public class PlayerController : MonoBehaviour
        
         currentAngle = angle;
         Debug.Log(currentAngle);
+        
     }
 
     private void ApplyGravity()
@@ -104,6 +109,11 @@ public class PlayerController : MonoBehaviour
 
         //if(!_characterController.isGrounded)
             _characterController.Move(_direction * speed);
+
+        if (_input.x != 0.0f || _input.y != 0.0f)
+        {
+            PlayFootstep();
+        }
 
         /*
         if (_input.sqrMagnitude <= 1)
@@ -128,5 +138,42 @@ public class PlayerController : MonoBehaviour
             _characterController.Move(_direction * speed);
         }*/
            
+    }
+
+    public void GroundMaterialSwitch(string switchName)
+    {
+
+        AkSoundEngine.SetSwitch("GroundMaterial", switchName, gameObject);
+        PlayFootstep();
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+       if (other.CompareTag("Dirt"))
+        {
+            GroundMaterialSwitch("Dirt");
+        }
+        else if (other.CompareTag("Grass"))
+        {
+            GroundMaterialSwitch("Grass");
+        }
+    }
+    void PlayFootstep()
+    {
+
+        //Should check if player is on ground here to see if it is needed to be played
+        if (Play_Footstep != null)
+        {
+           
+            Play_Footstep.Post(gameObject);
+            hasEventBeenTriggered = true;
+        }
+        else
+        {
+
+            Debug.LogWarning("No assigned Wwise event");
+        }
     }
 }

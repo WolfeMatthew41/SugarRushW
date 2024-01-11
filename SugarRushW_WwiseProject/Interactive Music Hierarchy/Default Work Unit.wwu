@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+							<ObjectRef Name="Music" ID="{5A7F30A9-E322-4FBB-A21F-32967879E831}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -449,7 +449,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+							<ObjectRef Name="Music" ID="{5A7F30A9-E322-4FBB-A21F-32967879E831}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -2214,7 +2214,7 @@
 								<ObjectList Name="Entries">
 									<Reference>
 										<Local>
-											<MultiSwitchEntry Name="" ID="{30BC7086-912C-4B41-9C2D-D0529378488C}">
+											<MultiSwitchEntry Name="" ID="{97B1D922-1F61-4B7B-A6E1-6FEF09C359C5}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
 														<ObjectRef Name="HighEnergyM" ID="{145D0938-3EBE-4AB5-B3DB-0CA7663C4628}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
@@ -2232,7 +2232,7 @@
 									</Reference>
 									<Reference>
 										<Local>
-											<MultiSwitchEntry Name="" ID="{5706002D-D195-495F-931B-C59711FF79E4}">
+											<MultiSwitchEntry Name="" ID="{28BA4BFC-1809-4A7A-A43E-61E586826A6E}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
 														<ObjectRef Name="LowEnergyM" ID="{EBDD34FC-9B54-44B5-97FB-5E4E3FE6825F}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
@@ -2250,7 +2250,7 @@
 									</Reference>
 									<Reference>
 										<Local>
-											<MultiSwitchEntry Name="" ID="{33268579-2DC4-41D1-A28A-386B726AE2DA}">
+											<MultiSwitchEntry Name="" ID="{1E59C14A-A445-4D27-B437-8B18604E3CC1}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
 														<ObjectRef Name="NormalEnergyM" ID="{267535BB-C5AF-423E-9512-1AEE66918C4C}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>

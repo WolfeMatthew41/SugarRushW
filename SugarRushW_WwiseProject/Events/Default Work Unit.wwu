@@ -36,6 +36,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Footstep" ID="{5929E129-5697-4438-8C0E-A83FB893BB82}">
+					<ChildrenList>
+						<Action Name="" ID="{72044E88-3F85-42E0-9F48-C6CCA2291123}" ShortID="562151545">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{13DD0F67-25EB-4A05-AFD7-5A7D29276F48}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EmptyAudioTest" ID="{E5927F91-D7D2-4BF3-A6D2-755D99259249}">
+					<ChildrenList>
+						<Action Name="" ID="{1EDDA0E1-1E5D-4F8B-8EEA-1AF564B0C17B}" ShortID="120390616">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EmptyAudioTest" ID="{7ACBB2CD-4F06-4C28-AC25-43A19101431E}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GoodOrBadFruit" ID="{8C14F1B5-E632-49B1-A7AB-973FC9C7F549}">
+					<ChildrenList>
+						<Action Name="" ID="{3FF8584F-83E3-483F-94E8-148C8A5CAFCC}" ShortID="355125254">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GoodOrBadFruit" ID="{D398B965-F0A6-4F4C-805D-748E8B46D967}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

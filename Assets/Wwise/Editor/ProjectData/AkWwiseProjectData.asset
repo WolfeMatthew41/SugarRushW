@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: fd6c3703156182408570aa720beab611
     GuidInternal: 
-    m_lastTime: -8584968606384620727
+    m_lastTime: -8584968665000102752
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 040167dc4ddf6a40a296ec7ab0368e2a
     GuidInternal: 
-    m_lastTime: -8584968606385344819
+    m_lastTime: -8584966901813333900
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: a9307f5a22e3bb4fa21f32967879e831
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 040167dc4ddf6a40a296ec7ab0368e2a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: a9307f5a22e3bb4fa21f32967879e831
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: SFX
+      guid: 885aee1468798f4f98d782e433263234
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 040167dc4ddf6a40a296ec7ab0368e2a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 885aee1468798f4f98d782e433263234
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584967059705473698
+    m_lastTime: -8584966162107721064
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -122,8 +156,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584967059758773808
+    m_lastTime: -8584966176895501835
     List:
+    - name: Play_EmptyAudioTest
+      guid: 917f92e5d2d7f34ba6d2755d99259249
+      id: 520202705
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_EmptyAudioTest
+        ObjectType: 3
+        guid: 917f92e5d2d7f34ba6d2755d99259249
+      Path: Events\Default Work Unit\Play_EmptyAudioTest
+      maxAttenuation: 0
+      maxDuration: 1.8540417
+      minDuration: 1.8540417
+    - name: Play_Footstep
+      guid: 29e12959975638448c0ea83fb893bb82
+      id: 1602358412
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_Footstep
+        ObjectType: 3
+        guid: 29e12959975638448c0ea83fb893bb82
+      Path: Events\Default Work Unit\Play_Footstep
+      maxAttenuation: 0
+      maxDuration: 0.7004163
+      minDuration: 0.3488982
+    - name: Play_GoodOrBadFruit
+      guid: b5f1148c32e6b149a7ab973fc9c7f549
+      id: 2781998183
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_GoodOrBadFruit
+        ObjectType: 3
+        guid: b5f1148c32e6b149a7ab973fc9c7f549
+      Path: Events\Default Work Unit\Play_GoodOrBadFruit
+      maxAttenuation: 0
+      maxDuration: 1.5437698
+      minDuration: 1.087483
     - name: Play_IngameMusic
       guid: 9175fc6e9dccd645a4952f9c31b8c0ec
       id: 3799629626
@@ -187,7 +272,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: e854aa4f62a781469e4c8c0d3dcba420
     GuidInternal: 
-    m_lastTime: -8584967059758763763
+    m_lastTime: -8584966926387897514
     List:
     - name: EnergyLevelRTPC
       guid: c265fab91622604096d6d859739ee63f
@@ -215,7 +300,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 114c8cc6c7bda84f9c49880460240feb
     GuidInternal: 
-    m_lastTime: -8584967059705463735
+    m_lastTime: -8584967136161833480
     List:
     - name: GameStates
       guid: 17d4da35f901dd468fe853381e4ecb67
@@ -393,7 +478,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8a3375716ecce44a9a9bcf149d21e80b
     GuidInternal: 
-    m_lastTime: -8584967059705463735
+    m_lastTime: -8584966176895521846
     List:
     - name: EnergyLevel
       guid: 9caf3507a266fc48bb72240c8421060c
@@ -461,6 +546,106 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: GoodOrBadFruit
+      guid: 697e638695e0434f97516c5313cd2cfb
+      id: 3201173508
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8a3375716ecce44a9a9bcf149d21e80b
+      - ElementName: GoodOrBadFruit
+        ObjectType: 11
+        guid: 697e638695e0434f97516c5313cd2cfb
+      Path: Switches\Default Work Unit\GoodOrBadFruit
+      values:
+      - name: BadFruit
+        guid: 816dcb8e0f680342a0c3691e55a814a4
+        id: 229773992
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8a3375716ecce44a9a9bcf149d21e80b
+        - ElementName: GoodOrBadFruit
+          ObjectType: 11
+          guid: 697e638695e0434f97516c5313cd2cfb
+        - ElementName: BadFruit
+          ObjectType: 10
+          guid: 816dcb8e0f680342a0c3691e55a814a4
+      - name: GoodFruit
+        guid: 4bc17a1b9dc0c341b035dd74a983290b
+        id: 1899661724
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8a3375716ecce44a9a9bcf149d21e80b
+        - ElementName: GoodOrBadFruit
+          ObjectType: 11
+          guid: 697e638695e0434f97516c5313cd2cfb
+        - ElementName: GoodFruit
+          ObjectType: 10
+          guid: 4bc17a1b9dc0c341b035dd74a983290b
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: GroundMaterial
+      guid: e29e7378c023fb4da8a18ccf94df598f
+      id: 3072116243
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8a3375716ecce44a9a9bcf149d21e80b
+      - ElementName: GroundMaterial
+        ObjectType: 11
+        guid: e29e7378c023fb4da8a18ccf94df598f
+      Path: Switches\Default Work Unit\GroundMaterial
+      values:
+      - name: Dirt
+        guid: 333c244050b55849bddfa0a245a1b27b
+        id: 2195636714
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8a3375716ecce44a9a9bcf149d21e80b
+        - ElementName: GroundMaterial
+          ObjectType: 11
+          guid: e29e7378c023fb4da8a18ccf94df598f
+        - ElementName: Dirt
+          ObjectType: 10
+          guid: 333c244050b55849bddfa0a245a1b27b
+      - name: Grass
+        guid: 82a782af804e3141851db20ec79c2b85
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8a3375716ecce44a9a9bcf149d21e80b
+        - ElementName: GroundMaterial
+          ObjectType: 11
+          guid: e29e7378c023fb4da8a18ccf94df598f
+        - ElementName: Grass
+          ObjectType: 10
+          guid: 82a782af804e3141851db20ec79c2b85
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -473,10 +658,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: b040c2bcc2735e438c4452b81dfbacb4
     GuidInternal: 
-    m_lastTime: -8584968606384867402
+    m_lastTime: -8584968665000232781
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 03000000040000000500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

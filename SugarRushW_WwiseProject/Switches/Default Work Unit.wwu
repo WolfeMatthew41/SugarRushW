@@ -43,6 +43,18 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="GroundMaterial" ID="{78739EE2-23C0-4DFB-A8A1-8CCF94DF598F}">
+					<ChildrenList>
+						<Switch Name="Dirt" ID="{40243C33-B550-4958-BDDF-A0A245A1B27B}"/>
+						<Switch Name="Grass" ID="{AF82A782-4E80-4131-851D-B20EC79C2B85}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="GoodOrBadFruit" ID="{86637E69-E095-4F43-9751-6C5313CD2CFB}">
+					<ChildrenList>
+						<Switch Name="GoodFruit" ID="{1B7AC14B-C09D-41C3-B035-DD74A983290B}"/>
+						<Switch Name="BadFruit" ID="{8ECB6D81-680F-4203-A0C3-691E55A814A4}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
