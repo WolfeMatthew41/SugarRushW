@@ -67,7 +67,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{3734E126-1311-A012-6178-DD5F4D5B636B}">
+		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{29A63240-C9EE-18AC-4ECF-0EA80D999051}">
 			<ShortName>IngameMusic_SoundBank</ShortName>
 			<Path>IngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -287,6 +287,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1319671012" Name="Stop_IngameMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="1841973268" Name="EnergyLevelRTPC"/>
@@ -434,7 +435,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{5A054A5A-2607-589E-4846-0EC0234817F5}">
+		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{683A1593-055F-080B-13C7-CCF734EE2ED9}">
 			<ShortName>NonIngameMusic_SoundBank</ShortName>
 			<Path>NonIngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -452,6 +453,12 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="3738780720" Name="Play_MainMenu" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="568555732"/>
+						<MediaRef Id="619033396"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3584345201" Name="Play_NonIngameMusic" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -469,6 +476,8 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="890527358" Name="Stop_MainMenu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3298098222" Name="Stop_Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<StateGroups>
 				<StateGroup Id="777429653" Name="GameStates">
@@ -482,5 +491,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B03524BA-C22B-11FA-9BE3-52366A7D0562}</FileHash>
+	<FileHash>{1E0095DA-7C97-3A33-5BAB-63C7A75CAFE2}</FileHash>
 </SoundBanksInfo>

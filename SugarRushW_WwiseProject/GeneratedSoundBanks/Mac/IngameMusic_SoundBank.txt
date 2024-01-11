@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1319671012	Stop_IngameMusic			\Default Work Unit\Stop_IngameMusic	
 	3799629626	Play_IngameMusic			\Default Work Unit\Play_IngameMusic	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
