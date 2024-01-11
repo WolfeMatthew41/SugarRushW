@@ -965,6 +965,7 @@ GameObject:
   - component: {fileID: -8878320551491483158}
   - component: {fileID: -5566093830452708929}
   - component: {fileID: 2884513480434936926}
+  - component: {fileID: 1735836200612182468}
   m_Layer: 0
   m_Name: FruitPineapple
   m_TagString: Untagged
@@ -1031,6 +1032,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b5442e19b7365fe43a8456d8d829a0d8, type: 2}
+  Play_FruitGlow:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f0a3bf0026f8c9646ae67fd62466aa6e, type: 2}
+  Stop_FruitGlow:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8d0647e4fd0995c4988790c331ebfd6a, type: 2}
 --- !u!54 &2884513480434936926
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1058,6 +1067,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1735836200612182468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418070491854399475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0afa27bc677f0f547a365f8162a12ce6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &3615302628250224730
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3abd9219ac1ccf4e92bcaab07b3ecc3, type: 3}
+  m_Name: 2A285BAD-E542-4123-8DC1-B111068AB4A8
+  m_EditorClassIdentifier: 
+  objectName: Stop_FruitGlow
+  id: 3338478285
+  guid: 2A285BAD-E542-4123-8DC1-B111068AB4A8

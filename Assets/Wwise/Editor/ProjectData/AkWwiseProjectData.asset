@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584966018252971112
+    m_lastTime: -8584965950468769183
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -156,7 +156,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584966018375930930
+    m_lastTime: -8584965950630374050
     List:
     - name: Play_EmptyAudioTest
       guid: 917f92e5d2d7f34ba6d2755d99259249
@@ -192,6 +192,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7004163
       minDuration: 0.3488982
+    - name: Play_FruitGlow
+      guid: 5f0ca87d66019146a48490f90238c3ac
+      id: 520175615
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_FruitGlow
+        ObjectType: 3
+        guid: 5f0ca87d66019146a48490f90238c3ac
+      Path: Events\Default Work Unit\Play_FruitGlow
+      maxAttenuation: 12
+      maxDuration: -1
+      minDuration: -1
     - name: Play_GoodOrBadFruit
       guid: b5f1148c32e6b149a7ab973fc9c7f549
       id: 2781998183
@@ -260,6 +277,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Pause
+      guid: 96bbfd2f8e5aca46a7ef700b7f8ad43b
+      id: 4233560256
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_Pause
+        ObjectType: 3
+        guid: 96bbfd2f8e5aca46a7ef700b7f8ad43b
+      Path: Events\Default Work Unit\Play_Pause
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_TestSound
       guid: abf90c7fb752304e86e3d2119ae639ad
       id: 2752533807
@@ -277,6 +311,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 16
       minDuration: 16
+    - name: Stop_FruitGlow
+      guid: ad5b282a42e523418dc1b111068ab4a8
+      id: 3338478285
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Stop_FruitGlow
+        ObjectType: 3
+        guid: ad5b282a42e523418dc1b111068ab4a8
+      Path: Events\Default Work Unit\Stop_FruitGlow
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_IngameMusic
       guid: a7b02afb331b3247ae74a5030d94af42
       id: 1319671012
@@ -729,7 +780,7 @@ MonoBehaviour:
     m_lastTime: -8584968665000232781
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000001100000012000000160000001700000018000000
+  ExpandedWaapiItemIds: 0500000006000000070000001100000012000000160000001700000018000000c0000000c1000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

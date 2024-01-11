@@ -122,6 +122,42 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Pause" ID="{2FFDBB96-5A8E-46CA-A7EF-700B7F8AD43B}">
+					<ChildrenList>
+						<Action Name="" ID="{9FA64541-DE8D-4742-9092-E7942671D9EC}" ShortID="503214611">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pause" ID="{47CB262D-638F-4803-895A-E2369BC49C8B}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FruitGlow" ID="{7DA80C5F-0166-4691-A484-90F90238C3AC}">
+					<ChildrenList>
+						<Action Name="" ID="{61397B1A-889E-4A37-B169-4599D5784E36}" ShortID="605748025">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FruitGlow" ID="{1F94D40F-DF0F-480D-BC88-BBB16936EB5F}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_FruitGlow" ID="{2A285BAD-E542-4123-8DC1-B111068AB4A8}">
+					<ChildrenList>
+						<Action Name="" ID="{B00AD3B2-A570-46A4-B8B3-1A37F87DC957}" ShortID="407752553">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FruitGlow" ID="{1F94D40F-DF0F-480D-BC88-BBB16936EB5F}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

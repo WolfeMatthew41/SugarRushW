@@ -321,7 +321,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{78EE5DE2-A054-FBD3-C233-633489B86478}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{57099B60-4075-DC2A-E301-05FB23BEEB5C}">
 			<ShortName>SFX_SoundBank</ShortName>
 			<Path>SFX_SoundBank.bnk</Path>
 			<Media>
@@ -340,6 +340,10 @@
 				<File Id="499353266" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Character_DirtFootstep02.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_DirtFootstep02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="546350154" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Items_FruitGlow02.wav</ShortName>
+					<CachePath>SFX/SugarRush_Items_FruitGlow02_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="557175082" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Character_Eat.wav</ShortName>
@@ -364,6 +368,10 @@
 				<File Id="925127407" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EmptyAudioTest.wav</ShortName>
 					<CachePath>SFX/EmptyAudioTest_818F3B66.wem</CachePath>
+				</File>
+				<File Id="985948447" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Items_FruitGlow01.wav</ShortName>
+					<CachePath>SFX/SugarRush_Items_FruitGlow01_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="1065132318" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
@@ -396,6 +404,12 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="520175615" Name="Play_FruitGlow" MaxAttenuation="12" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="546350154"/>
+						<MediaRef Id="985948447"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2781998183" Name="Play_GoodOrBadFruit" DurationType="OneShot" DurationMin="1.087483" DurationMax="1.5437698">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -419,6 +433,12 @@
 						<MediaRef Id="1065132318"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3338478285" Name="Stop_FruitGlow" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="546350154"/>
+						<MediaRef Id="985948447"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="3072116243" Name="GroundMaterial">
@@ -435,7 +455,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{683A1593-055F-080B-13C7-CCF734EE2ED9}">
+		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{42F653BA-C544-B084-DCF5-B1BA93BA66E1}">
 			<ShortName>NonIngameMusic_SoundBank</ShortName>
 			<Path>NonIngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -476,6 +496,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="4233560256" Name="Play_Pause" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="885853930"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="890527358" Name="Stop_MainMenu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3298098222" Name="Stop_Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
@@ -491,5 +516,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1E0095DA-7C97-3A33-5BAB-63C7A75CAFE2}</FileHash>
+	<FileHash>{25AC2BB6-643A-CC6B-0542-548C9D371604}</FileHash>
 </SoundBanksInfo>
