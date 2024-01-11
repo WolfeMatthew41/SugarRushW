@@ -19,12 +19,14 @@ public class PauseScript : MonoBehaviour
             PauseMenu.SetActive(true);
             Time.timeScale = 0f;
             _isPaused = true;
+            AkSoundEngine.SetState("GameStates", "Pause");
         }
         else 
         {
             PauseMenu.SetActive(false);
             Time.timeScale = 1f;
             _isPaused = false;
+            AkSoundEngine.SetState("GameStates", "Ingame");
         }
 
     }

@@ -67,7 +67,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{29A63240-C9EE-18AC-4ECF-0EA80D999051}">
+		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{88C2DB14-12F9-537A-C01A-D1D178C9FDC6}">
 			<ShortName>IngameMusic_SoundBank</ShortName>
 			<Path>IngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -195,6 +195,10 @@
 					<ShortName>SugarRush_120bpm_4-4_Normal_Base.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Normal_Base_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="885853930" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
+					<CachePath>SFX/SugarRush_120bpm_4-4_Pause_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="1008994935" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Normal_Marimba_4.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Normal_Marimba_4_FBC78EF0.wem</CachePath>
@@ -205,6 +209,7 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="709975500" Name="Pause_IngameMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3799629626" Name="Play_IngameMusic" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -281,6 +286,17 @@
 									<SwitchValue GroupType="State" GroupId="4069290704" Id="3671647190"/>
 									<MediaRefs>
 										<MediaRef Id="39179202"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="777429653" Id="3092587493"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="4069290704" Id="0"/>
+									<MediaRefs>
+										<MediaRef Id="885853930"/>
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
@@ -516,5 +532,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{94E62C69-72C7-AEF0-5717-36FC55653B0D}</FileHash>
+	<FileHash>{44B5B7B0-C452-6A7E-AF7C-8D55F7D6835F}</FileHash>
 </SoundBanksInfo>

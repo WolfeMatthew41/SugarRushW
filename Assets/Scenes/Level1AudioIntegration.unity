@@ -1803,6 +1803,10 @@ PrefabInstance:
       propertyPath: Stop_Pause.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 02b31950cea1b56479747a37319d40bb, type: 2}
+    - target: {fileID: 6333390167832789902, guid: b9cd886be9c8a8d43862a927e8ad545b, type: 3}
+      propertyPath: Pause_IngameMusic.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 371c919b060bf4c4db4f3c760adf5c4d, type: 2}
     - target: {fileID: 6653243864860568941, guid: b9cd886be9c8a8d43862a927e8ad545b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.8268723

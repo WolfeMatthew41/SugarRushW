@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584965950468769183
+    m_lastTime: -8584965940934526045
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -156,8 +156,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584965950630374050
+    m_lastTime: -8584965941084516435
     List:
+    - name: Pause_IngameMusic
+      guid: 6ba3fa97d8cce6408abe9b116a5649be
+      id: 709975500
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Pause_IngameMusic
+        ObjectType: 3
+        guid: 6ba3fa97d8cce6408abe9b116a5649be
+      Path: Events\Default Work Unit\Pause_IngameMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_EmptyAudioTest
       guid: 917f92e5d2d7f34ba6d2755d99259249
       id: 520202705
