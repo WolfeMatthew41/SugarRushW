@@ -8,6 +8,7 @@ public class GoodFruit : MonoBehaviour
 
     PlayerEnergy playerEnergy;
     private bool hasEventBeenTriggered = false;
+    private bool fruitAlive = true;
     public AK.Wwise.Event Play_GoodOrBadFruit;
 
     void Awake()
@@ -17,26 +18,36 @@ public class GoodFruit : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(playerEnergy.currentEnergy < playerEnergy.maxEnergy)
+        if (fruitAlive)
+        {
+            GoodFruitSwitch("GoodFruit");
+
+            //we have to play event only once
+            if (!hasEventBeenTriggered)
+            {
+                if (other.CompareTag("Player"))
+                {
+                    PlayFruit();
+                    hasEventBeenTriggered = true;
+                }
+
+            }
+        }
+
+        if (playerEnergy.currentEnergy < playerEnergy.maxEnergy)
         {
             Destroy(gameObject);
+            fruitAlive = false;
             playerEnergy.currentEnergy += energyBonus;
         }
         Debug.Log("Player Entered");
-        GoodFruitSwitch("GoodFruit");
-
-        //we have to play event only once
-        if (!hasEventBeenTriggered)
-        {
-            if (other.CompareTag("Player"))
-            {
-                PlayFruit();
-                hasEventBeenTriggered = true;
-            }
-            
-        }
+        
+      
+       
         
     }
+
+
     private void OnTriggerExit(Collider other)
     {
       

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 040167dc4ddf6a40a296ec7ab0368e2a
     GuidInternal: 
-    m_lastTime: -8584966901813333900
+    m_lastTime: -8584966125846836689
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584966162107721064
+    m_lastTime: -8584966125846646631
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -156,7 +156,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584966176895501835
+    m_lastTime: -8584966125861446543
     List:
     - name: Play_EmptyAudioTest
       guid: 917f92e5d2d7f34ba6d2755d99259249
@@ -272,7 +272,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: e854aa4f62a781469e4c8c0d3dcba420
     GuidInternal: 
-    m_lastTime: -8584966926387897514
+    m_lastTime: -8584966105828261433
     List:
     - name: EnergyLevelRTPC
       guid: c265fab91622604096d6d859739ee63f
@@ -478,7 +478,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8a3375716ecce44a9a9bcf149d21e80b
     GuidInternal: 
-    m_lastTime: -8584966176895521846
+    m_lastTime: -8584966105828231426
     List:
     - name: EnergyLevel
       guid: 9caf3507a266fc48bb72240c8421060c
@@ -661,7 +661,7 @@ MonoBehaviour:
     m_lastTime: -8584968665000232781
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 03000000040000000500000006000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
