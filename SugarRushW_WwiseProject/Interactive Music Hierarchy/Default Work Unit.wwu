@@ -2214,7 +2214,7 @@
 								<ObjectList Name="Entries">
 									<Reference>
 										<Local>
-											<MultiSwitchEntry Name="" ID="{97B1D922-1F61-4B7B-A6E1-6FEF09C359C5}">
+											<MultiSwitchEntry Name="" ID="{C6FDB796-D18A-442F-AD2C-9C3A1605C5C8}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
 														<ObjectRef Name="HighEnergyM" ID="{145D0938-3EBE-4AB5-B3DB-0CA7663C4628}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
@@ -2232,7 +2232,7 @@
 									</Reference>
 									<Reference>
 										<Local>
-											<MultiSwitchEntry Name="" ID="{28BA4BFC-1809-4A7A-A43E-61E586826A6E}">
+											<MultiSwitchEntry Name="" ID="{1F797DE3-ACC7-4FB9-A4B3-B008F33236AE}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
 														<ObjectRef Name="LowEnergyM" ID="{EBDD34FC-9B54-44B5-97FB-5E4E3FE6825F}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
@@ -2250,7 +2250,7 @@
 									</Reference>
 									<Reference>
 										<Local>
-											<MultiSwitchEntry Name="" ID="{1E59C14A-A445-4D27-B437-8B18604E3CC1}">
+											<MultiSwitchEntry Name="" ID="{FF4FDA54-9DEB-40C2-8660-C78D45C2CB44}">
 												<ReferenceList>
 													<Reference Name="AudioNode">
 														<ObjectRef Name="NormalEnergyM" ID="{267535BB-C5AF-423E-9512-1AEE66918C4C}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>

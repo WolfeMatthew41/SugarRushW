@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FruitSpawnPoint
   - Dirt
+  - Grass
   layers:
   - Default
   - TransparentFX
