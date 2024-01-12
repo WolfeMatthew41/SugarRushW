@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PAUSE_INGAMEMUSIC = 709975500U;
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
+        static const AkUniqueID PLAY_BUTTONCLICK = 3548535810U;
         static const AkUniqueID PLAY_EMPTYAUDIOTEST = 520202705U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
         static const AkUniqueID PLAY_FRUITGLOW = 520175615U;
@@ -24,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_NONINGAMEMUSIC = 3584345201U;
         static const AkUniqueID PLAY_SLEEP = 3734418179U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
+        static const AkUniqueID PLAY_UI_SOUND_BUTTONCLICK = 624353645U;
         static const AkUniqueID PLAY_VICTORY = 2453267296U;
         static const AkUniqueID STOP_AMBIENCE = 2477713992U;
         static const AkUniqueID STOP_FRUITGLOW = 3338478285U;

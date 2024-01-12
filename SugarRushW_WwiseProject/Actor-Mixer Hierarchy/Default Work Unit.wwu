@@ -977,6 +977,59 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Folder Name="UI" ID="{8E9AE560-B042-40F2-BFCE-195453BC1F06}" ShortID="95365769">
+					<ChildrenList>
+						<Sound Name="ButtonClick" ID="{66AA653E-E59F-4852-A3FF-18732320B19B}" ShortID="437614505">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Sound_ButtonClick" ID="{2153794B-F928-43D4-B74B-23D3BE19AA6D}">
+									<Language>SFX</Language>
+									<AudioFile>UI_Sound_ButtonClick.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="342973284"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Sound_ButtonClick" ID="{2153794B-F928-43D4-B74B-23D3BE19AA6D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_Sound_ButtonClick" ID="{A8108027-6096-45D8-85E2-9C292BE19BCB}" ShortID="687448716">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Sound_ButtonClick" ID="{5CE0ECE1-2725-4552-82E4-FE834A13735B}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.163670526379771"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.24279601264284"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>UI_Sound_ButtonClick.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="623527167"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Sound_ButtonClick" ID="{5CE0ECE1-2725-4552-82E4-FE834A13735B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

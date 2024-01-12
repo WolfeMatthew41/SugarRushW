@@ -379,7 +379,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{66A8E7F6-6DAA-7863-57C4-48568B02F875}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{78298F02-EFBE-3939-DE72-7B02A5BF1B25}">
 			<ShortName>SFX_SoundBank</ShortName>
 			<Path>SFX_SoundBank.bnk</Path>
 			<Media>
@@ -391,6 +391,10 @@
 					<ShortName>SugarRush_Character_Newstep003.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_Newstep003_818F3B66.wem</CachePath>
 				</File>
+				<File Id="342973284" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Sound_ButtonClick.wav</ShortName>
+					<CachePath>SFX/UI_Sound_ButtonClick_818F3B66.wem</CachePath>
+				</File>
 				<File Id="546350154" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Items_FruitGlow02.wav</ShortName>
 					<CachePath>SFX/SugarRush_Items_FruitGlow02_FBC78EF0.wem</CachePath>
@@ -398,6 +402,10 @@
 				<File Id="557175082" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Character_Eat.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_Eat_818F3B66.wem</CachePath>
+				</File>
+				<File Id="623527167" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Sound_ButtonClick.wav</ShortName>
+					<CachePath>SFX/UI_Sound_ButtonClick_4B28B8AA.wem</CachePath>
 				</File>
 				<File Id="631280473" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Character_Voice_BadFruitUGH.wav</ShortName>
@@ -449,6 +457,11 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3548535810" Name="Play_ButtonClick" DurationType="OneShot" DurationMin="0.74302083" DurationMax="0.74302083">
+					<MediaRefs>
+						<MediaRef Id="342973284"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="520202705" Name="Play_EmptyAudioTest" DurationType="OneShot" DurationMin="21.763" DurationMax="21.763">
 					<MediaRefs>
 						<MediaRef Id="925127407"/>
@@ -499,6 +512,11 @@
 				<Event Id="2752533807" Name="Play_TestSound" DurationType="OneShot" DurationMin="16" DurationMax="16">
 					<MediaRefs>
 						<MediaRef Id="1065132318"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="624353645" Name="Play_UI_Sound_ButtonClick" DurationType="OneShot" DurationMin="0.24279602" DurationMax="0.24279602">
+					<MediaRefs>
+						<MediaRef Id="623527167"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2477713992" Name="Stop_Ambience" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -611,5 +629,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C8F61DA7-EB8E-32B5-A27F-2876585F2E45}</FileHash>
+	<FileHash>{3404C238-71F5-A193-55D3-0F072F886DBB}</FileHash>
 </SoundBanksInfo>
