@@ -29,17 +29,19 @@ public class BadFruit : MonoBehaviour
                 {
                     PlayFruit();
                     hasEventBeenTriggered = true;
+
+                    if (playerEnergy.currentEnergy > 0)
+                    {
+                        Destroy(gameObject);
+                        fruitAlive = false;
+                        playerEnergy.currentEnergy -= energyDecrease;
+                    }
+                    Debug.Log("Player Entered");
                 }
 
             }
         }
-        if (playerEnergy.currentEnergy > 0)
-        {
-            Destroy(gameObject);
-            fruitAlive = false;
-            playerEnergy.currentEnergy -= energyDecrease;
-        }
-        Debug.Log("Player Entered");
+
 
         
     }
