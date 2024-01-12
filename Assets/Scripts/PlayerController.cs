@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0.0f, angle, 0.0f);
        
         currentAngle = angle;
-        Debug.Log(currentAngle);
+        //Debug.Log(currentAngle);
         
     }
 

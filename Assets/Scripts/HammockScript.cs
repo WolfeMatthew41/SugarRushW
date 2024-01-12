@@ -9,8 +9,10 @@ public class HammockScript : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
+        
         if (other.collider.CompareTag("Player"))
         {
+            
             //Fling the player code here
             other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * _bounce, ForceMode.Impulse);
         }
