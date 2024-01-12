@@ -22,7 +22,9 @@ namespace AK
         static const AkUniqueID PLAY_INGAMEMUSIC = 3799629626U;
         static const AkUniqueID PLAY_MAINMENU = 3738780720U;
         static const AkUniqueID PLAY_NONINGAMEMUSIC = 3584345201U;
+        static const AkUniqueID PLAY_SLEEP = 3734418179U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
+        static const AkUniqueID PLAY_VICTORY = 2453267296U;
         static const AkUniqueID STOP_AMBIENCE = 2477713992U;
         static const AkUniqueID STOP_FRUITGLOW = 3338478285U;
         static const AkUniqueID STOP_INGAMEMUSIC = 1319671012U;
@@ -66,6 +68,7 @@ namespace AK
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OUTOFENERGY = 1274144392U;
                 static const AkUniqueID SLEEP = 3671647190U;
+                static const AkUniqueID VICTORY = 2716678721U;
             } // namespace STATE
         } // namespace PLAYERSTATES
 
