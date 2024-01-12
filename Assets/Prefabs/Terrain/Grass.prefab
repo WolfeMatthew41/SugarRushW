@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 9162026209757860897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.284, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6779818148180023223}
@@ -41,15 +41,16 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9162026209757860897}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
+  m_LocalReferencePoint: {x: 0.03882277, y: 0.61859125, z: -0.08515}
+  m_Size: 2.0776455
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
   - screenRelativeHeight: 0.039783742
     fadeTransitionWidth: 0
-    renderers: []
+    renderers:
+    - renderer: {fileID: 5646929490217774296}
   m_Enabled: 1
 --- !u!1001 &6457169909443539036
 PrefabInstance:
@@ -99,6 +100,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3ec37a968373766448cad8496c5bd94b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00e0032eef7b1f348ac4ea7541ddcc9b, type: 2}
     - target: {fileID: 919132149155446097, guid: 3ec37a968373766448cad8496c5bd94b, type: 3}
       propertyPath: m_Name
       value: Grass
@@ -108,6 +113,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ec37a968373766448cad8496c5bd94b, type: 3}
+--- !u!23 &5646929490217774296 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 3ec37a968373766448cad8496c5bd94b, type: 3}
+  m_PrefabInstance: {fileID: 6457169909443539036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6779818148180023223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3ec37a968373766448cad8496c5bd94b, type: 3}
