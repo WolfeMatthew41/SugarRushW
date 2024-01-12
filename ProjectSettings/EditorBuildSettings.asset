@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: bb2869f1c6a37a14f9efa46b5a7be40a
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/TestRush.unity
+    guid: 8d58aced397a7b24dae8bc842a38c8a8
+  - enabled: 1
     path: Assets/Scenes/Level1DemoTest.unity
     guid: 5d7cee6ef361a424984c51e8925a9204
-  - enabled: 1
-    path: Assets/Scenes/Level1AudioIntegration.unity
-    guid: cdf8c13f87fd37b43a837edd1799f043
   m_configObjects: {}
