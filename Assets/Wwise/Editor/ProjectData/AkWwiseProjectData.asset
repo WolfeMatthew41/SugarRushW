@@ -224,8 +224,8 @@ MonoBehaviour:
         guid: 29e12959975638448c0ea83fb893bb82
       Path: Events\Default Work Unit\Play_Footstep
       maxAttenuation: 0
-      maxDuration: 0.7004163
-      minDuration: 0.3488982
+      maxDuration: 0.43313003
+      minDuration: 0.22593562
     - name: Play_FruitGlow
       guid: 5f0ca87d66019146a48490f90238c3ac
       id: 520175615
