@@ -36,24 +36,26 @@ public class GoodFruit : MonoBehaviour
                 {
                     PlayFruit();
                     hasEventBeenTriggered = true;
+
+                    if (playerEnergy.currentEnergy < playerEnergy.maxEnergy)
+                    {
+                        StopFruitGlow();
+                        fruitAlive = false;
+                        if (!fruitAlive)
+                        {
+                            StopFruitGlow();
+                        }
+                        Destroy(gameObject);
+
+                        playerEnergy.currentEnergy += energyBonus;
+                    }
+                    Debug.Log("Player Entered");
                 }
 
             }
         }
 
-        if (playerEnergy.currentEnergy < playerEnergy.maxEnergy)
-        {
-            StopFruitGlow();
-            fruitAlive = false;
-            if (!fruitAlive)
-            {
-                StopFruitGlow();
-            }
-            Destroy(gameObject);
-            
-            playerEnergy.currentEnergy += energyBonus;
-        }
-        Debug.Log("Player Entered");
+
         
       
        
