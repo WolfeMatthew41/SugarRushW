@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameOverScript : MonoBehaviour
 {
 
+ 
+
     public void OnRetry()
     {
         Time.timeScale = 1f;

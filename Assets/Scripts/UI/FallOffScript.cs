@@ -13,6 +13,7 @@ public class FallOffScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             OnRushOut();
+           
         }
     }
 

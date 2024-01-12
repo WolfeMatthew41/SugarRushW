@@ -197,6 +197,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Sleep" ID="{CEC874D8-04BF-4599-9B8B-5C874F420AEC}">
+					<ChildrenList>
+						<Action Name="" ID="{B68D0A39-E2EA-409D-A12A-47D76B6D98EC}" ShortID="269438475">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sleep" ID="{29DC1996-AB4A-4E4E-9645-40525AC47852}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Victory" ID="{4A12819B-1E4B-4A30-BF9F-1851B8C24049}">
+					<ChildrenList>
+						<Action Name="" ID="{A1EDD1DB-1F33-4A63-9F3F-081A7FE9730F}" ShortID="978127155">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{29DC3324-82F2-448E-9838-B0FC191AAD48}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -15,6 +15,7 @@ public class VictoryScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             OnVictory();
+            AkSoundEngine.SetState("PlayerStates", "Victory");
         }
     }//*/
 

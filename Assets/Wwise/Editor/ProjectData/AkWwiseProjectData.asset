@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584965876175047502
+    m_lastTime: -8584965192315376410
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -156,7 +156,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584965876430824292
+    m_lastTime: -8584965192315346413
     List:
     - name: Pause_IngameMusic
       guid: 6ba3fa97d8cce6408abe9b116a5649be
@@ -328,6 +328,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Sleep
+      guid: d874c8cebf0499459b8b5c874f420aec
+      id: 3734418179
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_Sleep
+        ObjectType: 3
+        guid: d874c8cebf0499459b8b5c874f420aec
+      Path: Events\Default Work Unit\Play_Sleep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_TestSound
       guid: abf90c7fb752304e86e3d2119ae639ad
       id: 2752533807
@@ -470,7 +487,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 114c8cc6c7bda84f9c49880460240feb
     GuidInternal: 
-    m_lastTime: -8584965893883640039
+    m_lastTime: -8584965181336000251
     List:
     - name: GameStates
       guid: 17d4da35f901dd468fe853381e4ecb67
@@ -699,6 +716,22 @@ MonoBehaviour:
         - ElementName: Sleep
           ObjectType: 8
           guid: 78d42aabcfeb784797a40e2c172be566
+      - name: Victory
+        guid: 7f9b0001fbc84e4689d16d5b77d8d2f1
+        id: 2716678721
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 114c8cc6c7bda84f9c49880460240feb
+        - ElementName: PlayerStates
+          ObjectType: 9
+          guid: 1242660e00f5fb4ca393ca2c77da4cb9
+        - ElementName: Victory
+          ObjectType: 8
+          guid: 7f9b0001fbc84e4689d16d5b77d8d2f1
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -947,7 +980,7 @@ MonoBehaviour:
     m_lastTime: -8584968665000232781
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000001100000012000000160000001700000018000000c0000000c1000000c7000000c8000000
+  ExpandedWaapiItemIds: 05000000060000000700000011000000120000001600000017000000180000001d0000001e0000001f000000c0000000c1000000c7000000c8000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
