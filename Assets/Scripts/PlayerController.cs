@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
             _direction = new Vector3(_input.x, 0.0f, _input.y); //Facing forward ^^^
             movementDirection = 0;
         }
-        
+
     }
 
     public void OnJump(InputAction.CallbackContext context)
