@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 908ca6a7e0f225c42ab648bef667ba64
+guid: 3ec37a968373766448cad8496c5bd94b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,63 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Blush
-    second: {fileID: 2100000, guid: 3fb8124f7231e224b9150c29f703615b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Blush.001
-    second: {fileID: 2100000, guid: 4d6a99028ee5bcd40b8e68777d958e2b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: EyeL
-    second: {fileID: 2100000, guid: b61fa552b5becf041826a55e8bec046d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: EyeR
-    second: {fileID: 2100000, guid: 1eaf900acb65f9546bab58e404510ed3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: ade03469282606d4bae41603105ed5e3, type: 2}
+    second: {fileID: 2100000, guid: 69cb743334caa34439c9ad62130d147a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: df52da540d74d0a4da7a60a335265f48, type: 2}
+    second: {fileID: 2100000, guid: 8b9a93cd9f55acd49ae1e7b0bb0e4e5a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.002
-    second: {fileID: 2100000, guid: 123dad323cae5a9428435ca00a236fbe, type: 2}
+    second: {fileID: 2100000, guid: 329fe220c31e3924293791a0d99bc01a, type: 2}
   - first:
-      type: UnityEngine:Material
+      type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: d86cd72dd92d2bd42af2fe1ede7e7144, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.004
-    second: {fileID: 2100000, guid: eb30113f3eb33b248ac50e3abc7825b6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.005
-    second: {fileID: 2100000, guid: 4153ff83563b4334ab59c0268b9ce359, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.006
-    second: {fileID: 2100000, guid: 9bf0901f5b100f0449a6d9b9397bd619, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mouth
-    second: {fileID: 2100000, guid: 024d92f2cd92c474ba94744fb88ce5a5, type: 2}
+      name: GrassBladesTexture
+    second: {fileID: 2800000, guid: 4cef56c244c98e44189fcac203ad8ef9, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
