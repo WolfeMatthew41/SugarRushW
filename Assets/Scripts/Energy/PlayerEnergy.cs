@@ -9,6 +9,8 @@ public class PlayerEnergy : MonoBehaviour
 
     public EnergySystem energyBar;
 
+    public GameObject GameOverMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +27,20 @@ public class PlayerEnergy : MonoBehaviour
     void DecreaseEnergy()
     {
         int energy = 1;
-        if(currentEnergy > 0)
+        if (currentEnergy > 0)
         {
             currentEnergy -= energy;
             energyBar.SetEnergy(currentEnergy);
-        }     
+        }
+        else
+        {
+            OnRushOut();
+        }
+    }
+
+    public void OnRushOut()
+    {
+        GameOverMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
 }
