@@ -31,6 +31,7 @@ public class VictoryScript : MonoBehaviour
         public void OnVictory()
     {
         VictoryMenu.SetActive(true);
+        AkSoundEngine.SetState("PlayerStates", "Victory");
         Time.timeScale = 0f;
     }
 

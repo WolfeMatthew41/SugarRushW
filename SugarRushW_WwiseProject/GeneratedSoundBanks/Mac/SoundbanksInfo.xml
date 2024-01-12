@@ -47,6 +47,7 @@
 						<State Id="748895195" Name="None"/>
 						<State Id="1151176110" Name="Awake"/>
 						<State Id="1274144392" Name="OutOfEnergy"/>
+						<State Id="2716678721" Name="Victory"/>
 						<State Id="3671647190" Name="Sleep"/>
 					</States>
 				</StateGroup>
@@ -80,7 +81,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{88C2DB14-12F9-537A-C01A-D1D178C9FDC6}">
+		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{F239984A-8913-28C1-F716-A3E956C1BD37}">
 			<ShortName>IngameMusic_SoundBank</ShortName>
 			<Path>IngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -132,13 +133,13 @@
 					<ShortName>SugarRush_120bpm_4-4_Fast_Xylophone_2.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Fast_Xylophone_2_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="266400666" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SugarRush_120bpm_4-4_Slow_Xylophone_4.wav</ShortName>
-					<CachePath>SFX/SugarRush_120bpm_4-4_Slow_Xylophone_4_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="283471362" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Normal_Xylophone_4.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Normal_Xylophone_4_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="301751640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sugar Rush Win.wav</ShortName>
+					<CachePath>SFX/Sugar Rush Win_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="361617025" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Fast_Violins_2.wav</ShortName>
@@ -212,6 +213,10 @@
 					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Pause_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="968189754" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sugar Rush Loose.wav</ShortName>
+					<CachePath>SFX/Sugar Rush Loose_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="1008994935" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Normal_Marimba_4.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Normal_Marimba_4_FBC78EF0.wem</CachePath>
@@ -256,7 +261,6 @@
 											<MediaRefs>
 												<MediaRef Id="115288702"/>
 												<MediaRef Id="167560107"/>
-												<MediaRef Id="266400666"/>
 												<MediaRef Id="424010406"/>
 												<MediaRef Id="476538838"/>
 												<MediaRef Id="567027002"/>
@@ -299,6 +303,7 @@
 									<SwitchValue GroupType="State" GroupId="4069290704" Id="3671647190"/>
 									<MediaRefs>
 										<MediaRef Id="39179202"/>
+										<MediaRef Id="968189754"/>
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
@@ -310,6 +315,29 @@
 									<SwitchValue GroupType="State" GroupId="4069290704" Id="0"/>
 									<MediaRefs>
 										<MediaRef Id="885853930"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="777429653" Id="0"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="4069290704" Id="3671647190"/>
+									<MediaRefs>
+										<MediaRef Id="39179202"/>
+										<MediaRef Id="968189754"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="777429653" Id="984691642"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="4069290704" Id="2716678721"/>
+									<MediaRefs>
+										<MediaRef Id="301751640"/>
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
@@ -335,6 +363,7 @@
 						<State Id="748895195" Name="None"/>
 						<State Id="1151176110" Name="Awake"/>
 						<State Id="1274144392" Name="OutOfEnergy"/>
+						<State Id="2716678721" Name="Victory"/>
 						<State Id="3671647190" Name="Sleep"/>
 					</States>
 				</StateGroup>
@@ -504,10 +533,18 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{2415A6B3-DCE5-C6A5-A510-73899B4C91A8}">
+		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{F59C86C0-D964-E7DF-73BE-9D7F7900CFB3}">
 			<ShortName>NonIngameMusic_SoundBank</ShortName>
 			<Path>NonIngameMusic_SoundBank.bnk</Path>
 			<Media>
+				<File Id="39179202" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_Voice_Snoring-01.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_Voice_Snoring-01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="301751640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sugar Rush Win.wav</ShortName>
+					<CachePath>SFX/Sugar Rush Win_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="568555732" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_MainMenu.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_MainMenu_FBC78EF0.wem</CachePath>
@@ -519,6 +556,10 @@
 				<File Id="885853930" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Pause_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="968189754" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sugar Rush Loose.wav</ShortName>
+					<CachePath>SFX/Sugar Rush Loose_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -545,6 +586,17 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3734418179" Name="Play_Sleep" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="39179202"/>
+						<MediaRef Id="968189754"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2453267296" Name="Play_Victory" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
+					<MediaRefs>
+						<MediaRef Id="301751640"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="890527358" Name="Stop_MainMenu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<StateGroups>
@@ -559,5 +611,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DAAD2AF3-E688-7234-B363-31DCF97BAB7A}</FileHash>
+	<FileHash>{C80B0E72-C00C-6949-0736-3CC1FCAD96E6}</FileHash>
 </SoundBanksInfo>

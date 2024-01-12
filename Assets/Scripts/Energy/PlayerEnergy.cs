@@ -41,6 +41,7 @@ public class PlayerEnergy : MonoBehaviour
     public void OnRushOut()
     {
         GameOverMenu.SetActive(true);
+        AkSoundEngine.SetState("PlayerStates", "Sleep");
         Time.timeScale = 0f;
     }
 }
