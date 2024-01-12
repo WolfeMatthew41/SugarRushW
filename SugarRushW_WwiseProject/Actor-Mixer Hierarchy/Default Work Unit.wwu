@@ -73,6 +73,11 @@
 							<ChildrenList>
 								<Sound Name="SugarRush_Character_DirtFootstep01" ID="{E43E5592-A792-4F3B-B041-30D52D67E04F}" ShortID="308378386">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -110,6 +115,11 @@
 								</Sound>
 								<Sound Name="SugarRush_Character_DirtFootstep02" ID="{6EAC9AE0-78A4-4D08-A498-B1B4F3422AAB}" ShortID="483957780">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -147,6 +157,11 @@
 								</Sound>
 								<Sound Name="SugarRush_Character_DirtFootstep03" ID="{06C631D3-3F61-4BEE-9382-635EA3DA6D56}" ShortID="117369841">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -182,6 +197,80 @@
 										<ActiveSource Name="SugarRush_Character_DirtFootstep03" ID="{5DE33BD0-6E86-4A04-8992-81DDA1DB62B9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="SugarRush_Character_Newstep001" ID="{D37645B7-9E8D-4891-A2CC-203C1DDC5041}" ShortID="654788209">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{108DD188-B3D6-4CF6-B9D6-9F111D28389D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_Newstep001" ID="{B11BD890-5A2D-44F9-AFE5-FC0EEDD77E2C}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_Newstep001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1013674065"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_Newstep001" ID="{B11BD890-5A2D-44F9-AFE5-FC0EEDD77E2C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SugarRush_Character_Newstep002" ID="{8A302216-847D-4D67-A427-2A99AA1F2B21}" ShortID="390754314">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DFED8D23-9073-4622-96D3-6C008D293B5E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_Newstep002" ID="{2666F6ED-B5FE-4C5A-A724-6304FD83F2D6}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_Newstep002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="846486220"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_Newstep002" ID="{2666F6ED-B5FE-4C5A-A724-6304FD83F2D6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Grass" ID="{F30769A1-6F07-4002-A9ED-00C406647EBF}" ShortID="630895444">
@@ -196,6 +285,11 @@
 							<ChildrenList>
 								<Sound Name="SugarRush_Character_GrassFootstep01" ID="{788590D4-83A2-4140-BED8-8E9211686BC4}" ShortID="470340293">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -233,6 +327,11 @@
 								</Sound>
 								<Sound Name="SugarRush_Character_GrassFootstep02" ID="{EB092151-B7A0-4881-A02A-0EC68E27AC29}" ShortID="126550344">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -270,6 +369,11 @@
 								</Sound>
 								<Sound Name="SugarRush_Character_GrassFootstep03" ID="{655762AA-AD32-4E68-B868-E96455F9B4B4}" ShortID="806077740">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -303,6 +407,80 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="SugarRush_Character_GrassFootstep03" ID="{E66A152B-8E81-485A-8BA8-AF459ED3B83B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SugarRush_Character_Newstep003" ID="{85549F0B-8150-44BF-9054-AFD691D76E81}" ShortID="429810594">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{244E7493-5CF4-45F5-8E90-1EF8EE9B14D0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_Newstep003" ID="{1B28A77A-1F21-4175-962D-C001E8A2C742}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_Newstep003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="230120102"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_Newstep003" ID="{1B28A77A-1F21-4175-962D-C001E8A2C742}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SugarRush_Character_Newstep004" ID="{82C328FB-F62B-46EF-A431-6F7B2C164306}" ShortID="681778208">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CA1432A5-5992-4C3B-B299-D6DC6996F267}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SugarRush_Character_Newstep004" ID="{EE844C39-083F-4A5D-8FBA-4CE3704B6C71}">
+											<Language>SFX</Language>
+											<AudioFile>SugarRush_Character_Newstep004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="632568252"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SugarRush_Character_Newstep004" ID="{EE844C39-083F-4A5D-8FBA-4CE3704B6C71}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
