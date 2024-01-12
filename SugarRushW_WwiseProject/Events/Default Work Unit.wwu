@@ -197,6 +197,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Sleep" ID="{CEC874D8-04BF-4599-9B8B-5C874F420AEC}">
+					<ChildrenList>
+						<Action Name="" ID="{B68D0A39-E2EA-409D-A12A-47D76B6D98EC}" ShortID="269438475">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sleep" ID="{29DC1996-AB4A-4E4E-9645-40525AC47852}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Victory" ID="{4A12819B-1E4B-4A30-BF9F-1851B8C24049}">
+					<ChildrenList>
+						<Action Name="" ID="{A1EDD1DB-1F33-4A63-9F3F-081A7FE9730F}" ShortID="978127155">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{29DC3324-82F2-448E-9838-B0FC191AAD48}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ButtonClick" ID="{A57F3E16-34E1-4A0C-BE9A-4BC422EAA260}">
+					<ChildrenList>
+						<Action Name="" ID="{6085BF8C-2676-4379-AB2B-8DA6472A5BA4}" ShortID="68056055">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ButtonClick" ID="{66AA653E-E59F-4852-A3FF-18732320B19B}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Sound_ButtonClick" ID="{DDADA20D-E424-43FF-896C-44BDF53DA225}">
+					<ChildrenList>
+						<Action Name="" ID="{AEB4D9F3-B590-4990-A41D-20D300CE4968}" ShortID="438912228">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Sound_ButtonClick" ID="{A8108027-6096-45D8-85E2-9C292BE19BCB}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
