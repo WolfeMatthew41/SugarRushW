@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4866936017238385934}
   m_Layer: 0
   m_Name: Puff
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,6 +75,10 @@ MonoBehaviour:
   _currentVelocity: 0
   _gravity: -9.81
   gravityMultiplyer: 3
+  Play_Footstep:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!143 &4866936017238385934
 CharacterController:
   m_ObjectHideFlags: 0
