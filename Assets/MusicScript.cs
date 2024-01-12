@@ -15,6 +15,7 @@ public class MusicScript : MonoBehaviour
 
 
     public AK.Wwise.Event playIngameEvent;
+    public AK.Wwise.Event playAmbienceEvent;
 
     
     public Slider rtpcSlider;
@@ -22,24 +23,29 @@ public class MusicScript : MonoBehaviour
     
     private const string gameStateGroupName = "GameStates";
     private const string playerStateGroupName = "PlayerStates";
+    private const string pauseStateGroupName = "PauseStates";
 
     
     private const string gameState = "Ingame";
     private const string playerStateAwake = "Awake";
     private const string playerStateOutOfEnergy = "OutOfEnergy";
     private const string playerStateSleep = "Sleep";
+    private const string pauseStateOff = "PauseOff";
 
     void Start()
     {
         
         rtpcSlider.onValueChanged.AddListener(OnSliderValueChanged);
 
-        
-        PlayIngame();
+        SetPauseState(pauseStateOff);
 
-        
+        PlayIngame();
+        PlayAmbience();
+
+
         SetGameState(gameState);
         SetPlayerState(playerStateAwake);
+        
     }
 
     void Update()
@@ -120,6 +126,14 @@ public class MusicScript : MonoBehaviour
         
         Debug.Log($"State {state} set for {playerStateGroupName}");
     }
+    void SetPauseState(string state)
+    {
+
+        AkSoundEngine.SetState(pauseStateGroupName, state);
+
+
+        Debug.Log($"State {state} set for {pauseStateGroupName}");
+    }
 
     // set player state to OutOfEnergy
     void OnOutOfEnergy()
@@ -140,5 +154,22 @@ public class MusicScript : MonoBehaviour
     {
         
         SetPlayerState(playerStateSleep);
+    }
+
+
+    void PlayAmbience()
+    {
+        
+
+        if (playAmbienceEvent != null)
+        {
+
+            playAmbienceEvent.Post(gameObject);
+        }
+        else
+        {
+
+            Debug.LogWarning("No assigned Wwise event");
+        }
     }
 }

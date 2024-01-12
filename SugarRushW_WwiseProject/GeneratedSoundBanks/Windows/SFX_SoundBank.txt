@@ -1,7 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
+	278617630	Play_Ambience			\Default Work Unit\Play_Ambience	
 	520175615	Play_FruitGlow			\Default Work Unit\Play_FruitGlow	
 	520202705	Play_EmptyAudioTest			\Default Work Unit\Play_EmptyAudioTest	
 	1602358412	Play_Footstep			\Default Work Unit\Play_Footstep	
+	2477713992	Stop_Ambience			\Default Work Unit\Stop_Ambience	
 	2752533807	Play_TestSound			\Default Work Unit\Play_TestSound	
 	2781998183	Play_GoodOrBadFruit			\Default Work Unit\Play_GoodOrBadFruit	
 	3338478285	Stop_FruitGlow			\Default Work Unit\Stop_FruitGlow	
@@ -16,6 +18,14 @@ Switch	ID	Name	Switch Group			Notes
 	229773992	BadFruit	GoodOrBadFruit			
 	1899661724	GoodFruit	GoodOrBadFruit			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3954002147	PauseStates			\Default Work Unit\PauseStates	
+
+State	ID	Name	State Group			Notes
+	80751710	PauseOn	PauseStates			
+	748895195	None	PauseStates			
+	3921005316	PauseOff	PauseStates			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	124480272	SugarRush_Character_Voice_Yummy	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Character_Voice_Yummy_FA57E0F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\GoodOrBadFruit\GoodFruit\GoodFruitBlend\SugarRush_Character_Voice_Yummy		94674
 	207380700	SugarRush_Character_GrassFootstep03	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Character_GrassFootstep03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\SugarRush_Character_GrassFootstep03		119904
@@ -26,8 +36,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	583404404	SugarRush_Character_DirtFootstep03	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Character_DirtFootstep03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Dirt\SugarRush_Character_DirtFootstep03		77844
 	631280473	SugarRush_Character_Voice_BadFruitUGH	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Character_Voice_BadFruitUGH_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\GoodOrBadFruit\BadFruit\BadFruitBlend\SugarRush_Character_Voice_BadFruitUGH		59848
 	748659744	SugarRush_Character_GrassFootstep01	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Character_GrassFootstep01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\SugarRush_Character_GrassFootstep01		85980
+	762352928	SugarRush_Ambience_CalmOutdoors	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\Sugar Rush Ambience 2_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\SugarRush_Ambience_CalmOutdoors		3984876
 	824552167	SugarRush_Character_GrassFootstep02	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Character_GrassFootstep02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Grass\SugarRush_Character_GrassFootstep02		80372
-	925127407	EmptyAudioTest	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\EmptyAudioTest_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\EmptyAudioTest		356072
+	925127407	EmptyAudioTest	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\EmptyAudioTest_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\EmptyAudioTest		4178592
 	985948447	SugarRush_Items_FruitGlow01	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_Items_FruitGlow01_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\FruitGlow\SugarRush_Items_FruitGlow01		3365632
 	1065132318	TestSound	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Windows\SFX\SugarRush_120bpm_4-4_Pause_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound		3072096
 

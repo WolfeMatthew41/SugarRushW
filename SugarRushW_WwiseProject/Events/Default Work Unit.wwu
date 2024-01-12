@@ -172,6 +172,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Ambience" ID="{9FF7A459-9164-4DE8-9D14-2D94FD2B5E0B}">
+					<ChildrenList>
+						<Action Name="" ID="{FA1708AE-E47B-4BB5-B0E5-087351CDB213}" ShortID="168422973">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SugarRush_Ambience_CalmOutdoors" ID="{7643AC58-A968-48AB-A3B7-55F32B48C25E}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience" ID="{F2584FE2-5F0F-41DD-BF26-F504D2E48C79}">
+					<ChildrenList>
+						<Action Name="" ID="{CD407775-C912-4767-A9AB-1E8E620B4BD0}" ShortID="611558155">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience" ID="{EBE51786-A9E0-418C-B83E-665C30002EE9}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

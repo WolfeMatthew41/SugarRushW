@@ -8,6 +8,7 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	777429653	GameStates			\Default Work Unit\GameStates	
+	3954002147	PauseStates			\Default Work Unit\PauseStates	
 	4069290704	PlayerStates			\Default Work Unit\PlayerStates	
 
 State	ID	Name	State Group			Notes
@@ -15,6 +16,9 @@ State	ID	Name	State Group			Notes
 	984691642	Ingame	GameStates			
 	3092587493	Pause	GameStates			
 	3604647259	MainMenu	GameStates			
+	80751710	PauseOn	PauseStates			
+	748895195	None	PauseStates			
+	3921005316	PauseOff	PauseStates			
 	748895195	None	PlayerStates			
 	1151176110	Awake	PlayerStates			
 	1274144392	OutOfEnergy	PlayerStates			

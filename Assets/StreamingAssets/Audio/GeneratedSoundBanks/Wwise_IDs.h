@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PAUSE_INGAMEMUSIC = 709975500U;
+        static const AkUniqueID PLAY_AMBIENCE = 278617630U;
         static const AkUniqueID PLAY_EMPTYAUDIOTEST = 520202705U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
         static const AkUniqueID PLAY_FRUITGLOW = 520175615U;
@@ -21,12 +22,11 @@ namespace AK
         static const AkUniqueID PLAY_INGAMEMUSIC = 3799629626U;
         static const AkUniqueID PLAY_MAINMENU = 3738780720U;
         static const AkUniqueID PLAY_NONINGAMEMUSIC = 3584345201U;
-        static const AkUniqueID PLAY_PAUSE = 4233560256U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
+        static const AkUniqueID STOP_AMBIENCE = 2477713992U;
         static const AkUniqueID STOP_FRUITGLOW = 3338478285U;
         static const AkUniqueID STOP_INGAMEMUSIC = 1319671012U;
         static const AkUniqueID STOP_MAINMENU = 890527358U;
-        static const AkUniqueID STOP_PAUSE = 3298098222U;
     } // namespace EVENTS
 
     namespace STATES
@@ -43,6 +43,18 @@ namespace AK
                 static const AkUniqueID PAUSE = 3092587493U;
             } // namespace STATE
         } // namespace GAMESTATES
+
+        namespace PAUSESTATES
+        {
+            static const AkUniqueID GROUP = 3954002147U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PAUSEOFF = 3921005316U;
+                static const AkUniqueID PAUSEON = 80751710U;
+            } // namespace STATE
+        } // namespace PAUSESTATES
 
         namespace PLAYERSTATES
         {
@@ -61,6 +73,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace AMBIENCE
+        {
+            static const AkUniqueID GROUP = 85412153U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace AMBIENCE
+
         namespace ENERGYLEVEL
         {
             static const AkUniqueID GROUP = 2286036297U;

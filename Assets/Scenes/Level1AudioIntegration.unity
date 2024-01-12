@@ -887,6 +887,10 @@ PrefabInstance:
       propertyPath: rtpcSlider
       value: 
       objectReference: {fileID: 1043398946}
+    - target: {fileID: 879175538366185929, guid: fa5831610d45f194b96f69aaf49a8b9a, type: 3}
+      propertyPath: playAmbienceEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 59c028e6062dce748b7fff7758355d3f, type: 2}
     - target: {fileID: 924054707468967575, guid: fa5831610d45f194b96f69aaf49a8b9a, type: 3}
       propertyPath: m_Name
       value: IngameMusic
@@ -938,44 +942,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 924054707468967575, guid: fa5831610d45f194b96f69aaf49a8b9a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 663868299}
-    - targetCorrespondingSourceObject: {fileID: 924054707468967575, guid: fa5831610d45f194b96f69aaf49a8b9a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 663868298}
   m_SourcePrefab: {fileID: 100100000, guid: fa5831610d45f194b96f69aaf49a8b9a, type: 3}
 --- !u!1 &663868297 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 924054707468967575, guid: fa5831610d45f194b96f69aaf49a8b9a, type: 3}
   m_PrefabInstance: {fileID: 663868296}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &663868298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663868297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8d07f54e241aac47bf2f42c1d70cb47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1916d85ed6781d949ba9b2262c097532, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &663868299
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -55,6 +55,12 @@
 						<Switch Name="BadFruit" ID="{8ECB6D81-680F-4203-A0C3-691E55A814A4}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Ambience" ID="{0847282D-499E-41BB-803E-41583BC07E41}">
+					<ChildrenList>
+						<Switch Name="On" ID="{9096B99F-FDFB-47FF-B056-5B362FB20D21}"/>
+						<Switch Name="Off" ID="{821542EA-96CB-4D3D-907E-D91A95516CC8}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

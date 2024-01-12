@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class PauseScript : MonoBehaviour
 
 
 
+
     public void OnPause()
     {
         if (!_isPaused)
@@ -20,6 +22,9 @@ public class PauseScript : MonoBehaviour
             Time.timeScale = 0f;
             _isPaused = true;
             AkSoundEngine.SetState("GameStates", "Pause");
+            AkSoundEngine.SetState("PauseStates", "PauseOn");
+
+
         }
         else 
         {
@@ -27,6 +32,7 @@ public class PauseScript : MonoBehaviour
             Time.timeScale = 1f;
             _isPaused = false;
             AkSoundEngine.SetState("GameStates", "Ingame");
+            AkSoundEngine.SetState("PauseStates", "PauseOff");
         }
 
     }
@@ -40,4 +46,5 @@ public class PauseScript : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
+
 }
