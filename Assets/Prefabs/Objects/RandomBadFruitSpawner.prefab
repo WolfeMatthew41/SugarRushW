@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2573263003802057283}
   - component: {fileID: -180677181510657191}
   m_Layer: 0
-  m_Name: RandomSpawner
+  m_Name: RandomBadFruitSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,4 +48,4 @@ MonoBehaviour:
   freeSpawn: 1
   spawnTimer: 5
   fruitSelection:
-  - {fileID: 3418070491854399475, guid: 08d007930f5a73c4697f488285e8cf3e, type: 3}
+  - {fileID: 3418070491854399475, guid: 862ce20eb812cbc4d8984f928e7d4baf, type: 3}
