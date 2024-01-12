@@ -8,7 +8,7 @@ public class VictoryScript : MonoBehaviour
 
     public GameObject VictoryMenu;
 
-
+    /*
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Working Dog!");
@@ -16,7 +16,16 @@ public class VictoryScript : MonoBehaviour
         {
             OnVictory();
         }
-    }
+    }/*/
+
+    //*
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.collider.CompareTag("Player"))
+        {
+            OnVictory();
+        }
+    }//*/
 
         public void OnVictory()
     {
