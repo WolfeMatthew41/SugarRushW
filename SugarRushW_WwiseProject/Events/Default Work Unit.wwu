@@ -69,6 +69,134 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_MainMenu" ID="{64F8F47F-E312-4C5E-A4B2-BE106EFAEE36}">
+					<ChildrenList>
+						<Action Name="" ID="{BB5F981B-D4C0-4741-B91B-48501D012F4B}" ShortID="125746797">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenu" ID="{1E695C0F-8EB0-402A-92EB-5659E47D8266}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_IngameMusic" ID="{FB2AB0A7-1B33-4732-AE74-A5030D94AF42}">
+					<ChildrenList>
+						<Action Name="" ID="{52B8BCC5-98C0-42C3-B174-5FE495324863}" ShortID="230558333">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IngameMusic" ID="{FF1BE994-9505-42C7-9268-DE443679DF18}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Pause" ID="{E981CAED-2BCC-4584-A1BE-9104D287EC76}">
+					<ChildrenList>
+						<Action Name="" ID="{23D4746F-B889-4CB2-B8B5-8320B4B0924A}" ShortID="34078649">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pause" ID="{47CB262D-638F-4803-895A-E2369BC49C8B}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_MainMenu" ID="{C184BED8-899E-4E06-9ED5-6478D7683001}">
+					<ChildrenList>
+						<Action Name="" ID="{14B1046E-ED65-41BB-A070-39F7C523F011}" ShortID="219469005">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenu" ID="{1E695C0F-8EB0-402A-92EB-5659E47D8266}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pause" ID="{2FFDBB96-5A8E-46CA-A7EF-700B7F8AD43B}">
+					<ChildrenList>
+						<Action Name="" ID="{9FA64541-DE8D-4742-9092-E7942671D9EC}" ShortID="503214611">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pause" ID="{47CB262D-638F-4803-895A-E2369BC49C8B}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FruitGlow" ID="{7DA80C5F-0166-4691-A484-90F90238C3AC}">
+					<ChildrenList>
+						<Action Name="" ID="{61397B1A-889E-4A37-B169-4599D5784E36}" ShortID="605748025">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FruitGlow" ID="{1F94D40F-DF0F-480D-BC88-BBB16936EB5F}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_FruitGlow" ID="{2A285BAD-E542-4123-8DC1-B111068AB4A8}">
+					<ChildrenList>
+						<Action Name="" ID="{B00AD3B2-A570-46A4-B8B3-1A37F87DC957}" ShortID="407752553">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FruitGlow" ID="{1F94D40F-DF0F-480D-BC88-BBB16936EB5F}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pause_IngameMusic" ID="{97FAA36B-CCD8-40E6-8ABE-9B116A5649BE}">
+					<ChildrenList>
+						<Action Name="" ID="{9CB4C3F3-2E2B-4521-9CC0-9864E5FF44C7}" ShortID="457549676">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IngameMusic" ID="{FF1BE994-9505-42C7-9268-DE443679DF18}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Ambience" ID="{9FF7A459-9164-4DE8-9D14-2D94FD2B5E0B}">
+					<ChildrenList>
+						<Action Name="" ID="{FA1708AE-E47B-4BB5-B0E5-087351CDB213}" ShortID="168422973">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SugarRush_Ambience_CalmOutdoors" ID="{7643AC58-A968-48AB-A3B7-55F32B48C25E}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience" ID="{F2584FE2-5F0F-41DD-BF26-F504D2E48C79}">
+					<ChildrenList>
+						<Action Name="" ID="{CD407775-C912-4767-A9AB-1E8E620B4BD0}" ShortID="611558155">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience" ID="{EBE51786-A9E0-418C-B83E-665C30002EE9}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584966125846646631
+    m_lastTime: -8584965876175047502
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -156,8 +156,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584966125861446543
+    m_lastTime: -8584965876430824292
     List:
+    - name: Pause_IngameMusic
+      guid: 6ba3fa97d8cce6408abe9b116a5649be
+      id: 709975500
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Pause_IngameMusic
+        ObjectType: 3
+        guid: 6ba3fa97d8cce6408abe9b116a5649be
+      Path: Events\Default Work Unit\Pause_IngameMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Ambience
+      guid: e24f58f20f5fdd41bf26f504d2e48c79
+      id: 278617630
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_Ambience
+        ObjectType: 3
+        guid: e24f58f20f5fdd41bf26f504d2e48c79
+      Path: Events\Default Work Unit\Play_Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_EmptyAudioTest
       guid: 917f92e5d2d7f34ba6d2755d99259249
       id: 520202705
@@ -173,8 +207,8 @@ MonoBehaviour:
         guid: 917f92e5d2d7f34ba6d2755d99259249
       Path: Events\Default Work Unit\Play_EmptyAudioTest
       maxAttenuation: 0
-      maxDuration: 1.8540417
-      minDuration: 1.8540417
+      maxDuration: 21.763
+      minDuration: 21.763
     - name: Play_Footstep
       guid: 29e12959975638448c0ea83fb893bb82
       id: 1602358412
@@ -192,6 +226,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7004163
       minDuration: 0.3488982
+    - name: Play_FruitGlow
+      guid: 5f0ca87d66019146a48490f90238c3ac
+      id: 520175615
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_FruitGlow
+        ObjectType: 3
+        guid: 5f0ca87d66019146a48490f90238c3ac
+      Path: Events\Default Work Unit\Play_FruitGlow
+      maxAttenuation: 12
+      maxDuration: -1
+      minDuration: -1
     - name: Play_GoodOrBadFruit
       guid: b5f1148c32e6b149a7ab973fc9c7f549
       id: 2781998183
@@ -226,6 +277,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_MainMenu
+      guid: 7ff4f86412e35e4ca4b2be106efaee36
+      id: 3738780720
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_MainMenu
+        ObjectType: 3
+        guid: 7ff4f86412e35e4ca4b2be106efaee36
+      Path: Events\Default Work Unit\Play_MainMenu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_NonIngameMusic
       guid: b42bbdc59b23cf48bd0597bc167631c4
       id: 3584345201
@@ -240,6 +308,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: b42bbdc59b23cf48bd0597bc167631c4
       Path: Events\Default Work Unit\Play_NonIngameMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Pause
+      guid: 96bbfd2f8e5aca46a7ef700b7f8ad43b
+      id: 4233560256
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Play_Pause
+        ObjectType: 3
+        guid: 96bbfd2f8e5aca46a7ef700b7f8ad43b
+      Path: Events\Default Work Unit\Play_Pause
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -260,6 +345,91 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 16
       minDuration: 16
+    - name: Stop_Ambience
+      guid: 59a4f79f6491e84d9d142d94fd2b5e0b
+      id: 2477713992
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Stop_Ambience
+        ObjectType: 3
+        guid: 59a4f79f6491e84d9d142d94fd2b5e0b
+      Path: Events\Default Work Unit\Stop_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_FruitGlow
+      guid: ad5b282a42e523418dc1b111068ab4a8
+      id: 3338478285
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Stop_FruitGlow
+        ObjectType: 3
+        guid: ad5b282a42e523418dc1b111068ab4a8
+      Path: Events\Default Work Unit\Stop_FruitGlow
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_IngameMusic
+      guid: a7b02afb331b3247ae74a5030d94af42
+      id: 1319671012
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Stop_IngameMusic
+        ObjectType: 3
+        guid: a7b02afb331b3247ae74a5030d94af42
+      Path: Events\Default Work Unit\Stop_IngameMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_MainMenu
+      guid: d8be84c19e89064e9ed56478d7683001
+      id: 890527358
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Stop_MainMenu
+        ObjectType: 3
+        guid: d8be84c19e89064e9ed56478d7683001
+      Path: Events\Default Work Unit\Stop_MainMenu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Pause
+      guid: edca81e9cc2b8445a1be9104d287ec76
+      id: 3298098222
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 93500b52ec9d0d438748bb41595c7458
+      - ElementName: Stop_Pause
+        ObjectType: 3
+        guid: edca81e9cc2b8445a1be9104d287ec76
+      Path: Events\Default Work Unit\Stop_Pause
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -272,7 +442,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: e854aa4f62a781469e4c8c0d3dcba420
     GuidInternal: 
-    m_lastTime: -8584966105828261433
+    m_lastTime: -8584966026354035819
     List:
     - name: EnergyLevelRTPC
       guid: c265fab91622604096d6d859739ee63f
@@ -300,7 +470,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 114c8cc6c7bda84f9c49880460240feb
     GuidInternal: 
-    m_lastTime: -8584967136161833480
+    m_lastTime: -8584965893883640039
     List:
     - name: GameStates
       guid: 17d4da35f901dd468fe853381e4ecb67
@@ -381,6 +551,72 @@ MonoBehaviour:
         - ElementName: Pause
           ObjectType: 8
           guid: 529903e33fd5ea458dca1daaee577b90
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: PauseStates
+      guid: 91e990068bbbb4448ea3a6d6aa6e84dd
+      id: 3954002147
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 114c8cc6c7bda84f9c49880460240feb
+      - ElementName: PauseStates
+        ObjectType: 9
+        guid: 91e990068bbbb4448ea3a6d6aa6e84dd
+      Path: States\Default Work Unit\PauseStates
+      values:
+      - name: None
+        guid: 31162a79009df546939d903219a02179
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 114c8cc6c7bda84f9c49880460240feb
+        - ElementName: PauseStates
+          ObjectType: 9
+          guid: 91e990068bbbb4448ea3a6d6aa6e84dd
+        - ElementName: None
+          ObjectType: 8
+          guid: 31162a79009df546939d903219a02179
+      - name: PauseOff
+        guid: bf2194c772840e44860b16c4b68e62e7
+        id: 3921005316
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 114c8cc6c7bda84f9c49880460240feb
+        - ElementName: PauseStates
+          ObjectType: 9
+          guid: 91e990068bbbb4448ea3a6d6aa6e84dd
+        - ElementName: PauseOff
+          ObjectType: 8
+          guid: bf2194c772840e44860b16c4b68e62e7
+      - name: PauseOn
+        guid: 1ab11070e52222498743a25195c8ef31
+        id: 80751710
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 114c8cc6c7bda84f9c49880460240feb
+        - ElementName: PauseStates
+          ObjectType: 9
+          guid: 91e990068bbbb4448ea3a6d6aa6e84dd
+        - ElementName: PauseOn
+          ObjectType: 8
+          guid: 1ab11070e52222498743a25195c8ef31
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -478,8 +714,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8a3375716ecce44a9a9bcf149d21e80b
     GuidInternal: 
-    m_lastTime: -8584966105828231426
+    m_lastTime: -8584965878743398729
     List:
+    - name: Ambience
+      guid: 2d2847089e49bb41803e41583bc07e41
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8a3375716ecce44a9a9bcf149d21e80b
+      - ElementName: Ambience
+        ObjectType: 11
+        guid: 2d2847089e49bb41803e41583bc07e41
+      Path: Switches\Default Work Unit\Ambience
+      values:
+      - name: Off
+        guid: ea421582cb963d4d907ed91a95516cc8
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8a3375716ecce44a9a9bcf149d21e80b
+        - ElementName: Ambience
+          ObjectType: 11
+          guid: 2d2847089e49bb41803e41583bc07e41
+        - ElementName: Off
+          ObjectType: 10
+          guid: ea421582cb963d4d907ed91a95516cc8
+      - name: On
+        guid: 9fb99690fbfdff47b0565b362fb20d21
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 8a3375716ecce44a9a9bcf149d21e80b
+        - ElementName: Ambience
+          ObjectType: 11
+          guid: 2d2847089e49bb41803e41583bc07e41
+        - ElementName: On
+          ObjectType: 10
+          guid: 9fb99690fbfdff47b0565b362fb20d21
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: EnergyLevel
       guid: 9caf3507a266fc48bb72240c8421060c
       id: 2286036297
@@ -661,7 +947,7 @@ MonoBehaviour:
     m_lastTime: -8584968665000232781
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000001100000012000000160000001700000018000000c0000000c1000000c7000000c8000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

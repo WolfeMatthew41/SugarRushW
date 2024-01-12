@@ -19,6 +19,13 @@
 						<State Name="Sleep" ID="{AB2AD478-EBCF-4778-97A4-0E2C172BE566}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="PauseStates" ID="{0690E991-BB8B-44B4-8EA3-A6D6AA6E84DD}">
+					<ChildrenList>
+						<State Name="None" ID="{792A1631-9D00-46F5-939D-903219A02179}"/>
+						<State Name="PauseOn" ID="{7010B11A-22E5-4922-8743-A25195C8EF31}"/>
+						<State Name="PauseOff" ID="{C79421BF-8472-440E-860B-16C4B68E62E7}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

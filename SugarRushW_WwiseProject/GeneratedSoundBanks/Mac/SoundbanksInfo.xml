@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{42B0DD51-0CC0-3274-F7F8-7A074456FB06}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{54D889E1-D68C-7780-32E1-9232138FB15F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -35,6 +35,13 @@
 						<State Id="3604647259" Name="MainMenu"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="3954002147" Name="PauseStates">
+					<States>
+						<State Id="80751710" Name="PauseOn"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="3921005316" Name="PauseOff"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="4069290704" Name="PlayerStates">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -45,6 +52,12 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="85412153" Name="Ambience">
+					<Switches>
+						<Switch Id="930712164" Name="Off"/>
+						<Switch Id="1651971902" Name="On"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="2286036297" Name="EnergyLevel">
 					<GameParameterRef Id="1841973268"/>
 					<Switches>
@@ -67,7 +80,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{3734E126-1311-A012-6178-DD5F4D5B636B}">
+		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{88C2DB14-12F9-537A-C01A-D1D178C9FDC6}">
 			<ShortName>IngameMusic_SoundBank</ShortName>
 			<Path>IngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -195,6 +208,10 @@
 					<ShortName>SugarRush_120bpm_4-4_Normal_Base.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Normal_Base_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="885853930" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
+					<CachePath>SFX/SugarRush_120bpm_4-4_Pause_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="1008994935" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Normal_Marimba_4.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Normal_Marimba_4_FBC78EF0.wem</CachePath>
@@ -205,6 +222,7 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="709975500" Name="Pause_IngameMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3799629626" Name="Play_IngameMusic" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -285,8 +303,20 @@
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="777429653" Id="3092587493"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="4069290704" Id="0"/>
+									<MediaRefs>
+										<MediaRef Id="885853930"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1319671012" Name="Stop_IngameMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="1841973268" Name="EnergyLevelRTPC"/>
@@ -320,7 +350,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{78EE5DE2-A054-FBD3-C233-633489B86478}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{800B6925-EFBA-9593-3469-EA00B3A0E5FD}">
 			<ShortName>SFX_SoundBank</ShortName>
 			<Path>SFX_SoundBank.bnk</Path>
 			<Media>
@@ -340,6 +370,10 @@
 					<ShortName>SugarRush_Character_DirtFootstep02.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_DirtFootstep02_818F3B66.wem</CachePath>
 				</File>
+				<File Id="546350154" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Items_FruitGlow02.wav</ShortName>
+					<CachePath>SFX/SugarRush_Items_FruitGlow02_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="557175082" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Character_Eat.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_Eat_818F3B66.wem</CachePath>
@@ -356,6 +390,10 @@
 					<ShortName>SugarRush_Character_GrassFootstep01.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_GrassFootstep01_818F3B66.wem</CachePath>
 				</File>
+				<File Id="762352928" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sugar Rush Ambience 2.wav</ShortName>
+					<CachePath>SFX/Sugar Rush Ambience 2_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="824552167" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Character_GrassFootstep02.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_GrassFootstep02_818F3B66.wem</CachePath>
@@ -364,13 +402,33 @@
 					<ShortName>EmptyAudioTest.wav</ShortName>
 					<CachePath>SFX/EmptyAudioTest_818F3B66.wem</CachePath>
 				</File>
+				<File Id="985948447" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Items_FruitGlow01.wav</ShortName>
+					<CachePath>SFX/SugarRush_Items_FruitGlow01_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="1065132318" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_Pause_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="520202705" Name="Play_EmptyAudioTest" DurationType="OneShot" DurationMin="1.8540417" DurationMax="1.8540417">
+				<Event Id="278617630" Name="Play_Ambience" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3954002147" Id="80751710"/>
+							<MediaRefs>
+								<MediaRef Id="925127407"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3954002147" Id="3921005316" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="762352928"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="520202705" Name="Play_EmptyAudioTest" DurationType="OneShot" DurationMin="21.763" DurationMax="21.763">
 					<MediaRefs>
 						<MediaRef Id="925127407"/>
 					</MediaRefs>
@@ -395,6 +453,12 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="520175615" Name="Play_FruitGlow" MaxAttenuation="12" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="546350154"/>
+						<MediaRef Id="985948447"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2781998183" Name="Play_GoodOrBadFruit" DurationType="OneShot" DurationMin="1.087483" DurationMax="1.5437698">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -418,7 +482,23 @@
 						<MediaRef Id="1065132318"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2477713992" Name="Stop_Ambience" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3338478285" Name="Stop_FruitGlow" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="546350154"/>
+						<MediaRef Id="985948447"/>
+					</MediaRefs>
+				</Event>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="3954002147" Name="PauseStates">
+					<States>
+						<State Id="80751710" Name="PauseOn"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="3921005316" Name="PauseOff"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="3072116243" Name="GroundMaterial">
 					<Switches>
@@ -434,7 +514,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{5A054A5A-2607-589E-4846-0EC0234817F5}">
+		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{2415A6B3-DCE5-C6A5-A510-73899B4C91A8}">
 			<ShortName>NonIngameMusic_SoundBank</ShortName>
 			<Path>NonIngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -452,6 +532,12 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="3738780720" Name="Play_MainMenu" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="568555732"/>
+						<MediaRef Id="619033396"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3584345201" Name="Play_NonIngameMusic" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -469,6 +555,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="890527358" Name="Stop_MainMenu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<StateGroups>
 				<StateGroup Id="777429653" Name="GameStates">
@@ -482,5 +569,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E68FF93B-2D60-79F5-4619-D529B71C939B}</FileHash>
+	<FileHash>{713738F8-25A4-92E6-4D9D-A18BB523E5B2}</FileHash>
 </SoundBanksInfo>

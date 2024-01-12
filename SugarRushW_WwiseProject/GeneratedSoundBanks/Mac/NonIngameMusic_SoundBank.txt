@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
+	890527358	Stop_MainMenu			\Default Work Unit\Stop_MainMenu	
 	3584345201	Play_NonIngameMusic			\Default Work Unit\Play_NonIngameMusic	
+	3738780720	Play_MainMenu			\Default Work Unit\Play_MainMenu	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	777429653	GameStates			\Default Work Unit\GameStates	

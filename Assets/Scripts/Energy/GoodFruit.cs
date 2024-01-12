@@ -10,10 +10,17 @@ public class GoodFruit : MonoBehaviour
     private bool hasEventBeenTriggered = false;
     private bool fruitAlive = true;
     public AK.Wwise.Event Play_GoodOrBadFruit;
+    public AK.Wwise.Event Play_FruitGlow;
+    public AK.Wwise.Event Stop_FruitGlow;
 
     void Awake()
     {
         playerEnergy = FindObjectOfType<PlayerEnergy>();
+        if (fruitAlive)
+        {
+            PlayFruitGlow();
+        }
+        
     }
 
     void OnTriggerEnter(Collider other)
@@ -36,8 +43,14 @@ public class GoodFruit : MonoBehaviour
 
         if (playerEnergy.currentEnergy < playerEnergy.maxEnergy)
         {
-            Destroy(gameObject);
+            StopFruitGlow();
             fruitAlive = false;
+            if (!fruitAlive)
+            {
+                StopFruitGlow();
+            }
+            Destroy(gameObject);
+            
             playerEnergy.currentEnergy += energyBonus;
         }
         Debug.Log("Player Entered");
@@ -72,6 +85,36 @@ public class GoodFruit : MonoBehaviour
         {
 
             Play_GoodOrBadFruit.Post(gameObject);
+        }
+        else
+        {
+
+            Debug.LogWarning("No assigned Wwise event");
+        }
+    }
+    void PlayFruitGlow()
+    {
+
+        //Should check if there is fruit event
+        if (Play_FruitGlow != null)
+        {
+
+            Play_FruitGlow.Post(gameObject);
+        }
+        else
+        {
+
+            Debug.LogWarning("No assigned Wwise event");
+        }
+    }
+    void StopFruitGlow()
+    {
+
+        //Should check if there is fruit event
+        if (Stop_FruitGlow != null)
+        {
+
+            Stop_FruitGlow.Post(gameObject);
         }
         else
         {

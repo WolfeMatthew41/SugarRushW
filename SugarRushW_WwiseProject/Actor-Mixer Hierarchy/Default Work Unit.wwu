@@ -333,37 +333,6 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<Sound Name="EmptyAudioTest" ID="{7ACBB2CD-4F06-4C28-AC25-43A19101431E}" ShortID="42106570">
-					<PropertyList>
-						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{0A517F49-8B89-451F-86BE-2D269545A233}"/>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{14EE5A88-7968-4F8F-98D7-82E433263234}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="EmptyAudioTest" ID="{22E36C41-141C-4B36-B660-C1E151ADBB67}">
-							<Language>SFX</Language>
-							<AudioFile>EmptyAudioTest.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="925127407"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="EmptyAudioTest" ID="{22E36C41-141C-4B36-B660-C1E151ADBB67}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<SwitchContainer Name="GoodOrBadFruit" ID="{D398B965-F0A6-4F4C-805D-748E8B46D967}" ShortID="489914113">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -373,7 +342,7 @@
 							<ObjectRef Name="GoodFruit" ID="{1B7AC14B-C09D-41C3-B035-DD74A983290B}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+							<ObjectRef Name="SFX" ID="{14EE5A88-7968-4F8F-98D7-82E433263234}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="GoodOrBadFruit" ID="{86637E69-E095-4F43-9751-6C5313CD2CFB}" WorkUnitID="{7175338A-CC6E-4AE4-9A9B-CF149D21E80B}"/>
@@ -621,6 +590,210 @@
 								<SwitchRef Name="BadFruit" ID="{8ECB6D81-680F-4203-A0C3-691E55A814A4}"/>
 								<ItemList>
 									<ItemRef Name="BadFruit" ID="{965190E4-24C8-4410-B8A9-92959568056C}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<RandomSequenceContainer Name="FruitGlow" ID="{1F94D40F-DF0F-480D-BC88-BBB16936EB5F}" ShortID="433669403">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="FruitGlow" ID="{32692771-0D04-49B9-974A-474FE884FB82}" WorkUnitID="{4204251B-BB62-4F29-AB39-E0D3620C9A0B}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{14EE5A88-7968-4F8F-98D7-82E433263234}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SugarRush_Items_FruitGlow01" ID="{52C829FF-FD55-4CAF-8802-BF5B4B773B67}" ShortID="1062726078">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{06483C86-060B-4EC0-B26C-EB0FBFE2AA89}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SugarRush_Items_FruitGlow01" ID="{BB6C8FC2-F30D-41A9-80FB-A961D4D5C17F}">
+									<Language>SFX</Language>
+									<AudioFile>SugarRush_Items_FruitGlow01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="985948447"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SugarRush_Items_FruitGlow01" ID="{BB6C8FC2-F30D-41A9-80FB-A961D4D5C17F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SugarRush_Items_FruitGlow02" ID="{EC27C75C-1BEC-4DCD-9778-1B57A1A77BF9}" ShortID="184540644">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8A018FE2-8E48-47C0-998C-4A197A8BA7E1}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SugarRush_Items_FruitGlow02" ID="{86AE6374-28A5-4964-83CA-944F63E05283}">
+									<Language>SFX</Language>
+									<AudioFile>SugarRush_Items_FruitGlow02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="546350154"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SugarRush_Items_FruitGlow02" ID="{86AE6374-28A5-4964-83CA-944F63E05283}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="Ambience" ID="{EBE51786-A9E0-418C-B83E-665C30002EE9}" ShortID="896986141">
+					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="PauseOff" ID="{C79421BF-8472-440E-860B-16C4B68E62E7}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{14EE5A88-7968-4F8F-98D7-82E433263234}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="PauseStates" ID="{0690E991-BB8B-44B4-8EA3-A6D6AA6E84DD}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SugarRush_Ambience_CalmOutdoors" ID="{7643AC58-A968-48AB-A3B7-55F32B48C25E}" ShortID="808303080">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{14EE5A88-7968-4F8F-98D7-82E433263234}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sugar Rush Ambience 2" ID="{7DAE6747-3DE1-48B7-89C9-B450F90EF61D}">
+									<Language>SFX</Language>
+									<AudioFile>Sugar Rush Ambience 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="762352928"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sugar Rush Ambience 2" ID="{7DAE6747-3DE1-48B7-89C9-B450F90EF61D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EmptyAudioTest" ID="{7ACBB2CD-4F06-4C28-AC25-43A19101431E}" ShortID="42106570">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0A517F49-8B89-451F-86BE-2D269545A233}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{14EE5A88-7968-4F8F-98D7-82E433263234}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EmptyAudioTest" ID="{22E36C41-141C-4B36-B660-C1E151ADBB67}">
+									<Language>SFX</Language>
+									<AudioFile>EmptyAudioTest.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="925127407"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EmptyAudioTest" ID="{22E36C41-141C-4B36-B660-C1E151ADBB67}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="SugarRush_Ambience_CalmOutdoors" ID="{7643AC58-A968-48AB-A3B7-55F32B48C25E}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="EmptyAudioTest" ID="{7ACBB2CD-4F06-4C28-AC25-43A19101431E}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="PauseOn" ID="{7010B11A-22E5-4922-8743-A25195C8EF31}"/>
+								<ItemList>
+									<ItemRef Name="EmptyAudioTest" ID="{7ACBB2CD-4F06-4C28-AC25-43A19101431E}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="PauseOff" ID="{C79421BF-8472-440E-860B-16C4B68E62E7}"/>
+								<ItemList>
+									<ItemRef Name="SugarRush_Ambience_CalmOutdoors" ID="{7643AC58-A968-48AB-A3B7-55F32B48C25E}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>
