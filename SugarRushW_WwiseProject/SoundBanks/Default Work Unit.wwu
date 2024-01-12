@@ -7,9 +7,11 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Stop_FruitGlow" ID="{2A285BAD-E542-4123-8DC1-B111068AB4A8}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience" ID="{F2584FE2-5F0F-41DD-BF26-F504D2E48C79}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_UI_Sound_ButtonClick" ID="{DDADA20D-E424-43FF-896C-44BDF53DA225}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footstep" ID="{5929E129-5697-4438-8C0E-A83FB893BB82}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FruitGlow" ID="{1F94D40F-DF0F-480D-BC88-BBB16936EB5F}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_GoodOrBadFruit" ID="{8C14F1B5-E632-49B1-A7AB-973FC9C7F549}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ButtonClick" ID="{A57F3E16-34E1-4A0C-BE9A-4BC422EAA260}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EmptyAudioTest" ID="{E5927F91-D7D2-4BF3-A6D2-755D99259249}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Ambience" ID="{9FF7A459-9164-4DE8-9D14-2D94FD2B5E0B}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TestSound" ID="{7F0CF9AB-52B7-4E30-86E3-D2119AE639AD}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
@@ -28,6 +30,8 @@
 				</SoundBank>
 				<SoundBank Name="NonIngameMusic_SoundBank" ID="{2F47F86B-B9FD-4E60-83A6-F702D2FA096F}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Victory" ID="{29DC3324-82F2-448E-9838-B0FC191AAD48}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Sleep" ID="{CEC874D8-04BF-4599-9B8B-5C874F420AEC}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_NonIngameMusic" ID="{C5BD2BB4-239B-48CF-BD05-97BC167631C4}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MainMenu" ID="{64F8F47F-E312-4C5E-A4B2-BE106EFAEE36}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_MainMenu" ID="{C184BED8-899E-4E06-9ED5-6478D7683001}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
