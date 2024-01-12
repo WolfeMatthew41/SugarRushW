@@ -350,7 +350,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{800B6925-EFBA-9593-3469-EA00B3A0E5FD}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{66A8E7F6-6DAA-7863-57C4-48568B02F875}">
 			<ShortName>SFX_SoundBank</ShortName>
 			<Path>SFX_SoundBank.bnk</Path>
 			<Media>
@@ -358,17 +358,9 @@
 					<ShortName>SugarRush_Character_Voice_Yummy.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_Voice_Yummy_FA57E0F6.wem</CachePath>
 				</File>
-				<File Id="207380700" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SugarRush_Character_GrassFootstep03.wav</ShortName>
-					<CachePath>SFX/SugarRush_Character_GrassFootstep03_818F3B66.wem</CachePath>
-				</File>
-				<File Id="407355580" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SugarRush_Character_DirtFootstep01.wav</ShortName>
-					<CachePath>SFX/SugarRush_Character_DirtFootstep01_818F3B66.wem</CachePath>
-				</File>
-				<File Id="499353266" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SugarRush_Character_DirtFootstep02.wav</ShortName>
-					<CachePath>SFX/SugarRush_Character_DirtFootstep02_818F3B66.wem</CachePath>
+				<File Id="230120102" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_Newstep003.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_Newstep003_818F3B66.wem</CachePath>
 				</File>
 				<File Id="546350154" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Items_FruitGlow02.wav</ShortName>
@@ -378,25 +370,21 @@
 					<ShortName>SugarRush_Character_Eat.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_Eat_818F3B66.wem</CachePath>
 				</File>
-				<File Id="583404404" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SugarRush_Character_DirtFootstep03.wav</ShortName>
-					<CachePath>SFX/SugarRush_Character_DirtFootstep03_818F3B66.wem</CachePath>
-				</File>
 				<File Id="631280473" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Character_Voice_BadFruitUGH.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_Voice_BadFruitUGH_818F3B66.wem</CachePath>
 				</File>
-				<File Id="748659744" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SugarRush_Character_GrassFootstep01.wav</ShortName>
-					<CachePath>SFX/SugarRush_Character_GrassFootstep01_818F3B66.wem</CachePath>
+				<File Id="632568252" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_Newstep004.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_Newstep004_818F3B66.wem</CachePath>
 				</File>
 				<File Id="762352928" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Sugar Rush Ambience 2.wav</ShortName>
 					<CachePath>SFX/Sugar Rush Ambience 2_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="824552167" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SugarRush_Character_GrassFootstep02.wav</ShortName>
-					<CachePath>SFX/SugarRush_Character_GrassFootstep02_818F3B66.wem</CachePath>
+				<File Id="846486220" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_Newstep002.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_Newstep002_818F3B66.wem</CachePath>
 				</File>
 				<File Id="925127407" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>EmptyAudioTest.wav</ShortName>
@@ -405,6 +393,10 @@
 				<File Id="985948447" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Items_FruitGlow01.wav</ShortName>
 					<CachePath>SFX/SugarRush_Items_FruitGlow01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="1013674065" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SugarRush_Character_Newstep001.wav</ShortName>
+					<CachePath>SFX/SugarRush_Character_Newstep001_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1065132318" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
@@ -433,22 +425,20 @@
 						<MediaRef Id="925127407"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1602358412" Name="Play_Footstep" DurationType="OneShot" DurationMin="0.3488982" DurationMax="0.7004163">
+				<Event Id="1602358412" Name="Play_Footstep" DurationType="OneShot" DurationMin="0.22593562" DurationMax="0.43313003">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3072116243" Id="2195636714" Default="true"/>
 							<MediaRefs>
-								<MediaRef Id="407355580"/>
-								<MediaRef Id="499353266"/>
-								<MediaRef Id="583404404"/>
+								<MediaRef Id="846486220"/>
+								<MediaRef Id="1013674065"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3072116243" Id="4248645337"/>
 							<MediaRefs>
-								<MediaRef Id="207380700"/>
-								<MediaRef Id="748659744"/>
-								<MediaRef Id="824552167"/>
+								<MediaRef Id="230120102"/>
+								<MediaRef Id="632568252"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -569,5 +559,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{713738F8-25A4-92E6-4D9D-A18BB523E5B2}</FileHash>
+	<FileHash>{DAAD2AF3-E688-7234-B363-31DCF97BAB7A}</FileHash>
 </SoundBanksInfo>
