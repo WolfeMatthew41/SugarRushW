@@ -26,7 +26,6 @@ namespace AK
         static const AkUniqueID PLAY_SLEEP = 3734418179U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
         static const AkUniqueID PLAY_UI_SOUND_BUTTONCLICK = 624353645U;
-        static const AkUniqueID PLAY_VICTORY = 2453267296U;
         static const AkUniqueID STOP_AMBIENCE = 2477713992U;
         static const AkUniqueID STOP_FRUITGLOW = 3338478285U;
         static const AkUniqueID STOP_INGAMEMUSIC = 1319671012U;

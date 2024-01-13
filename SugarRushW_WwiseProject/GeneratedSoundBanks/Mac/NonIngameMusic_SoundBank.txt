@@ -1,6 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
 	890527358	Stop_MainMenu			\Default Work Unit\Stop_MainMenu	
-	2453267296	Play_Victory			\Default Work Unit\Play_Victory	
 	3584345201	Play_NonIngameMusic			\Default Work Unit\Play_NonIngameMusic	
 	3734418179	Play_Sleep			\Default Work Unit\Play_Sleep	
 	3738780720	Play_MainMenu			\Default Work Unit\Play_MainMenu	
@@ -22,9 +21,7 @@ State	ID	Name	State Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	39179202	SugarRush_Character_Voice_Snoring-01	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_Character_Voice_Snoring-01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Sleep\SugarRush_Character_Voice_Snoring-01\SugarRush_Character_Voice_Snoring-01		185100
-	301751640	Sugar Rush Win	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\Sugar Rush Win_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Victory\Sugar Rush Win\Sugar Rush Win		288096
 	568555732	SugarRush_120bpm_4-4_MainMenu	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_MainMenu_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\NonIngameMusic\MainMenu\SugarRush_120bpm_4-4_MainMenu\SugarRush_120bpm_4-4_MainMenu		3072096
 	619033396	SugarRush_120bpm_4-4_MainMenu_Intro	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_MainMenu_Intro_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\NonIngameMusic\MainMenu\SugarRush_120bpm_4-4_MainMenu_Intro\SugarRush_120bpm_4-4_MainMenu_Intro		768096
 	885853930	SugarRush_120bpm_4-4_Pause	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\SugarRush_120bpm_4-4_Pause_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\NonIngameMusic\Pause\SugarRush_120bpm_4-4_Pause\SugarRush_120bpm_4-4_Pause		3072096
-	968189754	Sugar Rush Loose	C:\Users\jasmi\SugarRushW\SugarRushW\SugarRushW_WwiseProject\.cache\Mac\SFX\Sugar Rush Loose_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\IngameMusic\Sleep\Sugar Rush Loose\Sugar Rush Loose		288096
 

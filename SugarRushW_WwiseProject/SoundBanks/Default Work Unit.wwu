@@ -30,7 +30,6 @@
 				</SoundBank>
 				<SoundBank Name="NonIngameMusic_SoundBank" ID="{2F47F86B-B9FD-4E60-83A6-F702D2FA096F}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Victory" ID="{29DC3324-82F2-448E-9838-B0FC191AAD48}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Sleep" ID="{CEC874D8-04BF-4599-9B8B-5C874F420AEC}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_NonIngameMusic" ID="{C5BD2BB4-239B-48CF-BD05-97BC167631C4}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MainMenu" ID="{64F8F47F-E312-4C5E-A4B2-BE106EFAEE36}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
