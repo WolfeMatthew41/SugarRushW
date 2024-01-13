@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxEnergy: 40
   currentEnergy: 40
+  energyDeplete: 2
   energyBar: {fileID: 8325330276046287815}
   GameOverMenu: {fileID: 6470312302789007911}
   onPauseEvent:

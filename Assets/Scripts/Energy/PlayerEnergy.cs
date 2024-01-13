@@ -8,6 +8,8 @@ public class PlayerEnergy : MonoBehaviour
     public int maxEnergy = 100;
     public int currentEnergy;
 
+    public int energyDeplete = 1;
+
     public EnergySystem energyBar;
 
     public GameObject GameOverMenu;
@@ -29,10 +31,10 @@ public class PlayerEnergy : MonoBehaviour
 
     void DecreaseEnergy()
     {
-        int energy = 1;
+        //int energy = 1;
         if (currentEnergy > 0)
         {
-            currentEnergy -= energy;
+            currentEnergy -= energyDeplete;
             energyBar.SetEnergy(currentEnergy);
         }
         else
