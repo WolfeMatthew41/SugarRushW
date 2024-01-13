@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class PauseScript : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class PauseScript : MonoBehaviour
 
     public GameObject PauseMenu;
 
+    public UnityEvent onPauseEvent;
+
+    public UnityEvent onUnPauseEvent;
 
 
 
@@ -23,7 +27,7 @@ public class PauseScript : MonoBehaviour
             _isPaused = true;
             AkSoundEngine.SetState("GameStates", "Pause");
             AkSoundEngine.SetState("PauseStates", "PauseOn");
-
+            onPauseEvent.Invoke();
 
         }
         else 
@@ -33,8 +37,9 @@ public class PauseScript : MonoBehaviour
             _isPaused = false;
             AkSoundEngine.SetState("GameStates", "Ingame");
             AkSoundEngine.SetState("PauseStates", "PauseOff");
+            onUnPauseEvent.Invoke();
         }
-
+        
     }
 
     public void OnSettings()

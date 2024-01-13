@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
     private bool hasEventBeenTriggered = false;
     public AK.Wwise.Event Play_Footstep;
 
+    private bool isPaused = false;
+
 
     private void Awake()
     {
@@ -47,29 +49,39 @@ public class PlayerController : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        _input = context.ReadValue<Vector2>();
-        //Debug.Log(_input);// message: "PlayerController Moving!");
-        if (currentAngle > 135.0f && currentAngle < 225.0f) //Facing Backards VVV
+        if (!isPaused) 
         {
-            _direction = new Vector3(_input.x * -1, 0.0f, _input.y * -1);
-            movementDirection = 2;
-        }
-        else if (currentAngle > 45.0f && currentAngle < 135.0f) //Facing Right -->
-        {
-            _direction = new Vector3(_input.y, 0.0f, _input.x * -1);
-            movementDirection = 1;
-        }
-        else if (currentAngle > 225.0f && currentAngle < 315.0f) //Facing Left <---
-        {
-            _direction = new Vector3(_input.y * -1, 0.0f, _input.x);
-            movementDirection = 3;
-        }
-        else
-        { 
-            _direction = new Vector3(_input.x, 0.0f, _input.y); //Facing forward ^^^
-            movementDirection = 0;
+            _input = context.ReadValue<Vector2>();
+            //Debug.Log(_input);// message: "PlayerController Moving!");
+            if (currentAngle > 135.0f && currentAngle < 225.0f) //Facing Backards VVV
+            {
+                _direction = new Vector3(_input.x * -1, 0.0f, _input.y * -1);
+                movementDirection = 2;
+            }
+            else if (currentAngle > 45.0f && currentAngle < 135.0f) //Facing Right -->
+            {
+                _direction = new Vector3(_input.y, 0.0f, _input.x * -1);
+                movementDirection = 1;
+            }
+            else if (currentAngle > 225.0f && currentAngle < 315.0f) //Facing Left <---
+            {
+                _direction = new Vector3(_input.y * -1, 0.0f, _input.x);
+                movementDirection = 3;
+            }
+            else
+            {
+                _direction = new Vector3(_input.x, 0.0f, _input.y); //Facing forward ^^^
+                movementDirection = 0;
+            }
         }
 
+
+    }
+
+    public void OnPause(bool value)
+    {
+        isPaused = value;
+        
     }
 
     public void OnJump(InputAction.CallbackContext context)
@@ -80,11 +92,15 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        ApplyRotation();
-       
-        ApplyGravity();
+        if (!isPaused) 
+        {
+            ApplyRotation();
 
-        ApplyMovement();
+            ApplyGravity();
+
+            ApplyMovement();
+        }
+
         hasEventBeenTriggered = false;
     }
 
