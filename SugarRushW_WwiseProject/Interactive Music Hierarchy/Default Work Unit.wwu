@@ -2659,6 +2659,134 @@
 								</MusicSegment>
 							</ChildrenList>
 						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Victory" ID="{101D9A52-AE41-4B38-BF03-F4619B805BE3}" ShortID="9010407">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{C1990327-23B5-435D-B82F-9F2795125F7D}" ShortID="891739471">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{7C111F74-F2BF-43DC-8EB3-3C4202477CD5}" ShortID="718907916">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Sugar Rush Win" ID="{D24C9E8A-3A1E-4343-9776-CAF08F0942CE}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{6791B680-3709-4AE0-B39C-D6990E59FD1A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{2D758D4B-A0B8-4CE5-89A3-91E8F4DD9172}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Sugar Rush Win" ID="{D24C9E8A-3A1E-4343-9776-CAF08F0942CE}" ShortID="605474893">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B519348D-7FD1-47C0-88C0-05DFB801DD86}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Sugar Rush Win" ID="{ECBE7272-1901-446B-A968-2E2B1A75263C}" ShortID="516338358">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC670104-DF4D-406A-A296-EC7AB0368E2A}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{07D9611E-6D96-4D8A-8063-5F427E0BA6F1}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Sugar Rush Win" ID="{A1E390FA-EA30-4523-B16D-1156E38D24AD}">
+													<Language>SFX</Language>
+													<AudioFile>Sugar Rush Win.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="822163018"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{2AD0A3F1-28CD-41FF-9662-0D99EA592808}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Sugar Rush Win" ID="{16724384-04FF-40DA-A5C1-591FD4606489}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="1500"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Sugar Rush Win" ID="{A1E390FA-EA30-4523-B16D-1156E38D24AD}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{17E021B9-EF3C-4E79-B95B-0E8981CE19FC}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{5C7E30AB-0F37-4A9C-9116-6026EA2C2661}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1500"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Arguments">
@@ -2748,6 +2876,27 @@
 												</Reference>
 												<Reference>
 													<ObjectRef Name="PlayerStates" ID="{0E664212-F500-4CFB-A393-CA2C77DA4CB9}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{BCA8C1CC-9FD9-4020-A38E-C0AA8EC086AE}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Victory" ID="{101D9A52-AE41-4B38-BF03-F4619B805BE3}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Ingame" ID="{026C9C08-EE56-4CD4-AAFD-F32542C072A5}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Victory" ID="{CAEEE9CD-92B0-49E9-82DA-AD48DD37FFD7}" WorkUnitID="{C68C4C11-BDC7-4FA8-9C49-880460240FEB}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>

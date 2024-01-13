@@ -17,6 +17,7 @@
 						<State Name="Awake" ID="{40518799-6EF1-4649-B508-9199D0FDEC08}"/>
 						<State Name="OutOfEnergy" ID="{1CBFB0C6-24E1-4B0D-9793-AD5FC9D36328}"/>
 						<State Name="Sleep" ID="{AB2AD478-EBCF-4778-97A4-0E2C172BE566}"/>
+						<State Name="Victory" ID="{CAEEE9CD-92B0-49E9-82DA-AD48DD37FFD7}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="PauseStates" ID="{0690E991-BB8B-44B4-8EA3-A6D6AA6E84DD}">

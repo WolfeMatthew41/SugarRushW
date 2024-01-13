@@ -1080,7 +1080,7 @@ MonoBehaviour:
   Play_GoodOrBadFruit:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: b5442e19b7365fe43a8456d8d829a0d8, type: 2}
 --- !u!1 &3615302628250224730
 GameObject:
   m_ObjectHideFlags: 0
