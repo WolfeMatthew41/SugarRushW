@@ -11,14 +11,36 @@ public class FruitSpawner1 : MonoBehaviour
     [SerializeField]
     public float spawnTimer = 5.0f;
 
+    private float _timeLeft =30.0f;
+
     [SerializeField]
     public List<GameObject> fruitSelection;
 
     // Start is called before the first frame update
     void Start()
     {
+        SpawnFruit();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (_timeLeft > 0)
+        {
+            _timeLeft -= Time.deltaTime;
+        }
+        else
+        {
+            SpawnFruit();
+        }
+    }
+
+    private void SpawnFruit()
+    {
+        _timeLeft = spawnTimer;
+
         GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag(spawnPointTag);
-        foreach(GameObject spawnPoint in spawnPoints)
+        foreach (GameObject spawnPoint in spawnPoints)
         {
             int randomSpawnPoint = Random.Range(0, fruitSelection.Count);
 
@@ -27,13 +49,7 @@ public class FruitSpawner1 : MonoBehaviour
 
             GameObject pts = Instantiate(fruitSelection[randomSpawnPoint]);
             pts.transform.position = spawnPoint.transform.position;
-
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
