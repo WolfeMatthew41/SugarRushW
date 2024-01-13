@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c64fe804dd5e44386783309f28ee80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointTag: FruitSpawnPoint
+  spawnPointTag: BadFruitSpawnPoint
   freeSpawn: 1
   spawnTimer: 5
   fruitSelection:

@@ -37,7 +37,7 @@ public class FruitSpawner1 : MonoBehaviour
         {
             onDespawn?.Invoke();
             SpawnFruit();
-            SpawnFruit();
+            //SpawnFruit();
         }
     }
 
