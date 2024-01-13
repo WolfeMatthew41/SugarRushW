@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{54D889E1-D68C-7780-32E1-9232138FB15F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7B4BF2B7-51FF-2919-135E-F8161A4C9A79}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -20,11 +20,14 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="393239870" Name="SFX"/>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
 				<Bus Id="3991942870" Name="Music"/>
+				<Bus Id="4056684167" Name="Master"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume"/>
 				<GameParameter Id="1841973268" Name="EnergyLevelRTPC"/>
+				<GameParameter Id="2346531308" Name="MusicVolume"/>
+				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="777429653" Name="GameStates">
@@ -81,7 +84,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{FC117872-6766-5D56-CA73-77D63ED76535}">
+		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{269EFB48-E740-1F90-57F3-65DF00C47E2F}">
 			<ShortName>IngameMusic_SoundBank</ShortName>
 			<Path>IngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -184,6 +187,10 @@
 				<File Id="704831357" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_Character_Voice_Yawn.wav</ShortName>
 					<CachePath>SFX/SugarRush_Character_Voice_Yawn_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="713958477" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sugar Rush Loose.wav</ShortName>
+					<CachePath>SFX/Sugar Rush Loose_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="720960048" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Slow_Xylophone_1.wav</ShortName>
@@ -304,6 +311,7 @@
 									<SwitchValue GroupType="State" GroupId="4069290704" Id="3671647190"/>
 									<MediaRefs>
 										<MediaRef Id="39179202"/>
+										<MediaRef Id="713958477"/>
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
@@ -367,7 +375,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{8F53EE49-C286-126E-A2C5-F6159458D1F3}">
+		<SoundBank Id="2641024368" Type="User" Language="SFX" Hash="{BB465E42-4428-7633-A091-0E1984F75500}">
 			<ShortName>SFX_SoundBank</ShortName>
 			<Path>SFX_SoundBank.bnk</Path>
 			<Media>
@@ -460,6 +468,8 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3072116243" Id="2195636714" Default="true"/>
 							<MediaRefs>
+								<MediaRef Id="230120102"/>
+								<MediaRef Id="632568252"/>
 								<MediaRef Id="846486220"/>
 								<MediaRef Id="1013674065"/>
 							</MediaRefs>
@@ -469,6 +479,8 @@
 							<MediaRefs>
 								<MediaRef Id="230120102"/>
 								<MediaRef Id="632568252"/>
+								<MediaRef Id="846486220"/>
+								<MediaRef Id="1013674065"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -539,7 +551,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{1B822058-24DF-0CB8-76F1-4C4C637DA770}">
+		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{8654CA65-6C07-4494-C8B4-3D7E1F84C530}">
 			<ShortName>NonIngameMusic_SoundBank</ShortName>
 			<Path>NonIngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -554,6 +566,10 @@
 				<File Id="619033396" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_MainMenu_Intro.wav</ShortName>
 					<CachePath>SFX/SugarRush_120bpm_4-4_MainMenu_Intro_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="713958477" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Sugar Rush Loose.wav</ShortName>
+					<CachePath>SFX/Sugar Rush Loose_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="885853930" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SugarRush_120bpm_4-4_Pause.wav</ShortName>
@@ -584,9 +600,10 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3734418179" Name="Play_Sleep" DurationType="OneShot" DurationMin="1.927125" DurationMax="1.927125">
+				<Event Id="3734418179" Name="Play_Sleep" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="39179202"/>
+						<MediaRef Id="713958477"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="890527358" Name="Stop_MainMenu" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -603,5 +620,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F17B4ED7-465F-1BFE-D561-F494B9BB663E}</FileHash>
+	<FileHash>{35FED7A1-E9B6-946F-F19B-06D832FFD970}</FileHash>
 </SoundBanksInfo>
