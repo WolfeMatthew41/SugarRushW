@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreenScript : MonoBehaviour
 {
+    public GameObject TitleMenu;
+    public GameObject SettingsMenu;
+
     public AK.Wwise.Event Play_MainMenu;
     public AK.Wwise.Event Stop_MainMenu;
     void Start()
@@ -25,7 +28,15 @@ public class TitleScreenScript : MonoBehaviour
     }
 
     public void OnSettings()
-    { 
+    {
+        TitleMenu.SetActive(false);
+        SettingsMenu.SetActive(true);
+    }
+
+    public void OnSettingsBack()
+    {
+        SettingsMenu.SetActive(false);
+        TitleMenu.SetActive(true);
     }
 
     public void OnExit()
