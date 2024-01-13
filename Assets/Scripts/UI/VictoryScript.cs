@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class VictoryScript : MonoBehaviour
 {
 
     public GameObject VictoryMenu;
+
+    public UnityEvent onPauseEvent;
 
     //*
     void OnTriggerEnter(Collider other)
@@ -33,6 +36,7 @@ public class VictoryScript : MonoBehaviour
         VictoryMenu.SetActive(true);
         AkSoundEngine.SetState("PlayerStates", "Victory");
         Time.timeScale = 0f;
+        onPauseEvent.Invoke();
     }
 
     public void OnRetry()

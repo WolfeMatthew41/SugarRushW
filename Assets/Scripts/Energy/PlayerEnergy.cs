@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerEnergy : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlayerEnergy : MonoBehaviour
     public EnergySystem energyBar;
 
     public GameObject GameOverMenu;
+
+    public UnityEvent onPauseEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -43,5 +46,6 @@ public class PlayerEnergy : MonoBehaviour
         GameOverMenu.SetActive(true);
         AkSoundEngine.SetState("PlayerStates", "Sleep");
         Time.timeScale = 0f;
+        onPauseEvent.Invoke();
     }
 }
