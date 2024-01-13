@@ -51,6 +51,16 @@ public class GoodFruit : MonoBehaviour
                     }
                     Debug.Log("Player Entered");
                 }
+                else if(other.CompareTag("FruitClear"))
+                {
+                    StopFruitGlow();
+                    fruitAlive = false;
+                    if (!fruitAlive)
+                    {
+                        StopFruitGlow();
+                    }
+                    Destroy(gameObject);
+                }
 
             }
         }

@@ -38,6 +38,10 @@ public class BadFruit : MonoBehaviour
                     }
                     Debug.Log("Player Entered");
                 }
+                else if (other.CompareTag("FruitClear"))
+                {
+                    Destroy(gameObject);
+                }
 
             }
         }
