@@ -49,3 +49,4 @@ MonoBehaviour:
   spawnTimer: 5
   fruitSelection:
   - {fileID: 3418070491854399475, guid: 08d007930f5a73c4697f488285e8cf3e, type: 3}
+  - {fileID: 3418070491854399475, guid: 862ce20eb812cbc4d8984f928e7d4baf, type: 3}

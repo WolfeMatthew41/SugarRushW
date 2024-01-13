@@ -13,12 +13,12 @@ public class BadFruit : MonoBehaviour
 
     private void OnEnable()
     {
-        FruitSpawner1.onDespawn += despawn;
+        FruitBadSpawner.onDespawn += despawn;
     }
 
     private void OnDisable()
     {
-        FruitSpawner1.onDespawn -= despawn;
+        FruitBadSpawner.onDespawn -= despawn;
     }
 
     private void despawn()

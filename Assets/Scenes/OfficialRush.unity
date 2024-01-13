@@ -560,9 +560,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -180677181510657191, guid: 7e0fc0a1796b53a489eacba866431ebb, type: 3}
+    - target: {fileID: -6089270126079250438, guid: 7e0fc0a1796b53a489eacba866431ebb, type: 3}
       propertyPath: spawnTimer
-      value: 30
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spawnTimer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2573263003802057283, guid: 7e0fc0a1796b53a489eacba866431ebb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -607,6 +611,10 @@ PrefabInstance:
     - target: {fileID: 3518792705786949152, guid: 7e0fc0a1796b53a489eacba866431ebb, type: 3}
       propertyPath: m_Name
       value: RandomBadFruitSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 3518792705786949152, guid: 7e0fc0a1796b53a489eacba866431ebb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1199,6 +1207,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2793749308710162469, guid: 950df3b2691bdc14b9c85b17541198fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1775,7 +1787,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -180677181510657191, guid: 6da49231fde78a54289f4945c7536876, type: 3}
       propertyPath: spawnTimer
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -180677181510657191, guid: 6da49231fde78a54289f4945c7536876, type: 3}
       propertyPath: fruitSelection.Array.size
@@ -1785,6 +1797,10 @@ PrefabInstance:
       propertyPath: fruitSelection.Array.data[0]
       value: 
       objectReference: {fileID: 3418070491854399475, guid: 08d007930f5a73c4697f488285e8cf3e, type: 3}
+    - target: {fileID: -180677181510657191, guid: 6da49231fde78a54289f4945c7536876, type: 3}
+      propertyPath: fruitSelection.Array.data[1]
+      value: 
+      objectReference: {fileID: 3418070491854399475, guid: 862ce20eb812cbc4d8984f928e7d4baf, type: 3}
     - target: {fileID: 2573263003802057283, guid: 6da49231fde78a54289f4945c7536876, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.994551
