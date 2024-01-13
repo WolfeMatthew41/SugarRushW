@@ -13,6 +13,21 @@ public class GoodFruit : MonoBehaviour
     public AK.Wwise.Event Play_FruitGlow;
     public AK.Wwise.Event Stop_FruitGlow;
 
+    private void OnEnable()
+    {
+        FruitSpawner1.onDespawn += despawn;
+    }
+
+    private void OnDisable()
+    {
+        FruitSpawner1.onDespawn -= despawn;
+    }
+
+    private void despawn()
+    {
+        Destroy(gameObject);
+    }
+
     void Awake()
     {
         playerEnergy = FindObjectOfType<PlayerEnergy>();

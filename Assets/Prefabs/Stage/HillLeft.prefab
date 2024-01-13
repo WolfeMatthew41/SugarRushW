@@ -922,6 +922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectClearPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 8008607998480077143, guid: c72ce9493b992fe42ba604f446a6b21f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

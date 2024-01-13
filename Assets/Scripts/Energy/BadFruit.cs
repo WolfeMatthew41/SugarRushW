@@ -11,6 +11,22 @@ public class BadFruit : MonoBehaviour
     private bool hasEventBeenTriggered = false;
     public AK.Wwise.Event Play_GoodOrBadFruit;
 
+    private void OnEnable()
+    {
+        FruitSpawner1.onDespawn += despawn;
+    }
+
+    private void OnDisable()
+    {
+        FruitSpawner1.onDespawn -= despawn;
+    }
+
+    private void despawn()
+    {
+        Destroy(gameObject);
+    }
+
+
     void Awake()
     {
         playerEnergy = FindObjectOfType<PlayerEnergy>();
