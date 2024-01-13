@@ -22,12 +22,18 @@ State	ID	Name	State Group			Notes
 	748895195	None	PlayerStates			
 	1151176110	Awake	PlayerStates			
 	1274144392	OutOfEnergy	PlayerStates			
+	2716678721	Victory	PlayerStates			
 	3671647190	Sleep	PlayerStates			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	988953028	SFXVolume			\Default Work Unit\SFXVolume	
+	2346531308	MusicVolume			\Default Work Unit\MusicVolume	
+	2918011349	MasterVolume			\Default Work Unit\MasterVolume	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
-	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	393239870	SFX			\Default Work Unit\Master\SFX	
+	3991942870	Music			\Default Work Unit\Master\Music	
+	4056684167	Master			\Default Work Unit\Master	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
