@@ -1,28 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class FruitSpawner1 : MonoBehaviour
+public class FruitBadSpawner : MonoBehaviour
 {
-
     public string spawnPointTag = "FruitSpawnPoint";
     public bool freeSpawn = true;
 
     [SerializeField]
     public float spawnTimer = 5.0f;
 
-    private float _timeLeft =30.0f;
+    private float _timeLeft = 30.0f;
 
     [SerializeField]
     public List<GameObject> fruitSelection;
 
     public static event Action onDespawn;
-    
+
 
     // Start is called before the first frame update
     void Start()
     {
+        SpawnFruit();
         SpawnFruit();
     }
 
@@ -57,5 +58,4 @@ public class FruitSpawner1 : MonoBehaviour
             pts.transform.position = spawnPoint.transform.position;
         }
     }
-
 }

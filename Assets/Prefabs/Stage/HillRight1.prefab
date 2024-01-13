@@ -116,6 +116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HillRight
       objectReference: {fileID: 0}
+    - target: {fileID: 6803769859426722381, guid: f9927c67ead04cd49843dbb0b90570dc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

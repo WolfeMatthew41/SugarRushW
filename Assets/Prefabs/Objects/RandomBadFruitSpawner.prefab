@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573263003802057283}
-  - component: {fileID: -180677181510657191}
+  - component: {fileID: -6089270126079250438}
   m_Layer: 0
   m_Name: RandomBadFruitSpawner
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-180677181510657191
+--- !u!114 &-6089270126079250438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,10 +41,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3518792705786949152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45a33e742dbfb4d44b35620a189faa64, type: 3}
+  m_Script: {fileID: 11500000, guid: e8c64fe804dd5e44386783309f28ee80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointTag: BadFruitSpawnPoint
+  spawnPointTag: FruitSpawnPoint
   freeSpawn: 1
   spawnTimer: 5
   fruitSelection:
