@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class FruitSpawner1 : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class FruitSpawner1 : MonoBehaviour
 
     [SerializeField]
     public List<GameObject> fruitSelection;
+
+    public static event Action onDespawn;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,7 @@ public class FruitSpawner1 : MonoBehaviour
         }
         else
         {
+            onDespawn?.Invoke();
             SpawnFruit();
         }
     }
@@ -42,9 +46,9 @@ public class FruitSpawner1 : MonoBehaviour
         GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag(spawnPointTag);
         foreach (GameObject spawnPoint in spawnPoints)
         {
-            int randomSpawnPoint = Random.Range(0, fruitSelection.Count);
+            int randomSpawnPoint = UnityEngine.Random.Range(0, fruitSelection.Count);
 
-            int spawnOrNot = Random.Range(0, 2);
+            int spawnOrNot = UnityEngine.Random.Range(0, 2);
             //if(spawnOrNot==0)
 
             GameObject pts = Instantiate(fruitSelection[randomSpawnPoint]);
