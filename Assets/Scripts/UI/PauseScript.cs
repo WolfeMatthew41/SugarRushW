@@ -12,6 +12,8 @@ public class PauseScript : MonoBehaviour
 
     public GameObject PauseMenu;
 
+    public GameObject SettingsMenu;
+
     public UnityEvent onPauseEvent;
 
     public UnityEvent onUnPauseEvent;
@@ -43,7 +45,15 @@ public class PauseScript : MonoBehaviour
     }
 
     public void OnSettings()
-    { 
+    {
+        PauseMenu.SetActive(false);
+        SettingsMenu.SetActive(true);
+    }
+
+    public void OnSettingsBack()
+    {
+        SettingsMenu.SetActive(false);
+        PauseMenu.SetActive(true);
     }
 
     public void OnQuit()
