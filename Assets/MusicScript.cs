@@ -32,6 +32,9 @@ public class MusicScript : MonoBehaviour
     private const string playerStateSleep = "Sleep";
     private const string pauseStateOff = "PauseOff";
 
+
+
+
     void Start()
     {
         
@@ -105,6 +108,7 @@ public class MusicScript : MonoBehaviour
             
             Debug.LogWarning("No assigned Wwise event");
         }
+        
     }
 
     // setting game state 
@@ -172,4 +176,10 @@ public class MusicScript : MonoBehaviour
             Debug.LogWarning("No assigned Wwise event");
         }
     }
+    void OnDestroy()
+    {
+        AkSoundEngine.PostEvent("Stop_IngameMusic", gameObject);
+        Debug.Log("Destroyed");
+    }
+
 }

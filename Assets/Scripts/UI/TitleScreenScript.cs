@@ -13,6 +13,8 @@ public class TitleScreenScript : MonoBehaviour
 
         // For example, you can print a message to the console
         Debug.Log("Script is initialized!");
+        /*   AkSoundEngine.SetState("GameStates", "MainMenu");*/
+        
         PlayMainMenu();
     }
 

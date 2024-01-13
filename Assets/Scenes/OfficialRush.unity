@@ -445,6 +445,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 924054707468967575, guid: fa5831610d45f194b96f69aaf49a8b9a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 663868299}
+    - targetCorrespondingSourceObject: {fileID: 924054707468967575, guid: fa5831610d45f194b96f69aaf49a8b9a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 663868300}
   m_SourcePrefab: {fileID: 100100000, guid: fa5831610d45f194b96f69aaf49a8b9a, type: 3}
 --- !u!1 &663868297 stripped
 GameObject:
@@ -473,6 +476,35 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &663868300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663868297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d07f54e241aac47bf2f42c1d70cb47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cf8dec67816c40e4290f3a672a4764ec, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!1 &694803550 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4573001321050632893, guid: b9cd886be9c8a8d43862a927e8ad545b, type: 3}

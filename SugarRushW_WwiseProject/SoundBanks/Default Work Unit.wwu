@@ -22,8 +22,8 @@
 				<SoundBank Name="IngameMusic_SoundBank" ID="{C5692D5C-BA22-449F-A00D-FC2582C760A6}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Pause_IngameMusic" ID="{97FAA36B-CCD8-40E6-8ABE-9B116A5649BE}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_IngameMusic" ID="{6D10A73F-3801-419A-BBCA-7F6F5CDE1E33}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_IngameMusic" ID="{6EFC7591-CC9D-45D6-A495-2F9C31B8C0EC}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_IngameMusic" ID="{FB2AB0A7-1B33-4732-AE74-A5030D94AF42}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

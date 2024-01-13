@@ -84,7 +84,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{269EFB48-E740-1F90-57F3-65DF00C47E2F}">
+		<SoundBank Id="1668970261" Type="User" Language="SFX" Hash="{AB9980E2-A251-33EC-FED5-454E9D55FC50}">
 			<ShortName>IngameMusic_SoundBank</ShortName>
 			<Path>IngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -551,7 +551,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{8654CA65-6C07-4494-C8B4-3D7E1F84C530}">
+		<SoundBank Id="3695227540" Type="User" Language="SFX" Hash="{EEACCB50-6F63-F2AF-0AF5-625C7CA6A0EF}">
 			<ShortName>NonIngameMusic_SoundBank</ShortName>
 			<Path>NonIngameMusic_SoundBank.bnk</Path>
 			<Media>
@@ -620,5 +620,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BC5993EC-BE7F-AD24-3284-B7B6CC16C91F}</FileHash>
+	<FileHash>{29CD706E-C839-AA5C-67EF-60C11B24FE3C}</FileHash>
 </SoundBanksInfo>

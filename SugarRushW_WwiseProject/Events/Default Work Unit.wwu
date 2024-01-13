@@ -80,20 +80,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_IngameMusic" ID="{FB2AB0A7-1B33-4732-AE74-A5030D94AF42}">
-					<ChildrenList>
-						<Action Name="" ID="{52B8BCC5-98C0-42C3-B174-5FE495324863}" ShortID="230558333">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="IngameMusic" ID="{FF1BE994-9505-42C7-9268-DE443679DF18}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Stop_Pause" ID="{E981CAED-2BCC-4584-A1BE-9104D287EC76}">
 					<ChildrenList>
 						<Action Name="" ID="{23D4746F-B889-4CB2-B8B5-8320B4B0924A}" ShortID="34078649">
@@ -236,6 +222,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="UI_Sound_ButtonClick" ID="{A8108027-6096-45D8-85E2-9C292BE19BCB}" WorkUnitID="{DD2A0CB8-F3FC-464C-A9D2-206FA21D52A1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_IngameMusic" ID="{6D10A73F-3801-419A-BBCA-7F6F5CDE1E33}">
+					<ChildrenList>
+						<Action Name="" ID="{8FEF2390-02D1-4351-AB12-5DB583300CE1}" ShortID="287016966">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IngameMusic" ID="{FF1BE994-9505-42C7-9268-DE443679DF18}" WorkUnitID="{42123E1F-A6BD-4DB6-B20F-1C5920394C45}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

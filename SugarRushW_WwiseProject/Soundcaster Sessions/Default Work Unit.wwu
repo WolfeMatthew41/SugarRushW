@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CE9D9A49-99CA-4336-9100-2B9CAB59E6D4}" SchemaVersion="119">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{CE9D9A49-99CA-4336-9100-2B9CAB59E6D4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CE9D9A49-99CA-4336-9100-2B9CAB59E6D4}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{5401CA48-4CF1-42F7-84FB-874109BF442D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Pause_IngameMusic" ID="{97FAA36B-CCD8-40E6-8ABE-9B116A5649BE}" WorkUnitID="{520B5093-9DEC-430D-8748-BB41595C7458}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="PauseOff" ID="{C79421BF-8472-440E-860B-16C4B68E62E7}"/>
+						<CurrentStateRef Name="Ingame" ID="{026C9C08-EE56-4CD4-AAFD-F32542C072A5}"/>
+						<CurrentStateRef Name="Awake" ID="{40518799-6EF1-4649-B508-9199D0FDEC08}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Off" ID="{821542EA-96CB-4D3D-907E-D91A95516CC8}"/>
+						<CurrentSwitchRef Name="HighEnergy" ID="{14663D86-3CBB-4AEC-8166-992926629432}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{40243C33-B550-4958-BDDF-A0A245A1B27B}"/>
+						<CurrentSwitchRef Name="BadFruit" ID="{8ECB6D81-680F-4203-A0C3-691E55A814A4}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
