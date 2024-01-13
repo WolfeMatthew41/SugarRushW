@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,8 @@ public class PlayerEnergy : MonoBehaviour
     public GameObject GameOverMenu;
 
     public UnityEvent onPauseEvent;
+
+    public static event Action onGameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,7 @@ public class PlayerEnergy : MonoBehaviour
         }
         else
         {
+            onGameOver?.Invoke();
             OnRushOut();
         }
     }

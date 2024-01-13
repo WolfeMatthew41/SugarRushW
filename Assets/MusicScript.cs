@@ -33,6 +33,15 @@ public class MusicScript : MonoBehaviour
     private const string pauseStateOff = "PauseOff";
 
 
+    private void OnEnable()
+    {
+        PlayerEnergy.onGameOver += OnDestroy;
+    }
+
+    private void OnDisable()
+    {
+        PlayerEnergy.onGameOver -= OnDestroy;
+    }
 
 
     void Start()
