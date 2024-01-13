@@ -530,7 +530,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -180677181510657191, guid: 7e0fc0a1796b53a489eacba866431ebb, type: 3}
       propertyPath: spawnTimer
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2573263003802057283, guid: 7e0fc0a1796b53a489eacba866431ebb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1704,7 +1704,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -180677181510657191, guid: 6da49231fde78a54289f4945c7536876, type: 3}
       propertyPath: spawnTimer
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -180677181510657191, guid: 6da49231fde78a54289f4945c7536876, type: 3}
       propertyPath: fruitSelection.Array.size
