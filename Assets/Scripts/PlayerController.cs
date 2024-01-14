@@ -2,11 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Cinemachine;
 
 [RequireComponent(typeof(CharacterController))]
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] CinemachineVirtualCamera virtualCamera;
+    CinemachineComponentBase componentBase;
+    public float cameraDistance;
+    [SerializeField] float sensitivity = 50f;
+
     private Vector2 _input;
     private Vector3 _direction;
     private Vector3 _direction2;
@@ -124,6 +130,19 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if(componentBase == null)
+        {
+            componentBase = virtualCamera.GetCinemachineComponent(CinemachineCore.Stage.Body);
+        }
+
+        if(Input.GetAxis("Mouse ScrollWheel") != 0)
+        {
+            cameraDistance = Input.GetAxis("Mouse ScrollWheel") * sensitivity;
+            if(componentBase is CinemachineFramingTransposer)
+            {
+                (componentBase as CinemachineFramingTransposer).m_CameraDistance -= cameraDistance;
+            }
+        }
         if (!isPaused) 
         {
             ApplyMovement();
