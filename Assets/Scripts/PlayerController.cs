@@ -172,8 +172,8 @@ public class PlayerController : MonoBehaviour
         if (_input.x != 0.0f || _input.y != 0.0f)
         {
             PlayFootstep();
-
-            _characterController.Move(_direction2 * speed * Time.deltaTime);
+          
+            _characterController.Move(_direction2 * speed);
 
             Transform puffFacing = puffPlayer[0].GetComponent<Transform>();
             _direction2.y = 0;
