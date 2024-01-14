@@ -8,6 +8,8 @@ public class GameOverScript : MonoBehaviour
 
     public void OnRetry()
     {
+
+        
         Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }

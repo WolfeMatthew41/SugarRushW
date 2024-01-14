@@ -7,6 +7,7 @@
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="40"/>
 						<Property Name="Max" Type="Real64" Value="40"/>
+						<Property Name="Min" Type="Real64" Value="4"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="MasterVolume" ID="{DBC185DC-5CC0-4F1F-9222-C572D3715E74}">

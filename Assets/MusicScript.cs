@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
 using static UnityEngine.GraphicsBuffer;
+using UnityEngine.InputSystem;
 
 
 public class MusicScript : MonoBehaviour
@@ -32,15 +33,20 @@ public class MusicScript : MonoBehaviour
     private const string playerStateSleep = "Sleep";
     private const string pauseStateOff = "PauseOff";
 
+
+
     void Start()
     {
-        
-        rtpcSlider.onValueChanged.AddListener(OnSliderValueChanged);
 
+
+        AkSoundEngine.StopAll();
+
+        
         SetPauseState(pauseStateOff);
 
         PlayIngame();
-        PlayAmbience();
+        rtpcSlider.onValueChanged.AddListener(OnSliderValueChanged);
+       /* PlayAmbience();*/
 
 
         SetGameState(gameState);
@@ -54,7 +60,7 @@ public class MusicScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             
-            PlayIngame();
+          /*  PlayIngame();*/
         }
     }
 
@@ -62,12 +68,23 @@ public class MusicScript : MonoBehaviour
     void OnSliderValueChanged(float value)
     {
         
-        float clampedValue = Mathf.Clamp(value, 0f, 100f);
+       float clampedValue = Mathf.Clamp(value, 0f, 100f);
+        AkInitializationSettings initSettings = new AkInitializationSettings();
 
-        
-        AkSoundEngine.SetRTPCValue(rtpcName, clampedValue, gameObject);
+        // Optionally configure initSettings based on your needs
 
+        // Initialize the Wwise Sound Engine
+        if (!AkSoundEngine.IsInitialized())
+        {
+            AkSoundEngine.Init(initSettings);
+            AkSoundEngine.SetRTPCValue(rtpcName, clampedValue, gameObject);
+        }
+        else
+        {
+            AkSoundEngine.SetRTPCValue(rtpcName, clampedValue, gameObject);
+        }
         
+
         Debug.Log($"RTPC {rtpcName} set to value: {clampedValue}");
 
         // If the slider value is 0, change player state to "OutOfEnergy"
@@ -85,6 +102,18 @@ public class MusicScript : MonoBehaviour
     // Play Ingame music event with the current RTPC value from the slider
     void PlayIngame()
     {
+
+        AkInitializationSettings initSettings = new AkInitializationSettings();
+
+        // Optionally configure initSettings based on your needs
+
+        // Initialize the Wwise Sound Engine
+        if (!AkSoundEngine.IsInitialized())
+        {
+            AkSoundEngine.Init(initSettings);
+
+        }
+
         // Get the RTPC value from the slider
         float rtpcValue = rtpcSlider.value;
 
@@ -170,6 +199,28 @@ public class MusicScript : MonoBehaviour
         {
 
             Debug.LogWarning("No assigned Wwise event");
+        }
+    }
+    private void OnDestroy()
+    {
+        AkInitializationSettings initSettings = new AkInitializationSettings();
+
+        // Optionally configure initSettings based on your needs
+
+        // Initialize the Wwise Sound Engine
+        
+
+        if (AkSoundEngine.IsInitialized())
+        {
+            // Stop all Wwise events globally
+           
+            Debug.Log("DESTROY DESTROY DESTROY ");
+        }
+        else
+        {
+            Debug.LogError("Wwise Sound Engine is not initialized.");
+            AkSoundEngine.Init(initSettings);
+
         }
     }
 }

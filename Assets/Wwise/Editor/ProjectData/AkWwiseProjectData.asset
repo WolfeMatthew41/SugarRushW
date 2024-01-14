@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 040167dc4ddf6a40a296ec7ab0368e2a
     GuidInternal: 
-    m_lastTime: -8584964412744004663
+    m_lastTime: -8584964384363020267
     List:
     - name: Master
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f15927d4b9de29499ac2380722090277
     GuidInternal: 
-    m_lastTime: -8584964485080829835
+    m_lastTime: -8584964094445490271
     List:
     - name: IngameMusic_SoundBank
       guid: 5c2d69c522ba9f44a00dfc2582c760a6
@@ -156,7 +156,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 93500b52ec9d0d438748bb41595c7458
     GuidInternal: 
-    m_lastTime: -8584964499191863248
+    m_lastTime: -8584964094459862197
     List:
     - name: Pause_IngameMusic
       guid: 6ba3fa97d8cce6408abe9b116a5649be
@@ -360,8 +360,8 @@ MonoBehaviour:
         guid: d874c8cebf0499459b8b5c874f420aec
       Path: Events\Default Work Unit\Play_Sleep
       maxAttenuation: 0
-      maxDuration: 1.927125
-      minDuration: 1.927125
+      maxDuration: -1
+      minDuration: -1
     - name: Play_TestSound
       guid: abf90c7fb752304e86e3d2119ae639ad
       id: 2752533807
@@ -510,7 +510,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: e854aa4f62a781469e4c8c0d3dcba420
     GuidInternal: 
-    m_lastTime: -8584964428189245460
+    m_lastTime: -8584964060555501872
     List:
     - name: EnergyLevelRTPC
       guid: c265fab91622604096d6d859739ee63f
@@ -840,7 +840,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 8a3375716ecce44a9a9bcf149d21e80b
     GuidInternal: 
-    m_lastTime: -8584965878743398729
+    m_lastTime: -8584964060555481866
     List:
     - name: Ambience
       guid: 2d2847089e49bb41803e41583bc07e41
@@ -1073,7 +1073,7 @@ MonoBehaviour:
     m_lastTime: -8584968665000232781
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000002100000022000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
