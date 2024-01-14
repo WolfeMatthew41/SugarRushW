@@ -13,7 +13,7 @@ public class TitleScreenScript : MonoBehaviour
     void Start()
     {
         // Perform initialization tasks here
-
+        AkSoundEngine.StopAll();
         // For example, you can print a message to the console
         Debug.Log("Script is initialized!");
         PlayMainMenu();
