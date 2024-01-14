@@ -463,7 +463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: speed
-      value: 0.053
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: _gravity
@@ -471,7 +471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: smoothTime
-      value: 0.18
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: _currentVelocity
@@ -479,7 +479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6743680844160981610, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: gravityMultiplyer
-      value: 0.2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6890248132371381507, guid: 48490bd0ee1d54d46a4276df397df4f2, type: 3}
       propertyPath: field of view
