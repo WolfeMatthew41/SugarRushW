@@ -46,7 +46,7 @@ public class MusicScript : MonoBehaviour
 
         PlayIngame();
         rtpcSlider.onValueChanged.AddListener(OnSliderValueChanged);
-       /* PlayAmbience();*/
+        PlayAmbience();
 
 
         SetGameState(gameState);
