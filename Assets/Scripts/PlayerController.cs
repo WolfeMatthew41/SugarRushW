@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 _direction3;
     private CharacterController _characterController;
     [SerializeField]
-    private float speed = 0.25f; //Used to control speed of Puff
+    private float speed = 0.5f; //Used to control speed of Puff
 
     [SerializeField]
     private float smoothTime = 0.28f;
