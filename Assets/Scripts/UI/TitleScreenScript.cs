@@ -12,9 +12,7 @@ public class TitleScreenScript : MonoBehaviour
     public AK.Wwise.Event Stop_MainMenu;
     void Start()
     {
-        // Perform initialization tasks here
         AkSoundEngine.StopAll();
-        // For example, you can print a message to the console
         Debug.Log("Script is initialized!");
         PlayMainMenu();
     }

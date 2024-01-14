@@ -70,10 +70,8 @@ public class MusicScript : MonoBehaviour
         
        float clampedValue = Mathf.Clamp(value, 0f, 100f);
         AkInitializationSettings initSettings = new AkInitializationSettings();
-
-        // Optionally configure initSettings based on your needs
-
-        // Initialize the Wwise Sound Engine
+       
+       
         if (!AkSoundEngine.IsInitialized())
         {
             AkSoundEngine.Init(initSettings);
@@ -104,10 +102,6 @@ public class MusicScript : MonoBehaviour
     {
 
         AkInitializationSettings initSettings = new AkInitializationSettings();
-
-        // Optionally configure initSettings based on your needs
-
-        // Initialize the Wwise Sound Engine
         if (!AkSoundEngine.IsInitialized())
         {
             AkSoundEngine.Init(initSettings);
@@ -204,15 +198,10 @@ public class MusicScript : MonoBehaviour
     private void OnDestroy()
     {
         AkInitializationSettings initSettings = new AkInitializationSettings();
-
-        // Optionally configure initSettings based on your needs
-
-        // Initialize the Wwise Sound Engine
-        
+       
 
         if (AkSoundEngine.IsInitialized())
         {
-            // Stop all Wwise events globally
            
             Debug.Log("DESTROY DESTROY DESTROY ");
         }
